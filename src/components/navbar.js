@@ -11,10 +11,10 @@ export default function Navbar() {
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] bg-black w-52 text-gray-200 tracking-widestp-2">
       <li><a className="hover py-2">HOME</a></li>
-          <li><a className="hover py-2">ABOUT</a></li>
-          <li><a className="hover py-2">STYLISTS</a></li>
-          <li><a className="hover py-2">SERVICES</a></li>
-          <li><a className="hover py-2">CONTACT</a></li>
+          <li><a href="#about" className="hover py-2">ABOUT</a></li>
+          <li><a href="#stylists" className="hover py-2">STYLISTS</a></li>
+          <li><a href="#services" className="hover py-2">SERVICES</a></li>
+          <li><a href="#contact" className="hover py-2">CONTACT</a></li>
       </ul>
     </div>
     <div className="lg:w-full">
@@ -27,10 +27,10 @@ export default function Navbar() {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 p-0 text-gray-200 tracking-widest">
     <li><a className="hover py-0">HOME</a></li>
-          <li><a className="hover py-0">ABOUT</a></li>
-          <li><a className="hover py-0">STYLISTS</a></li>
-          <li><a className="hover py-0">SERVICES</a></li>
-          <li><a className="hover py-0">CONTACT</a></li>
+          <li><a href="#about" className="hover py-0">ABOUT</a></li>
+          <li><a href="#stylists" className="hover py-0">STYLISTS</a></li>
+          <li><a href="#services" className="hover py-0">SERVICES</a></li>
+          <li><a href="#contact" className="hover py-0">CONTACT</a></li>
     </ul>
   </div>
 </div>

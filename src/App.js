@@ -12,7 +12,7 @@ function App() {
             <img className='mx-auto pt-80 md:pt-36' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
           </div>
         </div>
-        <div className='bg-black text-center py-12'>
+        <div className='bg-black text-center py-12' id='about'>
           <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
           <div className='hr'></div>
           <p className='mx-10 lg:mx-60 text text-xl py-12'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
