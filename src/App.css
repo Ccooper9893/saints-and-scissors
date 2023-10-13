@@ -73,12 +73,26 @@ html {
   min-height: 100vh;
 }
 
+.tour {
+  height: 200px;
+  width: auto;
+}
+
+.hr {
+  margin: 1rem auto 2rem auto;
+  max-width: 60%;
+  height: 1px;
+  border-bottom: 1px solid rgb(91, 91, 91);
+}
+
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
 
   .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3,
+  .bgimg-4 {
     background-attachment: scroll;
+    min-height: 50vh !important;
   }
 }
