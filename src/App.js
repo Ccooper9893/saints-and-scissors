@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Prices from './components/Prices';
+import ContactUs from './components/Contact';
 import titleAndLogo from './assets/title-and-logo.png';
 import kendalPic from "./assets/kendal.jpg";
 import sherriPic from "./assets/sherri.jpg";
@@ -19,13 +20,14 @@ function App() {
           <img className='mx-auto pt-64 md:pt-36 fade-in' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
         </div>
       </div>
-      <div className='bg-black shadowY text-center py-8' id='about'>
+      <a className='title absolute text-6xl bottom-5 text-slate-50 left z-50'>&darr;</a>
+      <div className='bg-stone-950 shadowY text-center py-8' id='about'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
         <div className='hr'></div>
         <p className='mx-10 lg:mx-60 text lg:text-2xl py-12'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
       </div>
       <div className='bgimg-2'>
-        <div className='relative text-center top-48 lg:top-64 text-slate-300'>
+        <div className='relative text-center top-64 text-slate-300'>
           <div>
             <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
               <p className='text-2xl lg:text-4xl pb-5'>&ldquo;Fashions fade, style is eternal.&rdquo;</p>
@@ -67,21 +69,36 @@ function App() {
       <div className='bgimg-3'>
         <div className='relative text-center top-48 lg:top-64 text-slate-300'>
             <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
-              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;To Sculpt A Head Of Hair With Scissors Is An Art Form. It’s In Pursuit Of Art.&rdquo;</p>
+              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;To sculpt a head of Hair with Scissors is an Art Form. It’s In Pursuit Of Art.&rdquo;</p>
               <p className='text-xl lg:text-2xl'><em>– Vidal Sassoon</em></p>
             </div>
         </div>
       </div>
-      <div className='bg-black shadowY text-center py-8' id='services'>
+      <div className='bg-stone-950 shadowY text-center py-8' id='services'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>SERVICES</h1>
         <div className='hr'></div>
        <Prices />
       </div>
       
-      <div className='flex flex-col bgimg-4 justify-end text-center'><a className='text-slate-50 left-1/2 z-50'>^</a></div>
-      <div className='bg-black shadowY text-center py-8' id='contact'>
+      <div className='bgimg-4'>
+      <div className='relative text-center top-48 lg:top-64 text-slate-300'>
+            <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
+              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;A woman who cuts her hair is about to change her life.&rdquo;</p>
+              <p className='text-xl lg:text-2xl'><em>– Coco Chanel</em></p>
+            </div>
+        </div>
+      </div>
+      <div className='bg-stone-950 text-center py-8' id='contact'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>CONTACT</h1>
         <div className='hr'></div>
+        <div className='flex flex-col lg:flex-row mx-4 lg:mx-40 pt-10'>
+            <div>
+              
+            </div>
+            <div className='w-full'>
+              <ContactUs />
+            </div>
+        </div>
       </div>
       <Footer />
     </div>
