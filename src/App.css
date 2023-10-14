@@ -24,21 +24,16 @@ html {
 .title {
   font-family: 'Playfair Display', serif;
   font-weight: 100;
-  color: #cccccc;
+  color: #dddddd;
 }
 
 .text {
   font-weight: 100;
-  color: #cccccc;
+  color: #dddddd;
 }
 
 .hover:hover {
   color: #9ceb34 !important;
-}
-
-.section1 {
-  background-image: url("assets/hotel-wallpaper-black.webp");
-  background-repeat: repeat;
 }
 
 .bgimg-1,
@@ -50,7 +45,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 20;
+  z-index: -5;
   min-height: 100vh;
 }
 
@@ -70,6 +65,12 @@ html {
   background-image: url("assets/slides-home-4.jpg");
 }
 
+.floralBg {
+  background-image: url("assets/floral-background.jpg");
+  background-repeat: repeat;
+  background-size: 40rem;
+}
+
 .tour {
   height: 200px;
   width: auto;
@@ -77,7 +78,7 @@ html {
 
 .hr {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 80%;
   height: 1px;
   border-bottom: 1px solid rgb(91, 91, 91);
 }
@@ -93,17 +94,50 @@ html {
     background-color: rgba(0, 0, 0, 0.65); /* RGBA color with 0.5 opacity */
 }
 
+/* div.quoteBg p {
+  font-family: 'Playfair Display', serif;
+} */
+
+.selfie {
+  width: 266px;
+  height: 266px;
+}
+
+tr {
+ border-bottom: 1px solid rgb(70, 70, 70) !important;
+}
+
+.table {
+  width: 85%;
+  margin: auto auto;
+}
+
+tr td:nth-child(3) {
+  text-align: right;
+  color: #9ceb34;
+}
+
+.shadowY {
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.9), 0px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-device-width: 1024px) {
 
   .bgimg-2,
   .bgimg-3,
   .bgimg-4 {
-    background-attachment: scroll;
-    min-height: 75vh !important;
+    min-height: 100vh !important;
   }
 
   .bgimg-1 {
     min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .selfie {
+    width: 150px !important;
+    height: 150px !important;
   }
 }

@@ -1,37 +1,89 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Prices from './components/Prices';
 import titleAndLogo from './assets/title-and-logo.png';
+import kendalPic from "./assets/kendal.jpg";
+import sherriPic from "./assets/sherri.jpg";
+import paulPic from "./assets/paul.jpg";
+import juliPic from "./assets/juli.jpg";
+import ccPic from "./assets/cc-1.jpg";
+import amandaPic from "./assets/amanda.png";
 
 function App() {
   return (
     <div>
       <Navbar />
-        <div className='bgimg-1'>
-          <div className='z-0 w-full'>
-            <img className='mx-auto pt-80 md:pt-36' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-          </div>
+      <div className='bgimg-1' id='home'>
+        <div className='z-0 w-full'>
+          <img className='mx-auto pt-64 md:pt-36 fade-in' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
         </div>
-        <div className='bg-black text-center py-12' id='about'>
-          <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
-          <div className='hr'></div>
-          <p className='mx-10 lg:mx-60 text text-xl py-12'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
-        </div>
-        <div className='bgimg-2'>
-          <div className='relative text-center top-48 lg:top-64 text-slate-300'>
-            <div>
-              <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
-                <p className='text-3xl lg:text-5xl'>&ldquo;Fashions fade, style is eternal.&rdquo;</p>
-                <p className='text-xl lg:text-2xl'><em>– Yves Saint-Laurent</em></p>
-                </div>
+      </div>
+      <div className='bg-black shadowY text-center py-8' id='about'>
+        <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
+        <div className='hr'></div>
+        <p className='mx-10 lg:mx-60 text lg:text-2xl py-12'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+      </div>
+      <div className='bgimg-2'>
+        <div className='relative text-center top-48 lg:top-64 text-slate-300'>
+          <div>
+            <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
+              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;Fashions fade, style is eternal.&rdquo;</p>
+              <p className='text-xl lg:text-2xl'><em>– Yves Saint-Laurent</em></p>
             </div>
           </div>
         </div>
-        <div className='bg-black h-96 text-center'>
+      </div>
+      <div className='floralBg shadowY text-center py-8' id='stylists'>
+        <h1 className='title text-5xl md:text-7xl mx-auto py-6'>STYLISTS</h1>
+        <div className='hr'></div>
+        <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={sherriPic} alt='Sherri headshot'></img>
+            <h2 className='title'>Sherri</h2>
+          </div>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={paulPic} alt='Sherri headshot'></img>
+            <h2 className='title'>Paul</h2>
+          </div>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={ccPic} alt='Sherri headshot'></img>
+            <h2 className='title'>CC</h2>
+          </div>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={kendalPic} alt='Sherri headshot'></img>
+            <h2 className='title'>Kendal</h2>
+          </div>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={juliPic} alt='Sherri headshot'></img>
+            <h2 className='title'>Juli</h2>
+          </div>
+          <div className='p-6'>
+            <img className='selfie rounded-full' src={amandaPic} alt='Sherri headshot'></img>
+            <h2 className='title'>Amanda</h2>
+          </div>
         </div>
-        <div className='bgimg-3'></div>
-        <div className='bgimg-4'></div>
-        <Footer />
+      </div>
+      <div className='bgimg-3'>
+        <div className='relative text-center top-48 lg:top-64 text-slate-300'>
+            <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
+              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;To Sculpt A Head Of Hair With Scissors Is An Art Form. It’s In Pursuit Of Art.&rdquo;</p>
+              <p className='text-xl lg:text-2xl'><em>– Vidal Sassoon</em></p>
+            </div>
+        </div>
+      </div>
+      <div className='bg-black shadowY text-center py-8' id='services'>
+        <h1 className='title text-5xl md:text-7xl mx-auto py-6'>SERVICES</h1>
+        <div className='hr'></div>
+       <Prices />
+      </div>
+      
+      <div className='flex flex-col bgimg-4 justify-end text-center'><a className='text-slate-50 left-1/2 z-50'>^</a></div>
+      <div className='bg-black shadowY text-center py-8' id='contact'>
+        <h1 className='title text-5xl md:text-7xl mx-auto py-6'>CONTACT</h1>
+        <div className='hr'></div>
+      </div>
+      <Footer />
     </div>
   );
 }
