@@ -26,7 +26,7 @@ const toggle2Close = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar fixed justify-between lg:justify-around bg-black">
+        <div className="w-full navbar fixed justify-between pr-0 lg:justify-around bg-black">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -45,11 +45,11 @@ const toggle2Close = () => {
               <li><a>SERVICES</a></li>
               <li><a>GALLERY</a></li>
               <li><a>CONTACT</a></li>
-              <li><a>CAREERS</a></li>
+              <li><a onClick={() => {toggle(); toggle2Open();}}>CAREERS</a></li>
             </ul>
           </div>
           <div className="lg:w-1/4">
-            <a className="btn btn-xs mx-auto md:btn-sm normal-case bg-lime-500 text-black hover:bg-stone-200">BOOK</a>
+            <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
           </div>
         </div>
         {/* Page content here */}
@@ -63,9 +63,9 @@ const toggle2Close = () => {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-full min-h-full bg-base-200 text-base-content">
+    <ul className="menu py-4 px-0 w-full md:w-1/3 min-h-full bg-base-200 text-base-content">
       {/* Sidebar content here */}
-      <li><a onClick={toggle2Close}>{'<--'}BACK</a></li>
+      <li><button className="ribbon2 btn btn-sm w-1/4 md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white" onClick={toggle2Close}>&larr; GO BACK</button></li>
       <li><a>Sidebar Item 2</a></li>
     </ul>
   </div>

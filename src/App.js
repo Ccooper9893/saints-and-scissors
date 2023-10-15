@@ -18,21 +18,17 @@ function App() {
     <div>
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
-        <div className="carousel-item background1">
-          <img className='fade-in centerOfBg' src={titleAndLogo}></img>
-        </div>
-        <div className="carousel-item background2">
-
-        </div>
-        <div className="carousel-item background2">
-
-        </div>
-        <div className="carousel-item background3">
-
-        </div>
-        <div className="carousel-item background4">
-
-        </div>
+        <div className="carousel-item background1"><img className='fade-in centerOfBg' src={titleAndLogo}></img></div>
+        <div className='relative w-screen h-screen -z-5'>
+  <div className='absolute inset-4 flex items-center justify-center'>
+    <button className='downIcon'>&#9660;</button>
+  </div>
+</div>
+        <div className="carousel-item bg-black"></div>
+        <div className="carousel-item background2"></div>
+        <div className="carousel-item background2"></div>
+        <div className="carousel-item background3"></div>
+        <div className="carousel-item background4"></div>
       </div>
     </div>
   );
