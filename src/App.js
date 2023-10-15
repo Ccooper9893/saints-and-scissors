@@ -20,7 +20,6 @@ function App() {
           <img className='mx-auto pt-64 md:pt-36 fade-in' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
         </div>
       </div>
-      <a className='title absolute text-6xl bottom-5 text-slate-50 left z-50'>&darr;</a>
       <div className='bg-stone-950 shadowY text-center py-8' id='about'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
         <div className='hr'></div>
@@ -68,36 +67,35 @@ function App() {
       </div>
       <div className='bgimg-3'>
         <div className='relative text-center top-48 lg:top-64 text-slate-300'>
-            <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
-              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;To sculpt a head of Hair with Scissors is an Art Form. It’s In Pursuit Of Art.&rdquo;</p>
-              <p className='text-xl lg:text-2xl'><em>– Vidal Sassoon</em></p>
-            </div>
+          <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
+            <p className='text-2xl lg:text-4xl pb-5'>&ldquo;To sculpt a head of Hair with Scissors is an Art Form. It’s In Pursuit Of Art.&rdquo;</p>
+            <p className='text-xl lg:text-2xl'><em>– Vidal Sassoon</em></p>
+          </div>
         </div>
       </div>
       <div className='bg-stone-950 shadowY text-center py-8' id='services'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>SERVICES</h1>
         <div className='hr'></div>
-       <Prices />
+        <Prices />
       </div>
-      
+
       <div className='bgimg-4'>
-      <div className='relative text-center top-48 lg:top-64 text-slate-300'>
-            <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
-              <p className='text-2xl lg:text-4xl pb-5'>&ldquo;A woman who cuts her hair is about to change her life.&rdquo;</p>
-              <p className='text-xl lg:text-2xl'><em>– Coco Chanel</em></p>
-            </div>
+        <div className='relative text-center top-48 lg:top-64 text-slate-300'>
+          <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
+            <p className='text-2xl lg:text-4xl pb-5'>&ldquo;A woman who cuts her hair is about to change her life.&rdquo;</p>
+            <p className='text-xl lg:text-2xl'><em>– Coco Chanel</em></p>
+          </div>
         </div>
       </div>
       <div className='bg-stone-950 text-center py-8' id='contact'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>CONTACT</h1>
         <div className='hr'></div>
         <div className='flex flex-col lg:flex-row mx-4 lg:mx-40 pt-10'>
-            <div>
-              
-            </div>
-            <div className='w-full'>
-              <ContactUs />
-            </div>
+          <div>
+          </div>
+          <div className='w-full'>
+            <ContactUs />
+          </div>
         </div>
       </div>
       <Footer />
