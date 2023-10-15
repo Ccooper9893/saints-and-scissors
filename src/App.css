@@ -124,7 +124,6 @@ tr {
 tr td:nth-child(3) {
   text-align: right;
   color: #39e70e;
-  font-weight: bold;
 }
 
 .active {
