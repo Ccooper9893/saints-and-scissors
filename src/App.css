@@ -136,7 +136,7 @@ tr td:nth-child(3) {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media screen and (max-device-width: 1024px) {
+/* @media screen and (max-device-width: 1024px) {
 
   .bgimg-1,
   .bgimg-2,
@@ -145,7 +145,7 @@ tr td:nth-child(3) {
   .titleAndLogo {
     background-attachment: scroll;
   }
-}
+} */
 
 @media screen and (max-width: 635px) {
   .selfie {
