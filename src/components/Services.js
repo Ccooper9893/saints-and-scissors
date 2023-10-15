@@ -1,7 +1,10 @@
-
-
-export default function Prices () {
+export default function Services () {
     return (
+      <div></div>
+    )
+}
+
+/*
         <div className="py-5 my-10 mx-6 lg:mx-96 bg-stone-900">
         <h2 className='title text-center text-2xl py-4'>CUTS AND STYLING</h2>
 <table className="table text-white">
@@ -69,5 +72,5 @@ export default function Prices () {
   </tbody>
 </table>
 </div>
-    )
-}
+
+*/

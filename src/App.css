@@ -1,45 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'daisyui/dist/full.css';
 
 * {
   font-family: 'Rajdhani', sans-serif;
 }
 
-.bg-black {
-  background: #000000;
-}
-
-body,
 html {
-  height: 100%;
-  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.navbar {
-  z-index: 100;
+
+/* Navbar */
+
+.menu a {
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
-.title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 100;
-  color: #dddddd;
-}
-
-.text {
-  font-weight: 100;
-  color: #dddddd;
-}
-
-.hover:hover {
-  color: #2dc907 !important;
-}
-
-.bgimg-1,
-.bgimg-2,
-.bgimg-3,
-.bgimg-4,
-.titleAndLogo {
+/* Backgrounds */
+.background1,
+.background2,
+.background3,
+.background4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,109 +33,45 @@ html {
   min-height: 100vh;
 }
 
-.bgimg-1 {
+.centerOfBg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background1 {
   background-image: url("assets/slides-home-1.jpg");
 }
 
-.bgimg-2 {
+.background2 {
   background-image: url("assets/slides-home-2.jpg");
 }
 
-.bgimg-3 {
+.background3 {
   background-image: url("assets/slides-home-3.jpg");
 }
 
-.bgimg-4 {
+.background4 {
   background-image: url("assets/slides-home-4.jpg");
 }
 
-.floralBg {
-  background-image: url("assets/floral-background.jpg");
-  background-repeat: repeat;
-  background-size: 40rem;
-}
-
-.tour {
-  height: 200px;
-  width: auto;
-}
-
-.hr {
-  margin: 0 auto;
-  max-width: 80%;
-  height: 1px;
-  border-bottom: 1px solid rgb(91, 91, 91);
-}
-
-.hrsm {
-  margin: 0 auto;
-  max-width: 25%;
-  height: 1px;
-  border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-.quoteBg {
-    background-color: rgba(0, 0, 0, 0.5); /* RGBA color with 0.5 opacity */
-}
-
-/* div.quoteBg p {
-  font-family: 'Playfair Display', serif;
-} */
-
-.selfie {
-  width: 266px;
-  height: 266px;
-}
-
-tr {
- border-bottom: 1px solid rgb(70, 70, 70) !important;
-}
-
-.table {
-  width: 85%;
-  margin: auto auto;
-}
-
-tr td:nth-child(3) {
-  text-align: right;
-  color: #39e70e;
-  font-weight: bold;
-}
-
-.active {
-  color: black !important;
-  border-radius: 10px;
-  background-color: #2dc907 !important;
-}
-
-.left {
-  left: 46%;
-}
-
-.input, .textarea {
-  background-color: #202020;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 1rem;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
+/* Media Queries */
 @media screen and (max-device-width: 1024px) {
 
-  .bgimg-2,
-  .bgimg-3,
-  .bgimg-4 {
-    min-height: 100vh !important;
+  /* Backgrounds  */
+  .background1,
+  .background2,
+  .background3,
+  .background4,
+  .titleAndLogo {
+    background-attachment: scroll;
   }
 
-  .bgimg-1 {
-    min-height: 100vh;
-  }
 }
 
-@media screen and (max-width: 635px) {
-  .selfie {
-    width: 150px !important;
-    height: 150px !important;
-  }
-}
