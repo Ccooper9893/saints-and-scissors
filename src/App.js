@@ -31,6 +31,7 @@ function App() {
             <div className='mx-4 lg:mx-72 py-8 text-white quoteBg'>
               <p className='text-2xl lg:text-4xl pb-5'>&ldquo;Fashions fade, style is eternal.&rdquo;</p>
               <p className='text-xl lg:text-2xl'><em>– Yves Saint-Laurent</em></p>
+              <div className="divider"></div>
             </div>
           </div>
         </div>
