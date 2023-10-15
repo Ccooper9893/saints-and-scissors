@@ -50,6 +50,15 @@ html {
 }
 
 .bgimg-1 {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+  min-height: 100vh;
+}
+
+.bgimg-1 {
   background-image: url("assets/slides-home-1.jpg");
 }
 
