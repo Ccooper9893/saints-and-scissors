@@ -20,7 +20,8 @@ function App() {
           <img className='mx-auto pt-64 md:pt-36 fade-in' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
         </div>
       </div>
-      <div className='bg-stone-950 shadowY text-center py-8' id='about'>
+      <div id='about'></div>
+      <div className='bg-stone-950 shadowY text-center py-8'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>ABOUT S&S</h1>
         <div className='hr'></div>
         <p className='mx-10 lg:mx-60 text lg:text-2xl py-12'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
@@ -36,7 +37,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='floralBg shadowY text-center py-8' id='stylists'>
+      <div id='stylists'></div>
+      <div className='floralBg shadowY text-center py-8'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>STYLISTS</h1>
         <div className='hr'></div>
         <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
@@ -74,7 +76,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-stone-950 shadowY text-center py-8' id='services'>
+      <div id='services'></div>
+      <div className='bg-stone-950 shadowY text-center py-8'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>SERVICES</h1>
         <div className='hr'></div>
         <Prices />
@@ -88,7 +91,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='bg-stone-950 text-center py-8' id='contact'>
+      <div id='contact'></div>
+      <div className='bg-stone-950 text-center py-8'>
         <h1 className='title text-5xl md:text-7xl mx-auto py-6'>CONTACT</h1>
         <div className='hr'></div>
         <div className='flex flex-col lg:flex-row mx-4 lg:mx-40 pt-10'>
