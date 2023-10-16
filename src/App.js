@@ -1,12 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
-// import About from './components/About';
-// import Stylists from './components/About';
-// import Services from './components/Services';
-// import Contact from './components/Contact';
-// import Footer from './components/Footer';
 import titleAndLogo from './assets/title-and-logo.png';
-import pointer from './assets/pointer.png';
+import Seperator from './components/Seperator';
 
 import background1 from './assets/slides-home-1.jpg';
 import background2 from './assets/slides-home-1.jpg';
@@ -18,24 +13,33 @@ function App() {
     <div>
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
-        <div className="carousel-item background1">
+        <div className="carousel-item background1" id='home'>
           <img className='fade-in centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
-          <div class="absolute bottom-0 w-screen h-20 z-30">
-            {/* <div class="w-full h- border-solid border-transparent border-t-20 border-l-1/2 border-r-1/2">
-            </div> */}
+        </div>
+        <Seperator />
+        <div className="carousel-item background2" id='about'>
+          <div className='flex justify-center items-center w-full h-3/5 sectionBg'>
+              <div className='h-1/2 w-full text-center mx-10 md:mx-40 pt-0 lg:pt-10'>
+                  <h1 className='text-4xl font2'>ABOUT S&S</h1>
+                  <hr className='mx-1/2 mt-2'></hr>
+                  <p className='mt-3'>At Saints and Scissors, we don't just cut hair; we sculpt, shape, and craft it like a work of art. Our scissors are our chisels, and your hair is the beautiful, unique marble we create masterpieces from. With a passion for style and an unwavering commitment to the art of hairdressing, we are dedicated to making every visit to our salon a truly transformative and artistic experience.</p>
+              </div>
           </div>
         </div>
-        <div className='relative w-screen h-screen -z-5'>
-          <div className='absolute inset-0 flex items-center justify-center animate-bounce'>
-            <button className='downIcon'>&#9660;</button>
-          </div>
+        <Seperator />
+        <div className="carousel-item background3" id='stylists'>
 
         </div>
-        <div className="carousel-item background2">
-          {/* <div className='left-0 w-full h-1/6'><button className='downIcon'>&#9660;</button></div> */}
+        <Seperator />
+        <div className="carousel-item background4" id='services'>
+
         </div>
-        <div className="carousel-item background3"></div>
-        <div className="carousel-item background4"></div>
+        <div className="carousel-item background4" id='gallery'>
+
+        </div>
+        <div className="carousel-item background4" id='contact'>
+
+        </div>
       </div>
     </div>
   );

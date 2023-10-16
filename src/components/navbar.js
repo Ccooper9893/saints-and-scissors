@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from '../assets/nav-logo.png';
-import logoSmall from '../assets/nav-logo-sm.png';
 import calenderIcon from '../assets/calender-icon.png';
 import logoBig from '../assets/logo-bg.png';
 import graffiti from '../assets/graffiti.jpg';
@@ -43,12 +42,12 @@ export default function Navbar() {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              <li><a>ABOUT</a></li>
-              <li><a>STYLISTS</a></li>
-              <li><a>SERVICES</a></li>
-              <li><a>GALLERY</a></li>
-              <li><a>CONTACT</a></li>
-              <li><a onClick={() => { toggle(); toggle2Open(); }}>CAREERS</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#stylists">STYLISTS</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#gallery">GALLERY</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              <li><label onClick={() => { toggle(); toggle2Open(); }}>CAREERS</label></li>
             </ul>
           </div>
           <div className="lg:w-1/4 justify-center">
@@ -91,44 +90,14 @@ export default function Navbar() {
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-60 min-h-full bg-base-200">
           {/* Sidebar content here */}
-          <li><a onClick={toggle}>ABOUT</a></li>
-          <li><a onClick={toggle}>STYLISTS</a></li>
-          <li><a onClick={toggle}>SERVICES</a></li>
-          <li><a onClick={toggle}>GALLERY</a></li>
-          <li><a onClick={toggle}>CONTACT</a></li>
-          <li><a onClick={() => { toggle(); toggle2Open(); }}>CAREERS</a></li>
+          <li><a href="#about" onClick={toggle}>ABOUT</a></li>
+          <li><a href="#stylists" onClick={toggle}>STYLISTS</a></li>
+          <li><a href="#services" onClick={toggle}>SERVICES</a></li>
+          <li><a href="#gallery" onClick={toggle}>GALLERY</a></li>
+          <li><a href="#contact" onClick={toggle}>CONTACT</a></li>
+          <li><label onClick={() => { toggle(); toggle2Open(); }}>CAREERS</label></li>
         </ul>
       </div>
     </div>
   );
-}
-
-{/* <div className="navbar fixed bg-black z-10">
-<div className="navbar-start lg:justify-center">
-  <div className="dropdown">
-    <label tabIndex={0} className="btn btn-ghost lg:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-    </label>
-    <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] bg-base-100 rounded-box w-44">
-      <li><a>ABOUT</a></li>
-      <li><a>STYLISTS</a></li>
-      <li><a>SERVICES</a></li>
-      <li><a>GALLERY</a></li>
-      <li><a>CONTACT</a></li>
-    </ul>
-  </div>
-  <img className="ml-5 my-0" src={logo} alt="Hair stylist clippers with wings logo"></img>
-</div>
-<div className="navbar-center hidden lg:flex">
-  <ul className="menu menu-horizontal px-1 hidden lg:flex text-base">
-    <li><a>ABOUT</a></li>
-    <li><a>STYLISTS</a></li>
-    <li><a>SERVICES</a></li>
-    <li><a>GALLERY</a></li>
-    <li><a>CONTACT</a></li>
-  </ul>
-</div>
-<div className="navbar-end lg:justify-center">
-  <a className="btn btn-xs md:btn-sm normal-case bg-lime-500 text-black hover:bg-stone-200">BOOK NOW</a>
-</div>
-</div> */}
+};
