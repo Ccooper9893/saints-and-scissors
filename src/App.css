@@ -136,6 +136,19 @@ hr {
 
 
 /* Media Queries */
+@media screen and (max-device-height: 670px) {
+
+  /* Backgrounds  */
+  .background1,
+  .background2,
+  .background3,
+  .background4,
+  .carousel-item,
+  .titleAndLogo {
+    background-attachment: scroll;
+  }
+}
+
 @media screen and (max-device-height: 740px) {
 
   .sectionBg {
@@ -169,11 +182,19 @@ hr {
   }
 }
 
+@keyframes pulse-opacity {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .calender {
   width: 27px;
   height: 27px;
-  opacity: 0.9;
-  /* animation: pulse-opacity 4s infinite; */
+  animation: pulse-opacity 4s infinite; /* Adjust the duration as needed */
 }
 
 @keyframes pulse-opacity {
@@ -181,6 +202,6 @@ hr {
     opacity: 0.5;
   }
   50% {
-    opacity: 1;
+    opacity: .9;
   }
 }
