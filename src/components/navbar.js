@@ -37,7 +37,7 @@ const toggle2Close = () => {
             <img className="mx-auto" src={logo} alt="Hair stylist clippers with wings logo"></img>
           </div>
 
-          <img className="md:hidden lg:ml-5 my-2 w-1/4" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
+          <img className="md:hidden lg:ml-5 my-2 w-1/5" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
