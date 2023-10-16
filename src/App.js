@@ -21,7 +21,7 @@ function App() {
         <Seperator />
         
         <div className="carousel-item background4" id='about'>
-          <div className='sectionBg flex justify-center items-baseline pt-24 md:pt-20 w-full lg:h-1/2'>
+          <div className='sectionBg flex justify-center items-center w-full lg:h-1/2'>
               <div className='w-4/5 lg:w-1/2 h-1/2 mb-6 mx-auto lg:pt-10 text-center'>
                   <h1 className='font2 text-5xl'>ABOUT S&S</h1>
                   <hr className='mx-auto md:w-1/2 mt-2 md:mt-4'></hr>

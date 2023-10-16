@@ -151,9 +151,9 @@ hr {
 
 @media screen and (max-device-height: 740px) {
 
-  .sectionBg {
-    height: 75% !important;
-}
+    .sectionBg {
+      height: 75% !important;
+  }
 }
 
 /* Utilities */
