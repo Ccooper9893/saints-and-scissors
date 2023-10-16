@@ -71,7 +71,7 @@ const toggle2Close = () => {
     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
 
 
-    <div className="w-3/4 md:w-1/2 lg:w-1/4 min-h-full bg-black text-base-content">
+    <div className="w-3/4 md:w-1/2 lg:w-1/4 min-h-full border-r border-r-stone-800 bg-black text-base-content">
       {/* Sidebar content here */}
       <div className="flex flex-col text-center">
         <div className="p-4">
