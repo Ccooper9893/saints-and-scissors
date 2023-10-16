@@ -18,15 +18,22 @@ function App() {
     <div>
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
-        <div className="carousel-item background1"><img className='fade-in centerOfBg' src={titleAndLogo}></img></div>
+        <div className="carousel-item background1">
+          <img className='fade-in centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+          <div class="absolute bottom-0 w-screen h-20 z-30">
+            {/* <div class="w-full h- border-solid border-transparent border-t-20 border-l-1/2 border-r-1/2">
+            </div> */}
+          </div>
+        </div>
         <div className='relative w-screen h-screen -z-5'>
-  <div className='absolute inset-4 flex items-center justify-center'>
-    <button className='downIcon'>&#9660;</button>
-  </div>
-</div>
-        <div className="carousel-item bg-black"></div>
-        <div className="carousel-item background2"></div>
-        <div className="carousel-item background2"></div>
+          <div className='absolute inset-0 flex items-center justify-center animate-bounce'>
+            <button className='downIcon'>&#9660;</button>
+          </div>
+
+        </div>
+        <div className="carousel-item background2">
+          {/* <div className='left-0 w-full h-1/6'><button className='downIcon'>&#9660;</button></div> */}
+        </div>
         <div className="carousel-item background3"></div>
         <div className="carousel-item background4"></div>
       </div>

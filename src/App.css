@@ -37,6 +37,7 @@ html {
   background-size: cover;
   z-index: -5;
   min-height: 100vh;
+  
 }
 
 .centerOfBg {
@@ -121,4 +122,9 @@ html {
 .calender {
   width: 26px;
   height: 26px;
+}
+
+.seperator {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5019257703081232) 21%, rgba(0,0,0,0.7932422969187676) 48%, rgba(0,0,0,1) 63%, rgba(0,0,0,1) 72%);
 }
