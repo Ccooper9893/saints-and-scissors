@@ -4,6 +4,7 @@ import logoSmall from '../assets/nav-logo-sm.png';
 import calenderIcon from '../assets/calender-icon.png';
 import logoBig from '../assets/logo-bg.png';
 import graffiti from '../assets/graffiti.jpg';
+
 export default function Navbar() {
   const drawerRef = useRef(null);
   const drawerRef2 = useRef(null);
@@ -11,17 +12,17 @@ export default function Navbar() {
   const toggle = () => {
     // Use the current property of the ref to access the input element
     drawerRef.current.checked = false;
-};
+  };
 
-const toggle2Open = () => {
-  // Use the current property of the ref to access the input element
-  drawerRef2.current.checked = true;
-};
+  const toggle2Open = () => {
+    // Use the current property of the ref to access the input element
+    drawerRef2.current.checked = true;
+  };
 
-const toggle2Close = () => {
-  // Use the current property of the ref to access the input element
-  drawerRef2.current.checked = false;
-};
+  const toggle2Close = () => {
+    // Use the current property of the ref to access the input element
+    drawerRef2.current.checked = false;
+  };
 
   return (
     <div className="drawer">
@@ -38,7 +39,7 @@ const toggle2Close = () => {
             <img className="mx-auto" src={logo} alt="Hair stylist clippers with wings logo"></img>
           </div>
 
-          <img className="md:hidden lg:ml-5 my-2 w-1/5" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
+          <img className="md:hidden lg:ml-5 my-2 w-1/6" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
@@ -47,58 +48,43 @@ const toggle2Close = () => {
               <li><a>SERVICES</a></li>
               <li><a>GALLERY</a></li>
               <li><a>CONTACT</a></li>
-              <li><a onClick={() => {toggle(); toggle2Open();}}>CAREERS</a></li>
+              <li><a onClick={() => { toggle(); toggle2Open(); }}>CAREERS</a></li>
             </ul>
           </div>
           <div className="lg:w-1/4 justify-center">
             <div className="btn btn-square btn-ghost">
               <a href="https://www.vagaro.com/saintsandscissors/services" target="_blank" rel="noreferrer" className="btn btn-ghost"><img className="calender" src={calenderIcon}></img></a>
-              </div>
+            </div>
           </div>
           {/* <div className="lg:w-1/4">
             <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
           </div> */}
         </div>
         {/* Page content here */}
-        
 
         <div className="drawer">
-  <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
-  <div className="drawer-content">
-    {/* Page content here */}
-  </div> 
-  <div className="drawer-side">
-    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-
-
-    <div className="w-3/4 md:w-1/2 lg:w-1/4 min-h-full border-r border-r-stone-800 bg-black text-base-content">
-      {/* Sidebar content here */}
-      <div className="flex flex-col text-center">
-        <div className="p-4">
-        <h2 className="title font2 pt-4 pb-2 text-4xl">CAREERS</h2>
-        <hr></hr>
-        {/* <p className="text-center">Crafting style, one strand at a time. Join our team of artistic hair stylists, where scissors are chisels, hair is our marble, and together, we create masterpieces.</p> */}
-        <p className="pt-4 text-lg">We're seeking passionate individuals with an eye for artistry and a dedication to transforming hair into works of beauty. If you're a creative stylist who thrives in an environment that values innovation and precision, we'd love to have you as part of our team.</p>
-        <p className="pt-3">To apply, send your resume to</p>
-        <a className=" text-lime-400" href="mailto:rent@saintsandscissors.com">rent@saintsandscissors.com</a>
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
+          <div className="drawer-content">
+            {/* Page content here */}
+          </div>
+          <div className="drawer-side">
+            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+            <div className="w-3/4 md:w-1/2 lg:w-1/4 min-h-full border-r border-r-stone-800 bg-black text-base-content">
+              {/* Sidebar content here */}
+              <div className="flex flex-col text-center">
+                <div className="p-4">
+                  <h2 className="title font2 pt-4 pb-2 text-4xl">CAREERS</h2>
+                  <hr></hr>
+                  {/* <p className="text-center">Crafting style, one strand at a time. Join our team of artistic hair stylists, where scissors are chisels, hair is our marble, and together, we create masterpieces.</p> */}
+                  <p className="pt-4 text-lg">We're seeking passionate individuals with an eye for artistry and a dedication to transforming hair into works of beauty. If you're a creative stylist who thrives in an environment that values innovation and precision, we'd love to have you as part of our team.</p>
+                  <p className="pt-4">To apply, send your resume to</p>
+                  <a className=" text-lime-400" href="mailto:rent@saintsandscissors.com">rent@saintsandscissors.com</a>
+                </div>
+                <img className="absolute bottom-0 -z-10" src={graffiti} alt="Graffiti painting of Saints and Scissors"></img>
+              </div>
+            </div>
+          </div>
         </div>
-        <img className="absolute bottom-0 -z-10" src={graffiti}></img>
-      </div>
-      
-    </div>
-
-
-
-
-
-
-
-
-
-  </div>
-</div>
-
-
 
       </div>
       <div className="drawer-side">
@@ -110,7 +96,7 @@ const toggle2Close = () => {
           <li><a onClick={toggle}>SERVICES</a></li>
           <li><a onClick={toggle}>GALLERY</a></li>
           <li><a onClick={toggle}>CONTACT</a></li>
-          <li><a onClick={() => {toggle(); toggle2Open();}}>CAREERS</a></li>
+          <li><a onClick={() => { toggle(); toggle2Open(); }}>CAREERS</a></li>
         </ul>
       </div>
     </div>
