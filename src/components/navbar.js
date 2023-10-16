@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from '../assets/nav-logo.png';
 import logoSmall from '../assets/nav-logo-sm.png';
+import calenderIcon from '../assets/calender-icon.png';
 
 export default function Navbar() {
   const drawerRef = useRef(null);
@@ -26,7 +27,7 @@ const toggle2Close = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar fixed justify-between pr-0 lg:justify-around bg-black">
+        <div className="w-full navbar fixed justify-between lg:justify-around fade-in-2 bg-black">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -36,7 +37,7 @@ const toggle2Close = () => {
             <img className="mx-auto" src={logo} alt="Hair stylist clippers with wings logo"></img>
           </div>
 
-          <img className="md:hidden lg:ml-5 my-0" src={logoSmall} alt="Hair stylist clippers with wings logo"></img>
+          <img className="md:hidden lg:ml-5 my-2" src={logoSmall} alt="Hair stylist clippers with wings logo"></img>
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
@@ -48,25 +49,30 @@ const toggle2Close = () => {
               <li><a onClick={() => {toggle(); toggle2Open();}}>CAREERS</a></li>
             </ul>
           </div>
-          <div className="lg:w-1/4">
-            <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
+          <div className="lg:w-1/4 justify-center">
+            <div className="btn btn-square btn-ghost">
+              <a href="https://www.vagaro.com/saintsandscissors/services" target="_blank" rel="noreferrer" className="btn btn-ghost"><img className="calender" src={calenderIcon}></img></a>
+              </div>
           </div>
+          {/* <div className="lg:w-1/4">
+            <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
+          </div> */}
         </div>
         {/* Page content here */}
         
 
-<div className="drawer drawer-end">
-  <input id="my-drawer-4" type="checkbox" className="drawer-toggle" ref={drawerRef2}/>
+        <div className="drawer">
+  <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
   <div className="drawer-content">
     {/* Page content here */}
-    {/* <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label> */}
   </div> 
   <div className="drawer-side">
-    <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu py-4 px-0 w-full md:w-1/3 min-h-full bg-base-200 text-base-content">
+    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
       {/* Sidebar content here */}
-      <li><button className="ribbon2 btn btn-sm w-1/4 md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white" onClick={toggle2Close}>&larr; GO BACK</button></li>
+      <li><a onClick={toggle2Close}>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
+      
     </ul>
   </div>
 </div>

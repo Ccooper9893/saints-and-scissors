@@ -101,6 +101,11 @@ html {
 
 .fade-in {
   opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+}
+
+.fade-in-2 {
+  opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
 
@@ -111,4 +116,9 @@ html {
   to {
     opacity: 1;
   }
+}
+
+.calender {
+  width: 26px;
+  height: 26px;
 }
