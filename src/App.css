@@ -136,7 +136,7 @@ hr {
 
 
 /* Media Queries */
-@media screen and (max-device-height: 670px) {
+@media screen and (max-device-height: 1000px) {
 
   /* Backgrounds  */
   .background1,
