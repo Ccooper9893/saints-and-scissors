@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from '../assets/nav-logo.png';
 import logoSmall from '../assets/nav-logo-sm.png';
 import calenderIcon from '../assets/calender-icon.png';
-
+import logoBig from '../assets/logo-bg.png';
 export default function Navbar() {
   const drawerRef = useRef(null);
   const drawerRef2 = useRef(null);
@@ -37,7 +37,7 @@ const toggle2Close = () => {
             <img className="mx-auto" src={logo} alt="Hair stylist clippers with wings logo"></img>
           </div>
 
-          <img className="md:hidden lg:ml-5 my-2" src={logoSmall} alt="Hair stylist clippers with wings logo"></img>
+          <img className="md:hidden lg:ml-5 my-2 w-1/4" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
