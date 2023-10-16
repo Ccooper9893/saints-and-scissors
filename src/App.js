@@ -76,9 +76,9 @@ function App() {
                   <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
               </div>
           </div>
-        </div>
+        </div>*/}
       </div>
-    </div> */}
+    </div> 
   );
 }
 
