@@ -3,6 +3,7 @@ import logo from '../assets/nav-logo.png';
 import logoSmall from '../assets/nav-logo-sm.png';
 import calenderIcon from '../assets/calender-icon.png';
 import logoBig from '../assets/logo-bg.png';
+import graffiti from '../assets/graffiti.jpg';
 export default function Navbar() {
   const drawerRef = useRef(null);
   const drawerRef2 = useRef(null);
@@ -68,12 +69,32 @@ const toggle2Close = () => {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+
+
+    <div className="w-3/4 md:w-1/2 lg:w-1/4 min-h-full bg-black text-base-content">
       {/* Sidebar content here */}
-      <li><a onClick={toggle2Close}>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      <div className="flex flex-col text-center">
+        <div className="p-4">
+        <h2 className="title font2 pt-4 pb-2 text-4xl">CAREERS</h2>
+        <hr></hr>
+        {/* <p className="text-center">Crafting style, one strand at a time. Join our team of artistic hair stylists, where scissors are chisels, hair is our marble, and together, we create masterpieces.</p> */}
+        <p className="pt-4 text-lg">We're seeking passionate individuals with an eye for artistry and a dedication to transforming hair into works of beauty. If you're a creative stylist who thrives in an environment that values innovation and precision, we'd love to have you as part of our team.</p>
+        <p className="pt-3">To apply, send your resume to</p>
+        <a className=" text-lime-400" href="mailto:rent@saintsandscissors.com">rent@saintsandscissors.com</a>
+        </div>
+        <img className="absolute bottom-0 -z-10" src={graffiti}></img>
+      </div>
       
-    </ul>
+    </div>
+
+
+
+
+
+
+
+
+
   </div>
 </div>
 
