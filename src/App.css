@@ -25,6 +25,22 @@ html {
   margin-bottom: 4px;
 }
 
+/* Body Content */
+
+.seperator {
+  height: 1px;
+}
+
+.sectionBg {
+  height: 55%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5019257703081232) 6%, rgba(0,0,0,0.7932422969187676) 16%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 41%);
+}
+
+hr {
+  border-color: rgb(96, 96, 96);
+}
+
 /* Backgrounds */
 .background1,
 .background2,
@@ -32,7 +48,7 @@ html {
 .background4,
 .carousel-item {
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
@@ -52,29 +68,64 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.sectionOfBg {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -4;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
 .background1 {
   background-image: url("assets/slides-home-1.jpg");
+  background-position: center;
 }
 
 .background2 {
   background-image: url("assets/slides-home-2.jpg");
+  background-position: center;
 }
 
 .background3 {
   background-image: url("assets/slides-home-3.jpg");
+  background-position: center;
 }
 
 .background4 {
   background-image: url("assets/slides-home-4.jpg");
+  background-position: center;
+}
+
+.background5 {
+  background-image: url("assets/slides-home-1.jpg");
+  background-position: right;
+}
+
+.background6 {
+  background-image: url("assets/slides-home-2.jpg");
+  background-position: right;
+}
+
+.background7 {
+  background-image: url("assets/slides-home-3.jpg");
+  background-position: right;
+}
+
+.background8 {
+  background-image: url("assets/slides-home-4.jpg");
+  background-position: right;
+}
+
+.background9 {
+  background-image: url("assets/slides-home-1.jpg");
+  background-position: left;
+}
+
+.background10 {
+  background-image: url("assets/slides-home-2.jpg");
+  background-position: left;
+}
+
+.background11 {
+  background-image: url("assets/slides-home-3.jpg");
+  background-position: left;
+}
+
+.background12 {
+  background-image: url("assets/slides-home-4.jpg");
+  background-position: left;
 }
 
 .titleAndLogo {
@@ -82,25 +133,14 @@ html {
   transition: opacity 0.5s ease; /* Add a smooth transition effect */
 }
 
+
+
 /* Media Queries */
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-height: 740px) {
 
-  /* Backgrounds  */
-  .background1,
-  .background2,
-  .background3,
-  .background4,
-  .carousel-item,
-  .titleAndLogo {
-    background-attachment: scroll;
-  }
-  .ribbon {
-    border-bottom-left-radius: 10px;
-  }
-
-  .ribbon2 {
-    border-bottom-right-radius: 10px;
-  }
+  .sectionBg {
+    height: 75% !important;
+}
 }
 
 /* Utilities */
@@ -111,7 +151,8 @@ html {
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 3s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 1s;
 }
 
 .fade-in-2 {
@@ -129,19 +170,17 @@ html {
 }
 
 .calender {
-  width: 26px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
+  opacity: 0.9;
+  /* animation: pulse-opacity 4s infinite; */
 }
 
-.seperator {
-  height: 1px;
-}
-
-.sectionBg {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5019257703081232) 6%, rgba(0,0,0,0.7932422969187676) 16%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 41%);
-}
-
-hr {
-  border-color: rgb(96, 96, 96);
+@keyframes pulse-opacity {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }

@@ -13,35 +13,72 @@ function App() {
     <div>
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
-        <div className="carousel-item background1" id='home'>
+
+        <div className="carousel-item background9" id='home'>
           <img className='fade-in centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
+
         <Seperator />
-        <div className="carousel-item background2" id='about'>
-          <div className='flex justify-center items-center w-full h-3/5 sectionBg'>
-              <div className='h-1/2 w-full text-center mx-10 md:mx-40 pt-0 lg:pt-10'>
-                  <h1 className='text-4xl font2'>ABOUT S&S</h1>
-                  <hr className='mx-1/2 mt-2'></hr>
-                  <p className='mt-3'>At Saints and Scissors, we don't just cut hair; we sculpt, shape, and craft it like a work of art. Our scissors are our chisels, and your hair is the beautiful, unique marble we create masterpieces from. With a passion for style and an unwavering commitment to the art of hairdressing, we are dedicated to making every visit to our salon a truly transformative and artistic experience.</p>
+        
+        <div className="carousel-item background4" id='about'>
+          <div className='sectionBg flex justify-center items-baseline pt-24 md:pt-20 w-full lg:h-1/2'>
+              <div className='w-4/5 lg:w-1/2 h-1/2 mb-6 mx-auto lg:pt-10 text-center'>
+                  <h1 className='font2 text-5xl'>ABOUT S&S</h1>
+                  <hr className='mx-auto md:w-1/2 mt-2 md:mt-4'></hr>
+                  <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
               </div>
           </div>
         </div>
+
         <Seperator />
+{/* 
         <div className="carousel-item background3" id='stylists'>
-
+        <div className='sectionBg flex justify-center items-center w-full lg:h-1/2'>
+              <div className='h-1/2 mb-6 mx-10 md:mx-40 lg:mx-60 pt-0 lg:pt-10 text-center'>
+                  <h1 className='font2 text-5xl lg:text-6xl'>ABOUT S&S</h1>
+                  <hr className='mx-1/2 mt-2'></hr>
+                  <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+              </div>
+          </div>
         </div>
+
         <Seperator />
+
         <div className="carousel-item background4" id='services'>
-
+        <div className='sectionBg flex justify-center items-center w-full lg:h-1/2'>
+              <div className='h-1/2 mb-6 mx-10 md:mx-40 lg:mx-60 pt-0 lg:pt-10 text-center'>
+                  <h1 className='font2 text-5xl lg:text-6xl'>ABOUT S&S</h1>
+                  <hr className='mx-1/2 mt-2'></hr>
+                  <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+              </div>
+          </div>
         </div>
+        
+        <Seperator />
+
         <div className="carousel-item background4" id='gallery'>
-
+        <div className='sectionBg flex justify-center items-center w-full lg:h-1/2'>
+              <div className='h-1/2 mb-6 mx-10 md:mx-40 lg:mx-60 pt-0 lg:pt-10 text-center'>
+                  <h1 className='font2 text-5xl lg:text-6xl'>ABOUT S&S</h1>
+                  <hr className='mx-1/2 mt-2'></hr>
+                  <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+              </div>
+          </div>
         </div>
-        <div className="carousel-item background4" id='contact'>
 
+        <Seperator />
+
+        <div className="carousel-item background4" id='contact'>
+        <div className='sectionBg flex justify-center items-center w-full lg:h-1/2'>
+              <div className='h-1/2 mb-6 mx-10 md:mx-40 lg:mx-60 pt-0 lg:pt-10 text-center'>
+                  <h1 className='font2 text-5xl lg:text-6xl'>ABOUT S&S</h1>
+                  <hr className='mx-1/2 mt-2'></hr>
+                  <p className='mt-3 lg:text-xl'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div> */}
   );
 }
 
