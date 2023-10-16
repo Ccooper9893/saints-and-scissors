@@ -32,7 +32,7 @@ html {
 }
 
 .sectionBg {
-  height: 55%;
+  height: 55% !important;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5019257703081232) 6%, rgba(0,0,0,0.7932422969187676) 16%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 41%);
 }
@@ -65,6 +65,15 @@ hr {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sectionOfBg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -4;
+  position: absolute;
   transform: translate(-50%, -50%);
 }
 
@@ -136,24 +145,17 @@ hr {
 
 
 /* Media Queries */
-@media screen and (max-device-height: 1000px) {
+@media screen and (max-device-width: 1024px) {
 
   /* Backgrounds  */
-  .background1,
+  /* .background1,
   .background2,
   .background3,
   .background4,
   .carousel-item,
   .titleAndLogo {
     background-attachment: scroll;
-  }
-}
-
-@media screen and (max-device-height: 740px) {
-
-    .sectionBg {
-      height: 75% !important;
-  }
+  } */
 }
 
 /* Utilities */
@@ -182,26 +184,7 @@ hr {
   }
 }
 
-@keyframes pulse-opacity {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 .calender {
-  width: 27px;
-  height: 27px;
-  animation: pulse-opacity 4s infinite; /* Adjust the duration as needed */
-}
-
-@keyframes pulse-opacity {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: .9;
-  }
+  width: 26px;
+  height: 26px;
 }
