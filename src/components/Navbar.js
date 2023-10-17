@@ -28,7 +28,7 @@ export default function Navbar() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar max-h-16 fixed justify-between lg:justify-around bg-black shadow-2xl shadow-stone-900">
+        <div className="w-full navbar fixed justify-between lg:justify-around p-0 bg-black shadow-2xl shadow-stone-900">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -43,46 +43,37 @@ export default function Navbar() {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#stylists">STYLISTS</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#gallery">GALLERY</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-              {/* <li><label onClick={() => { toggle2Open(); }}>CAREERS</label></li> */}
+              <li><a href="#about" className="text-xs">ABOUT</a></li>
+              <li><a href="#stylists" className="text-xs">STYLISTS</a></li>
+              <li><a href="#services" className="text-xs">SERVICES</a></li>
+              <li><a href="#gallery" className="text-xs">GALLERY</a></li>
+              <li><a href="#contact" className="text-xs">CONTACT</a></li>
             </ul>
           </div>
           <div className="lg:w-1/4 justify-center">
-            <a onClick={() => { toggle2Open(); }} rel="noreferrer" className="btn btn-ghost px-3"><img className="calender" src={calenderIcon} alt="calender icon, book now"></img></a>
+            <button onClick={() => { toggle2Open(); }} className="btn btn-ghost px-3"><img className="calender" src={calenderIcon} alt="calender icon, book now with vigaro"></img></button>
           </div>
-          {/* <div className="lg:w-1/4">
-            <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
-          </div> */}
         </div>
+
         {/* Page content here */}
 
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
           <div className="drawer-content">
+
             {/* Page content here */}
+          
           </div>
           <div className="drawer-side">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-            <div className="w-full md:w-1/2 lg:w-1/2 min-h-full border-r border-r-stone-800 bg-black text-base-content">
+            <div className="w-full md:w-1/2 lg:w-1/3 min-h-full bg-black">
+
               {/* Sidebar content here */}
-              <div className="w-full h-screen text-center">
-                <div className=" h-full py-20 p-4">
-                  <button onClick={() => { toggle2Close(); }} className="btn btn-sm btn-circle btn-ghost text-white absolute right-2 top-2">✕</button>
-                  {/* <h2 className="title font2 pt-4 pb-2 text-4xl">CAREERS</h2>
-                  <hr></hr>
-                  <p className="pt-4 text-lg">We're seeking passionate individuals with an eye for artistry and a dedication to transforming hair into works of beauty. If you're a creative stylist who thrives in an environment that values innovation and precision, we'd love to have you as part of our team.</p>
-                  <p className="pt-4">To apply, send your resume to</p>
-                  <a className=" text-lime-400" href="mailto:rent@saintsandscissors.com">rent@saintsandscissors.com</a> */}
-
+              <div className="w-full h-screen text-center bg-stone-950">
+                <div className="h-full pt-16">
+                  <button onClick={() => { toggle2Close(); }} className="btn btn-sm absolute right-0 top-0 h-16 w-16 bg-stone-800 text-white">✕</button>
                   <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe>
-
-
                 </div>
-                {/* <img className="absolute bottom-0 -z-10 opacity-50" src={graffiti} alt="Graffiti painting of Saints and Scissors"></img> */}
               </div>
             </div>
           </div>
