@@ -81,6 +81,28 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+/* Media Queries */
+@media screen and (max-device-width: 1024px) {
+
+  /* Backgrounds  */
+  .background1,
+  .background2,
+  .background3,
+  .background4,
+  .background5,
+  .background6,
+  .background7,
+  .background8,
+  .background9,
+  .background10,
+  .background11,
+  .background12,
+  .carousel-item,
+  .titleAndLogo {
+    background-attachment: scroll;
+  }
+}
+
 .background1 {
   background-image: url("assets/slides-home-1.jpg");
   background-position: center;
@@ -144,30 +166,6 @@ hr {
 .titleAndLogo {
   opacity: 0;
   transition: opacity 0.5s ease; /* Add a smooth transition effect */
-}
-
-
-
-/* Media Queries */
-@media screen and (max-device-width: 1024px) {
-
-  /* Backgrounds  */
-  .background1,
-  .background2,
-  .background3,
-  .background4,
-  .background5,
-  .background6,
-  .background7,
-  .background8,
-  .background9,
-  .background10,
-  .background11,
-  .background12,
-  .carousel-item,
-  .titleAndLogo {
-    background-attachment: scroll;
-  }
 }
 
 /* Utilities */
