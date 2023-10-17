@@ -9,13 +9,13 @@ function App() {
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
 
-        <div className="carousel-item background9" id='home'>
-          <img className='fade-in-1 centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+        <div className="carousel-item background2" id='home'>
+          <img className='fade-in centerOfBg md:w-1/3' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
 
         <Seperator />
 
-        <div className="carousel-item background4 fade-in-3" id='about'>
+        <div className="carousel-item background4" id='about'>
           <div className='h-full w-full sectionBg'>
             <div className='flex flex-col justify-center w-4/5 lg:w-2/5 pt-16 mt-6 mx-auto text-center'>
               <h2 className='font2 text-4xl lg:text-6xl'>ABOUT S&S</h2>
