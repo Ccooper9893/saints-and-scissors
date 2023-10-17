@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <div className="h-screen w-full carousel carousel-vertical">
 
-        <div className="carousel-item background2" id='home'>
+        <div className="carousel-item background1" id='home'>
           <img className='fade-in centerOfBg md:w-1/3' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
 
