@@ -22,11 +22,11 @@ function App() {
               <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
               <p className='text-lg'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
               <div className="rating mx-auto mt-4">
-                <input type="radio" name="rating-1" className="mask mask-star" checked />
-                <input type="radio" name="rating-1" className="mask mask-star" checked />
-                <input type="radio" name="rating-1" className="mask mask-star" checked />
-                <input type="radio" name="rating-1" className="mask mask-star" checked />
-                <input type="radio" name="rating-1" className="mask mask-star" checked />
+                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
+                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
+                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
+                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
+                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
               </div>
             </div>
           </div>
