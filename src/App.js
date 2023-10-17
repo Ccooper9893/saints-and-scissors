@@ -18,16 +18,10 @@ function App() {
         <div className="carousel-item background4" id='about'>
           <div className='h-full w-full sectionBg'>
             <div className='flex flex-col justify-center w-4/5 lg:w-2/5 pt-16 mt-6 mx-auto text-center'>
-              <h2 className='font2 text-4xl lg:text-6xl'>ABOUT S&S</h2>
+              <h2 className='font2 text-4xl'>ABOUT S&S</h2>
               <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
-              <p className='text-lg'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
-              <div className="rating mx-auto mt-4">
-                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
-                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
-                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
-                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
-                <input type="radio" name="rating-1" className="mask mask-star bg-lime-400" checked />
-              </div>
+              <p className='text-md'>At Saints and Scissors, we are more than just hairstylists - we are artists, creators, and visionaries dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+
             </div>
           </div>
         </div>
@@ -85,12 +79,3 @@ function App() {
 }
 
 export default App;
-
-/*
-      <header className='background1'>
-        <img className='mx-auto pt-56 md:pt-36 fade-in' src={titleAndLogo}></img>
-      </header>
-      <div className='h-96 bg-slate-400'></div>
-      <a className='fixed bottom-0 left-1/2 transform -translate-x-1/2'><img className='h-8 mx-auto opacity-50' src={pointer} alt="Arrow" /></a>
-    </div>
-*/
