@@ -7,6 +7,7 @@ export default function Seperator() {
           </div>
           <div className='flex items-center justify-center'>
             <button className='absolute bottom-2 animate-bounce downIcon'>&#9660;</button>
+            <button className='absolute bottom-0 animate-bounce downIcon'>&#9660;</button>
           </div>
 
         </div>

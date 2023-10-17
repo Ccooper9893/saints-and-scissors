@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from '../assets/nav-logo.png';
 import calenderIcon from '../assets/calender-icon.png';
 import logoBig from '../assets/logo-bg.png';
-import logoBig2 from '../assets/logo-bg-2.png';
 import graffiti from '../assets/graffiti.jpg';
 
 export default function Navbar() {
@@ -29,7 +28,7 @@ export default function Navbar() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar fixed justify-between lg:justify-around fade-in-2 bg-black shadow-2xl shadow-black">
+        <div className="w-full navbar max-h-16 fixed justify-between lg:justify-around fade-in-2 bg-black shadow-2xl shadow-black">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -38,8 +37,9 @@ export default function Navbar() {
           <div className="hidden md:block lg:w-1/4 lg:ml-5 ">
             <img className="mx-auto" src={logo} alt="Hair stylist clippers with wings logo"></img>
           </div>
-
-          <img className="md:hidden lg:ml-5 my-2 w-1/5" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
+          <div className="md:hidden lg:ml-5 w-1/5">
+          <img className="max-h-20" src={logoBig} alt="Hair stylist clippers with wings logo"></img>
+          </div>
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
@@ -73,6 +73,7 @@ export default function Navbar() {
               {/* Sidebar content here */}
               <div className="flex flex-col text-center">
                 <div className="p-4">
+                <button onClick={() => { toggle2Close(); }} className="btn btn-sm btn-circle btn-ghost text-white absolute right-2 top-2">✕</button>
                   <h2 className="title font2 pt-4 pb-2 text-4xl">CAREERS</h2>
                   <hr></hr>
                   {/* <p className="text-center">Crafting style, one strand at a time. Join our team of artistic hair stylists, where scissors are chisels, hair is our marble, and together, we create masterpieces.</p> */}
@@ -80,7 +81,7 @@ export default function Navbar() {
                   <p className="pt-4">To apply, send your resume to</p>
                   <a className=" text-lime-400" href="mailto:rent@saintsandscissors.com">rent@saintsandscissors.com</a>
                 </div>
-                <img className="absolute bottom-0 -z-10" src={graffiti} alt="Graffiti painting of Saints and Scissors"></img>
+                <img className="absolute bottom-0 -z-10 opacity-50" src={graffiti} alt="Graffiti painting of Saints and Scissors"></img>
               </div>
             </div>
           </div>
