@@ -52,9 +52,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="lg:w-1/4 justify-center">
-            <div className="btn btn-square btn-ghost">
-              <a href="https://www.vagaro.com/saintsandscissors/services" target="_blank" rel="noreferrer" className="btn btn-ghost"><img className="calender" src={calenderIcon}></img></a>
-            </div>
+              <a href="https://www.vagaro.com/saintsandscissors/services" target="_blank" rel="noreferrer" className="btn btn-ghost px-3"><img className="calender" src={calenderIcon}></img></a>
           </div>
           {/* <div className="lg:w-1/4">
             <a className=" btn btn-md mx-auto md:btn-md normal-case bg-lime-400 text-black hover:bg-stone-900 hover:text-white">BOOK <br />ME</a>
