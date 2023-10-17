@@ -7,10 +7,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="h-screen w-full carousel carousel-vertical">
+      <div className="h-screen w-full carousel carousel-vertical fade-in-3">
 
         <div className="carousel-item background9" id='home'>
-          <img className='fade-in centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+          <img className='fade-in-1 centerOfBg' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
 
         <Seperator />
