@@ -43,11 +43,11 @@ export default function Navbar() {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              <li><a href="#about" className="text-xs">ABOUT</a></li>
-              <li><a href="#stylists" className="text-xs">STYLISTS</a></li>
-              <li><a href="#services" className="text-xs">SERVICES</a></li>
-              <li><a href="#gallery" className="text-xs">GALLERY</a></li>
-              <li><a href="#contact" className="text-xs">CONTACT</a></li>
+              <li><a href="#about" className=" text-xs">ABOUT</a></li>
+              <li><a href="#stylists" className=" text-xs">STYLISTS</a></li>
+              <li><a href="#services" className=" text-xs">SERVICES</a></li>
+              <li><a href="#gallery" className=" text-xs">GALLERY</a></li>
+              <li><a href="#contact" className=" text-xs">CONTACT</a></li>
             </ul>
           </div>
           <div className="lg:w-1/4 justify-center">
@@ -66,12 +66,12 @@ export default function Navbar() {
           </div>
           <div className="drawer-side">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-            <div className="w-full md:w-1/2 lg:w-1/3 min-h-full bg-black">
+            <div className="w-full md:w-1/2 lg:w-full min-h-full bg-black">
 
               {/* Sidebar content here */}
               <div className="w-full h-screen text-center bg-stone-950">
                 <div className="h-full pt-16">
-                  <button onClick={() => { toggle2Close(); }} className="btn btn-sm absolute right-0 top-0 h-16 w-16 bg-stone-800 text-white">✕</button>
+                  <button onClick={() => { toggle2Close(); }} className="btn btn-sm absolute right-0 top-0 h-16 w-16 text-white">✕</button>
                   <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe>
                 </div>
               </div>

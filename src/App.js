@@ -7,16 +7,16 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="h-screen w-full mt-16 carousel carousel-vertical">
+      <div className="h-screen w-full carousel carousel-vertical">
 
         <div className="carousel-item background1" id='home'>
-          <img className='fade-in centerOfBg md:w-1/3' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+          <img className='fade-in centerOfBg md:w-1/3 mt-16' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
 
         <Seperator />
 
         <div className="carousel-item background4" id='about'>
-          <div className='h-full w-full sectionBg'>
+          <div className='h-full w-full sectionBg mt-16'>
             <div className='flex flex-col justify-center w-4/5 lg:w-2/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-4xl'>ABOUT S&S</h2>
               <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
