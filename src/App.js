@@ -10,7 +10,7 @@ function App() {
       <div className="h-screen w-full carousel carousel-vertical">
 
         <div className="carousel-item background1" id='home'>
-          <img className='fade-in centerOfBg md:w-1/3 mt-16' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+          <img className='fade-in centerOfBg md:w-1/3 pt-16' src={titleAndLogo} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
 
         <Seperator />
