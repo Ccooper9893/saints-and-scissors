@@ -51,6 +51,7 @@ hr {
 .background2,
 .background3,
 .background4,
+.background5,
 .carousel-item {
   background-attachment: fixed;
   background-position: center;
@@ -109,6 +110,16 @@ hr {
 
 .background5 {
   background-image: url("assets/backgrounds/graffiti.jpg");
+  background-size: contain;
+  background-position: 0px bottom;
+  background-color: black;
+}
+
+.background5Reversed {
+  background-image: url("assets/backgrounds/graffiti-reversed.jpg");
+  background-size: contain;
+  background-position: 0px top;
+  background-color: black;
 }
 
 .floralBg {

@@ -43,8 +43,8 @@ export default function Navbar() {
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
               <li><a href="#about" className=" text-xs">ABOUT</a></li>
-              <li><a href="#stylists" className=" text-xs">STYLISTS</a></li>
               <li><a href="#services" className=" text-xs">SERVICES</a></li>
+              <li><a href="#stylists" className=" text-xs">STYLISTS</a></li>
               <li><a href="#gallery" className=" text-xs">GALLERY</a></li>
               <li><a href="#contact" className=" text-xs">CONTACT</a></li>
             </ul>
@@ -84,8 +84,8 @@ export default function Navbar() {
         <ul className="menu p-4 w-60 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li><a href="#about" onClick={toggle}>ABOUT</a></li>
-          <li><a href="#stylists" onClick={toggle}>STYLISTS</a></li>
           <li><a href="#services" onClick={toggle}>SERVICES</a></li>
+          <li><a href="#stylists" onClick={toggle}>STYLISTS</a></li>
           <li><a href="#gallery" onClick={toggle}>GALLERY</a></li>
           <li><a href="#contact" onClick={toggle}>CONTACT</a></li>
           {/* <li><label onClick={() => { toggle(); toggle2Open(); }}>CAREERS</label></li> */}
