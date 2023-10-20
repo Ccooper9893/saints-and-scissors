@@ -163,3 +163,17 @@ hr {
   overflow: hidden;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+tr {
+  border-bottom: 1px solid rgb(70, 70, 70) !important;
+ }
+ 
+ .table {
+   width: 85%;
+   margin: auto auto;
+ }
+ 
+ tr td:nth-child(3) {
+   text-align: right;
+   color: #39e70e;
+ }

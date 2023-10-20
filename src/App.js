@@ -53,12 +53,8 @@ function App() {
             <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
 
               <h2 className='font2 text-5xl text-white mb-4'>Services</h2>
+              <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <Prices />
-
-            </div>
-            <div className='relative w-full md:w-1/4 mt-5 lg:mt-6 mx-auto'>
-              <img class='opacity-80' src={aboutBg} alt='Grunge style women'></img>
-              {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}
             </div>
           </div>
         </div>
