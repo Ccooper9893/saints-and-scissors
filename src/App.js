@@ -25,7 +25,7 @@ function App() {
         <Seperator />
 
         <div className="carousel-item backgroundAbout" id='about'>
-          <div className='h-full w-full bg-black pt-36 md:pt-20'>
+          <div className='h-full w-full bg-black pt-20 md:pt-20'>
             <div className='flex flex-col justify-center w-4/5 lg:w-3/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-4xl lg:text-5xl text-lime-600'>Unlock Your Hair's Potential.</h2>
               <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
@@ -41,7 +41,7 @@ function App() {
         <Seperator />
 
         <div className="carousel-item backgroundAbout" id='stylists'>
-          <div className='h-full w-full bg-black pt-36 md:pt-20'>
+          <div className='h-full w-full bg-black pt-20 md:pt-20'>
             <div className='flex flex-col justify-center w-4/5 lg:w-3/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-4xl lg:text-5xl'>Meet the Team</h2>
               <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
