@@ -64,7 +64,7 @@ function App() {
 <Seperator />
 
         <div className="carousel-item background5Reversed" id='stylists'>
-          <div className='h-full w-full pt-28 md:pt-20  bg-black bg-opacity-75'>
+          <div className='h-full w-full pt-28 md:pt-20  bg-black bg-opacity-90'>
             <div className='flex flex-col justify-center w-full mt-6 lg:w-3/5 mx-auto text-center'>
               <h2 className='font2 text-5xl text-stone-100 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2 bg-white'></hr>
