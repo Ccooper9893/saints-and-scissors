@@ -47,35 +47,35 @@ function App() {
 
         <Seperator />
 
-        <div className="carousel-item gradientBg" id='stylists'>
+        <div className="carousel-item floralBg" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20'>
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
-              <h2 className='font2 text-5xl text-black mb-4'>From Classic to Creative</h2>
+              <h2 className='font2 text-5xl text-stone-100 mb-4'>From Classic to Creative</h2>
               <hr className='w-3/4 mx-auto mb-4 hr2'></hr>
-              <small className='text-3xl text-black'>Our Stylists Have You Covered</small>
+              <h2 className='text-3xl text-stone-200'>Our Stylists Have You Covered</h2>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={sherri} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={sherri} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>Sherri</h2>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={paul} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={paul} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>Paul</h2>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={cc} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={cc} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>CC</h2>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={kendal} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={kendal} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>Kendal</h2>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={juli} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={juli} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>Juli</h2>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg rounded-full shadow-black bg-black'>
-                  <img className='selfie rounded-3xl' src={amanda} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
+                  <img className='selfie' src={amanda} alt='Sherri headshot'></img>
                   <h2 className='title text-stone-200'>Amanda</h2>
                 </div>
               </div>
