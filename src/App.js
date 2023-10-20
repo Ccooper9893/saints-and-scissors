@@ -25,7 +25,7 @@ function App() {
         <Seperator />
 
         <div className="carousel-item backgroundAbout" id='about'>
-          <div className='h-full w-full bg-black pt-20 md:pt-14'>
+          <div className='h-full w-full bg-black pt-28 md:pt-14'>
             <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
               
               <h2 className='font2 text-5xl text-white '>Unlock Your Hair's Potential.</h2>
