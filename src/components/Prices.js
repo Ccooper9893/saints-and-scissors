@@ -1,6 +1,6 @@
 export default function Prices () {
     return (
-        <div className="py-5 mx-6 lg:mx-96 bg-stone-950 ">
+        <div className="py-5 mx-6 bg-stone-950 ">
         <h2 className='title text-center text-2xl py-4'>CUTS AND STYLING</h2>
 <table className="table text-white">
   <tbody className="lg:text-xl">
