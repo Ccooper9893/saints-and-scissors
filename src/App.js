@@ -50,7 +50,7 @@ function App() {
 
         <div className="carousel-item background5" id='services'>
           <div className='h-full w-full pt-28 md:pt-14'>
-            <div className='flex flex-col justify-center lg:w-3/5 mx-3 lg:mx-auto text-center'>
+            <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
               <h2 className='font2 text-5xl text-white mb-4'>Services</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto mt-2'></hr>
               <div className='md:w-4/5 mx-auto'>
@@ -65,7 +65,7 @@ function App() {
 
         <div className="carousel-item background5Reversed" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20  bg-black bg-opacity-75'>
-            <div className='flex flex-col justify-center w-full lg:w-3/5 mx-auto text-center'>
+            <div className='flex flex-col justify-center w-full mt-6 lg:w-3/5 mx-auto text-center'>
               <h2 className='font2 text-5xl text-stone-100 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2 bg-white'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
