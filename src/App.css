@@ -37,7 +37,7 @@ html {
 }
 
 .sectionBg {
-  height: 90%;
+  height: 75%;
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 21%, rgba(0,0,0,0.88) 28%, rgba(0,0,0,0.97) 39%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 76%, rgba(0,0,0,1) 88%, rgba(0,0,0,1) 100%);
 
 }
@@ -58,7 +58,6 @@ hr {
   background-size: cover;
   z-index: -5;
   min-height: 100vh;
-  
 }
 
 .centerOfBg {
@@ -77,14 +76,15 @@ hr {
 @media screen and (max-device-width: 1024px) {
 
   /* Backgrounds  */
-  .background1,
+  /* .background1,
   .background2,
   .background3,
   .background4,
+  .background5,
   .carousel-item,
   .titleAndLogo {
     background-attachment: scroll;
-  }
+  } */
 }
 
 .background1 {
@@ -99,12 +99,16 @@ hr {
 
 .background3 {
   background-image: url("assets/slides-home-3.jpg");
-  background-position: center;
+  background-position: right;
 }
 
 .background4 {
   background-image: url("assets/slides-home-4.jpg");
-  background-position: right;
+  background-position: center;
+}
+
+.background5 {
+  background-image: url("assets/graffiti.jpg");
 }
 
 .titleAndLogo {
