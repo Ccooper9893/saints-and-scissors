@@ -38,8 +38,8 @@ function App() {
               </div>
 
             </div>
-            <div className='relative w-full md:w-1/3 mt-5 lg:mt-6 mx-auto'>
-              <img class='opacity-80' src={aboutBg} alt='Inside of Saints and Scissors salon. Couch and multiple barber chairs. Coloristic interior design with an emphasize on a lime green, punk rock style.'></img>
+            <div className='relative w-full md:w-1/4 mt-5 lg:mt-6 mx-auto'>
+              <img class='opacity-80' src={aboutBg} alt='Grunge style women'></img>
               {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}
             </div>
           </div>
@@ -47,36 +47,35 @@ function App() {
 
         <Seperator />
 
-        <div className="carousel-item floralBg" id='stylists'>
+        <div className="carousel-item bg-black" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20'>
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
-              <h2 className='font2 text-5xl text-stone-100 mb-4'>From Classic to Creative</h2>
-              <hr className='w-3/4 mx-auto mb-4 hr2'></hr>
-              <h2 className='text-3xl text-stone-200'>Our Stylists Have You Covered</h2>
+              <h2 className='font2 text-5xl text-stone-100 mb-4'>Stylists</h2>
+              <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={sherri} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>Sherri</h2>
+                  <img className='shadow shadow-stone-200' src={sherri} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>Sherri</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={paul} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>Paul</h2>
+                  <img className='shadow shadow-stone-200' src={paul} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>Paul</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={cc} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>CC</h2>
+                  <img className='shadow shadow-stone-200' src={cc} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>CC</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={kendal} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>Kendal</h2>
+                  <img className='shadow shadow-stone-200' src={kendal} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>Kendal</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={juli} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>Juli</h2>
+                  <img className='shadow shadow-stone-200' src={juli} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>Juli</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='selfie' src={amanda} alt='Sherri headshot'></img>
-                  <h2 className='title text-stone-200'>Amanda</h2>
+                  <img className='shadow shadow-stone-200' src={amanda} alt='Sherri headshot'></img>
+                  <small className='font2 text-sm text-stone-200'>Amanda</small>
                 </div>
               </div>
             </div>
