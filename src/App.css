@@ -46,6 +46,10 @@ hr {
   border-color: rgb(96, 96, 96);
 }
 
+.hr2 {
+  border-color: rgb(31, 31, 31) !important;
+}
+
 /* Backgrounds */
 .background1,
 .background2,
@@ -154,6 +158,6 @@ hr {
 }
 
 .gradientBg {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 23%, rgba(27,27,27,1) 37%, rgba(14,14,14,1) 64%, rgba(14,14,14,1) 91%, rgba(0,0,0,1) 100%);
+  background: rgb(214,211,209);
+  background: linear-gradient(0deg, rgba(214,211,209,1) 0%, rgba(214,211,209,1) 64%, rgba(214,211,209,1) 81%, rgba(209,206,204,1) 87%, rgba(204,201,199,1) 91%, rgba(143,141,140,1) 94%, rgba(82,80,80,1) 98%, rgba(0,0,0,1) 100%);
 }
