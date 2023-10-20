@@ -47,7 +47,7 @@ function App() {
 
         <Seperator />
 
-        <div className="carousel-item floralBg" id='stylists'>
+        <div className="carousel-item bg-black" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20'>
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-5xl text-white mb-4'>Discover Our Stylist Team</h2>
