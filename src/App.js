@@ -66,7 +66,7 @@ function App() {
                   <small className='text-stone-200'>CC</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
-                  <img className='mask-diamond' src={kendal} alt='Sherri headshot'></img>
+                  <img className='' src={kendal} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Kendal</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
