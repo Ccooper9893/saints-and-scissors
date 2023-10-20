@@ -146,3 +146,8 @@ hr {
     opacity: 1;
   }
 }
+
+.gradientBg {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 23%, rgba(27,27,27,1) 37%, rgba(14,14,14,1) 64%, rgba(14,14,14,1) 91%, rgba(0,0,0,1) 100%);
+}
