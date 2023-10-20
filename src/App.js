@@ -39,7 +39,7 @@ function App() {
 
             </div>
             <div className='relative w-full md:w-1/3 mt-5 lg:mt-6 mx-auto'>
-              <img class=' opacity-80' src={aboutBg} alt='Inside of Saints and Scissors salon. Couch and multiple barber chairs. Coloristic interior design with an emphasize on a lime green, punk rock style.'></img>
+              <img class='opacity-80' src={aboutBg} alt='Inside of Saints and Scissors salon. Couch and multiple barber chairs. Coloristic interior design with an emphasize on a lime green, punk rock style.'></img>
               {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}
             </div>
           </div>
@@ -47,11 +47,37 @@ function App() {
 
         <Seperator />
 
-        <div className="carousel-item backgroundAbout" id='stylists'>
-          <div className='h-full w-full bg-black pt-20 md:pt-20'>
-            <div className='flex flex-col justify-center w-4/5 lg:w-3/5 mt-6 mx-auto text-center'>
-              <h2 className='font2 text-4xl lg:text-5xl'>Meet the Team</h2>
-              <hr className='w-3/4 mx-auto mt-2 mb-4'></hr>
+        <div className="carousel-item floralBg" id='stylists'>
+          <div className='h-full w-full pt-20 md:pt-20'>
+            <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
+              <h2 className='font2 text-5xl text-white mb-4'>The Crew</h2>
+              <hr className='w-3/4 mx-auto mb-4'></hr>
+              <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={sherri} alt='Sherri headshot'></img>
+            <h2 className='title'>Sherri</h2>
+          </div>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={paul} alt='Sherri headshot'></img>
+            <h2 className='title'>Paul</h2>
+          </div>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={cc} alt='Sherri headshot'></img>
+            <h2 className='title'>CC</h2>
+          </div>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={kendal} alt='Sherri headshot'></img>
+            <h2 className='title'>Kendal</h2>
+          </div>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={juli} alt='Sherri headshot'></img>
+            <h2 className='title'>Juli</h2>
+          </div>
+          <div className='p-3 w-44 lg:w-52'>
+            <img className='selfie border shadow shadow-lime-500 border-violet-500' src={amanda} alt='Sherri headshot'></img>
+            <h2 className='title'>Amanda</h2>
+          </div>
+        </div>
             </div>
           </div>
         </div>

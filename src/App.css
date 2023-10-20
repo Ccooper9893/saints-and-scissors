@@ -111,6 +111,12 @@ hr {
   background-image: url("assets/backgrounds/graffiti.jpg");
 }
 
+.floralBg {
+  background-image: url("assets/backgrounds/floral-background.jpg");
+  background-repeat: repeat;
+  background-size: 60rem;
+}
+
 .titleAndLogo {
   opacity: 0;
   transition: opacity 0.5s ease; /* Add a smooth transition effect */
