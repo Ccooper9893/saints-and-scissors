@@ -53,29 +53,29 @@ function App() {
               <h2 className='font2 text-5xl text-stone-200 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
-                <div className='p-2 m-3 w-52'>
+                <div className='p-2 m-3 w-52 bg-black'>
                   <img className='' src={sherri} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>Sherri</small>
+                  <small className='text-stone-200'>Sherri</small>
                 </div>
-                <div className='p-2 m-3 w-52'>
+                <div className='p-2 m-3 w-52 bg-black'>
                   <img className='' src={paul} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>Paul</small>
+                  <small className='text-stone-200'>Paul</small>
                 </div>
-                <div className='p-2 m-3 w-52'>
+                <div className='p-2 m-3 w-52 bg-black'>
                   <img className='' src={cc} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>CC</small>
+                  <small className='text-stone-200'>CC</small>
                 </div>
-                <div className='p-2 m-3 w-52'>
+                <div className='p-2 m-3 w-52 bg-black'>
                   <img className='' src={kendal} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>Kendal</small>
+                  <small className='text-stone-200'>Kendal</small>
                 </div>
-                <div className='p-2 m-3 w-52'>
+                <div className='p-2 m-3 w-52 bg-black'>
                   <img className='' src={juli} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>Juli</small>
+                  <small className='text-stone-200'>Juli</small>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black'>
+                <div className='p-2 m-3 w-52 bg-black shadow-lg shadow-black'>
                   <img className='' src={amanda} alt='Sherri headshot'></img>
-                  <small className='text-stone-200 bg-black bg-opacity-80'>Amanda</small>
+                  <small className='text-stone-200'>Amanda</small>
                 </div>
               </div>
             </div>
