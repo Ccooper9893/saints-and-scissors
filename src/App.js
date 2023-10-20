@@ -50,32 +50,32 @@ function App() {
         <div className="carousel-item bg-black" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20'>
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
-              <h2 className='font2 text-5xl text-stone-100 mb-4'>Stylists</h2>
+              <h2 className='font2 text-5xl text-stone-200 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={sherri} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>Sherri</small>
+                <div className='p-2 m-3 w-52'>
+                  <img className=' mask-diamond' src={sherri} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>Sherri</small>
+                </div>
+                <div className='p-2 m-3 w-52'>
+                  <img className=' mask-diamond' src={paul} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>Paul</small>
+                </div>
+                <div className='p-2 m-3 w-52'>
+                  <img className=' mask-diamond' src={cc} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>CC</small>
+                </div>
+                <div className='p-2 m-3 w-52'>
+                  <img className='mask-diamond' src={kendal} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>Kendal</small>
+                </div>
+                <div className='p-2 m-3 w-52'>
+                  <img className=' mask-diamond' src={juli} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>Juli</small>
                 </div>
                 <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={paul} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>Paul</small>
-                </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={cc} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>CC</small>
-                </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={kendal} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>Kendal</small>
-                </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={juli} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>Juli</small>
-                </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className='shadow shadow-stone-200' src={amanda} alt='Sherri headshot'></img>
-                  <small className='font2 text-sm text-stone-200'>Amanda</small>
+                  <img className=' mask-diamond' src={amanda} alt='Sherri headshot'></img>
+                  <small className='text-stone-200'>Amanda</small>
                 </div>
               </div>
             </div>
