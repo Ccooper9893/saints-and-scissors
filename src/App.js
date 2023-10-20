@@ -74,6 +74,7 @@ function App() {
                   <small className='text-stone-200'>Juli</small>
                 </div>
                 
+
                 <div className='m-3 w-52 bg-stone-950 shadow-lg shadow-black'>
                   <img className='' src={amanda} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Amanda</small>
