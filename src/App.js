@@ -53,29 +53,29 @@ function App() {
               <h2 className='font2 text-5xl text-stone-200 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
-                <div className='m-3 w-52 bg-stone-200'>
+                <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={sherri} alt='Sherri headshot'></img>
-                  <small className='text-black'>Sherri</small>
+                  <small className='text-stone-200'>Sherri</small>
                 </div>
-                <div className='m-3 w-52 bg-stone-200'>
+                <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={paul} alt='Sherri headshot'></img>
-                  <small className='text-black'>Paul</small>
+                  <small className='text-stone-200'>Paul</small>
                 </div>
-                <div className='m-3 w-52 bg-stone-200'>
+                <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={cc} alt='Sherri headshot'></img>
-                  <small className='text-black'>CC</small>
+                  <small className='text-stone-200'>CC</small>
                 </div>
-                <div className='m-3 w-52 bg-stone-200'>
+                <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={kendal} alt='Sherri headshot'></img>
-                  <small className='text-black'>Kendal</small>
+                  <small className='text-stone-200'>Kendal</small>
                 </div>
-                <div className='m-3 w-52 bg-stone-200'>
+                <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={juli} alt='Sherri headshot'></img>
-                  <small className='text-black'>Juli</small>
+                  <small className='text-stone-200'>Juli</small>
                 </div>
-                <div className='m-3 w-52 bg-stone-200 shadow-lg shadow-black'>
+                <div className='m-3 w-52 bg-stone-950 shadow-lg shadow-black'>
                   <img className='' src={amanda} alt='Sherri headshot'></img>
-                  <small className='text-black'>Amanda</small>
+                  <small className='text-stone-200'>Amanda</small>
                 </div>
               </div>
             </div>
