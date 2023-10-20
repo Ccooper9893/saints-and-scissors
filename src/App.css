@@ -76,7 +76,7 @@ hr {
 @media screen and (max-device-width: 1024px) {
 
   /* Backgrounds  */
-  /* .background1,
+  .background1,
   .background2,
   .background3,
   .background4,
@@ -84,31 +84,31 @@ hr {
   .carousel-item,
   .titleAndLogo {
     background-attachment: scroll;
-  } */
+  }
 }
 
 .background1 {
-  background-image: url("assets/slides-home-1.jpg");
+  background-image: url("assets/backgrounds/slides-home-1.jpg");
   background-position: left;
 }
 
 .background2 {
-  background-image: url("assets/slides-home-2.jpg");
+  background-image: url("assets/backgrounds/slides-home-2.jpg");
   background-position: center;
 }
 
 .background3 {
-  background-image: url("assets/slides-home-3.jpg");
+  background-image: url("assets/backgrounds/slides-home-3.jpg");
   background-position: right;
 }
 
 .background4 {
-  background-image: url("assets/slides-home-4.jpg");
+  background-image: url("assets/backgrounds/slides-home-4.jpg");
   background-position: center;
 }
 
 .background5 {
-  background-image: url("assets/graffiti.jpg");
+  background-image: url("assets/backgrounds/graffiti.jpg");
 }
 
 .titleAndLogo {
@@ -117,8 +117,6 @@ hr {
 }
 
 /* Utilities */
-
-
 .font2 {
   font-family: 'Playfair Display', serif;
 }

@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from '../assets/nav-logo.png';
-import calenderIcon from '../assets/calender-icon.png';
-import logoBig from '../assets/logo-bg.png';
-import graffiti from '../assets/graffiti.jpg';
+import logo from '../assets/logos/nav-logo.png';
+import calenderIcon from '../assets/icons/calender-icon.png';
+import logoBig from '../assets/logos/logo-bg.png';
 
 export default function Navbar() {
   const drawerRef = useRef(false);
