@@ -52,7 +52,7 @@ function App() {
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-5xl text-stone-200 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
-              <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
+              <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl grayscale'>
                 <div className='m-3 w-52 bg-stone-950'>
                   <img className='' src={sherri} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Sherri</small>
@@ -73,7 +73,7 @@ function App() {
                   <img className='' src={juli} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Juli</small>
                 </div>
-                
+
 
                 <div className='m-3 w-52 bg-stone-950 shadow-lg shadow-black'>
                   <img className='' src={amanda} alt='Sherri headshot'></img>
