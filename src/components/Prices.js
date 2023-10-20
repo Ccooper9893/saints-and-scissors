@@ -1,8 +1,8 @@
 export default function Prices () {
     return (
-        <div className="py-5 my-10 mx-6 lg:mx-96 bg-stone-200">
+        <div className="py-5 my-10 mx-6 lg:mx-96 bg-stone-950">
         <button className="btn btn-ghost">Schedule an Appointment</button>
-<table className="table text-black">
+<table className="table text-white">
   <tbody className="lg:text-xl">
     <tr>
       <td>Womans Cut and Blowdry</td>
