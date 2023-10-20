@@ -47,22 +47,22 @@ function App() {
 
         <Seperator />
 
-        <div className="carousel-item bg-black" id='stylists'>
+        <div className="carousel-item background3" id='stylists'>
           <div className='h-full w-full pt-28 md:pt-20'>
             <div className='flex flex-col justify-center w-full lg:w-3/5 mt-6 mx-auto text-center'>
               <h2 className='font2 text-5xl text-stone-200 mb-4'>The Stylists</h2>
               <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
               <div className='flex flex-row flex-wrap lg:mx-28 justify-center text-4xl'>
                 <div className='p-2 m-3 w-52'>
-                  <img className=' mask-diamond' src={sherri} alt='Sherri headshot'></img>
+                  <img className='diamond-mask' src={sherri} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Sherri</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
-                  <img className=' mask-diamond' src={paul} alt='Sherri headshot'></img>
+                  <img className='diamond-mask' src={paul} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Paul</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
-                  <img className=' mask-diamond' src={cc} alt='Sherri headshot'></img>
+                  <img className='diamond-mask' src={cc} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>CC</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
@@ -70,11 +70,11 @@ function App() {
                   <small className='text-stone-200'>Kendal</small>
                 </div>
                 <div className='p-2 m-3 w-52'>
-                  <img className=' mask-diamond' src={juli} alt='Sherri headshot'></img>
+                  <img className='diamond-mask' src={juli} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Juli</small>
                 </div>
-                <div className='p-2 m-3 w-52 shadow-lg shadow-black bg-black'>
-                  <img className=' mask-diamond' src={amanda} alt='Sherri headshot'></img>
+                <div className='p-2 m-3 w-52 shadow-lg shadow-black'>
+                  <img className='diamond-mask' src={amanda} alt='Sherri headshot'></img>
                   <small className='text-stone-200'>Amanda</small>
                 </div>
               </div>

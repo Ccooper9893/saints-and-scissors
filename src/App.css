@@ -98,8 +98,8 @@ hr {
 }
 
 .background3 {
-  background-image: url("assets/backgrounds/slides-home-3.jpg");
-  background-position: right;
+  background-image: url("assets/backgrounds/slides-home-3-bw.jpg");
+  background-position: left;
 }
 
 .background4 {
@@ -156,4 +156,10 @@ hr {
 .gradientBg {
   background: rgb(214,211,209);
   background: linear-gradient(0deg, rgba(214,211,209,1) 0%, rgba(214,211,209,1) 64%, rgba(214,211,209,1) 81%, rgba(209,206,204,1) 87%, rgba(204,201,199,1) 91%, rgba(143,141,140,1) 94%, rgba(82,80,80,1) 98%, rgba(0,0,0,1) 100%);
+}
+
+.diamond-mask {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
