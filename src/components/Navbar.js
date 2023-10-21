@@ -70,8 +70,10 @@ export default function Navbar() {
               {/* Sidebar content here */}
               <div className="w-full h-screen text-center bg-stone-950">
                 <div className="h-full pt-16">
+
                   <button onClick={() => { toggle2Close(); }} className="btn btn-sm absolute right-0 top-0 h-16 w-16 text-white">✕</button>
                   <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe>
+                  
                 </div>
               </div>
             </div>
