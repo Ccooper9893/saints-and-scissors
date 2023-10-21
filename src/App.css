@@ -58,8 +58,12 @@ header {
     background-position: left;
   }
 
-  @media screen and (min-width: 600px) {
+/* Media Queries */
+@media screen and (max-device-width: 1024px) {
+
+    /* Backgrounds  */
     .bg-home {
-      filter:grayscale(25%)
+      background-attachment: scroll;
+      filter:grayscale(25%);
     }
   }
