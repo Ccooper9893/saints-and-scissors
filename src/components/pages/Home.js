@@ -24,8 +24,8 @@ export default function Home() {
                         <small><em>- Ashely A.</em></small>
                     </div>
                 </div>
-                <div className='relative text-center'>
-    <img className='absolute -top-1/2 lg:left-1/3 opacity-80' src={aboutBg} alt='Grunge style women' />
+                <div className='relative h-full text-center'>
+    <img className='absolute bottom-0 lg:left-1/3 opacity-80' src={aboutBg} alt='Grunge style women' />
     {/* Add any additional content here */}
   </div>
             </section>
