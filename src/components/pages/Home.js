@@ -10,7 +10,7 @@ export default function Home() {
                     <img className='homeLogo mx-auto mt-40 lg:w-1/3' src={logoHeader} alt='Title and Logo of Saints and Scissors'></img>
                 </header>
             </section>
-            <section className='bg-black h-screen bg-opacity-75'>
+            <section className='bg-black bg-opacity-75'>
                 <div className='flex flex-col justify-center lg:w-3/5 mx-3 lg:mx-auto text-center'>
                     <div className='relative'>
                     <button className='absolute -top-16 animate-bounce downIcon'>&#9660;</button>
@@ -24,8 +24,8 @@ export default function Home() {
                         <small><em>- Ashely A.</em></small>
                     </div>
                 </div>
-                <div className='relative h-full text-center'>
-    <img className='absolute bottom-0 lg:left-1/3 opacity-80' src={aboutBg} alt='Grunge style women' />
+                <div className='relative text-center'>
+    <img className='absolute lg:left-1/3 opacity-80' src={aboutBg} alt='Grunge style women' />
     {/* Add any additional content here */}
   </div>
             </section>
