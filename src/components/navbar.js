@@ -65,6 +65,7 @@ export default function Navbar() {
   );
 }
 
+
 /*
 <div className="navbar bg-base-100">
 <div className="navbar-start">
