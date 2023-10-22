@@ -38,7 +38,7 @@ function App() {
   return (
     <main>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} availablePages={availablePages}>
-        <div className='w-full mx-auto mt-16'>
+        <div className='w-full mx-auto'>
           {renderPage()}
         </div>
       </Navbar>

@@ -39,31 +39,30 @@ html {
 }
 
 /* Header (const page) */
-header {
-    padding-top: 4rem;
-}
+
 
 /* Home page */
 .bg-home {
-  background-attachment: fixed;
-  background-position: center;
+  background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  height: calc(100vh - 32px);
+  height: 100vh;
+  filter: grayscale(50%);
 }
 
 .bg-home {
-    background-image: url("assets/backgrounds/slides-home-1.jpg");
-    background-position: left;
-  }
+  background-image: url(assets/backgrounds/slides-home-2.jpg);
+  background-position: left;
+}
 
 /* Media Queries */
-@media screen and (max-device-width: 1024px) {
+@media screen and (min-device-width: 1024px) {
 
     /* Backgrounds  */
     .bg-home {
       background-attachment: scroll;
-      filter:grayscale(25%);
+
     }
+
   }
