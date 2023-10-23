@@ -19,12 +19,12 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="embla h-screen" ref={emblaRef}>
+        <div className="embla h-full" ref={emblaRef}>
             <div className="embla__container">
-            <div className="embla__slide">
+                <div className="embla__slide">
                     <div className='bg-slide-2'>
-                    <h1>A NEW BREED OF SALON</h1>
-            <h2>WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSPHERE</h2>
+                        <h1>A NEW BREED OF SALON</h1>
+                        <h2>WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSPHERE</h2>
                     </div>
                 </div>
                 <div className="embla__slide">

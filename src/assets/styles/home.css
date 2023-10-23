@@ -4,20 +4,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    height: 100vh;
+    height: calc(100vh - 64px);
     filter: grayscale(65%);
   }
   
-  .centerOfBg {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 10;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.centerOfBg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   
   
   .bg-slide-1 {
