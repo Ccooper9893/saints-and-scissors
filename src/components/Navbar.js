@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import logo from '../assets/logos/nav-logo.png';
 import calenderIcon from '../assets/icons/calender-icon.png';
 import logoSm from '../assets/logos/logo-bg.png';
 import logoNoLogo from '../assets/logos/nav-nologo-.png';
-
+import '../assets/styles/nav.css';
 export default function Navbar({ children, currentPage, handlePageChange, availablePages }) {
 
   const drawerRef = useRef(false);
@@ -71,24 +71,11 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         {/* NAVBAR END */}
 
         {/* BOOK NOW BANNER BUTTON */}
-        {/* {currentPage === 'Home'
-          ? (
-            <div className="absolute w-36 md:w-44 bottom-0 md:bottom-44 z-10 left-1/2 transform -translate-x-1/2">
-              <button className="normal-case w-full pt-1 text-lg border border-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
-            </div>
-          )
-          : (
-            <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-              <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest rounded-t-full shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
-            </div>
-          )
-        } */}
-
-{currentPage === 'Home' && (
-              <div className="absolute w-36 md:w-44 top-16 rounded-b-full z-20 left-1/2 transform -translate-x-1/2">
-              <button className="normal-case w-full pt-1 shadow shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
-            </div>
-)}
+        {currentPage === 'Home' && (
+          <div className="absolute w-36 md:w-44 bottom-6 z-10 left-1/2 transform -translate-x-1/2">
+            <button className="normal-case w-full pt-1 shadow-md hover:shadow-stone-600 shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+          </div>
+        )}
 
 
         {/* BEGIN MAIN PAGE CONTENT */}
@@ -96,9 +83,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
           <div className="drawer-content">
-            <div className="mt-16">
             {children}
-            </div>
           </div>
           <div className="drawer-side z-20">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
