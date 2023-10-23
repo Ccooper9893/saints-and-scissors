@@ -10,18 +10,19 @@
 */
 
 .font1 {
-    font-family: 'Merienda', serif;
+  font-family: 'Merienda', serif;
 }
 
 .font2 {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 * {
   font-family: 'Rajdhani', sans-serif;
 }
 
-body, html {
+body,
+html {
   background-color: black;
   height: 100%;
   width: 100%;
@@ -33,12 +34,13 @@ body, html {
 }
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
-.menu a, .menu label {
+.menu a,
+.menu label {
   font-size: 15px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -54,7 +56,7 @@ body {
 
 /* Home page */
 .bg-home {
-  background-attachment:scroll;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
@@ -70,8 +72,15 @@ body {
 /* Media Queries */
 @media screen and (min-device-width: 1024px) {
 
-    /* Backgrounds  */
-    .bg-home {
-      background-attachment: scroll;
-    }
+  /* Backgrounds  */
+  .bg-home {
+    background-attachment: scroll;
   }
+}
+
+/* Colors */
+
+.bg-green-black {
+  background: rgb(101, 163, 13);
+  background: linear-gradient(0deg, rgba(101, 163, 13, 1) 70%, rgba(101, 163, 13, 1) 79%, rgba(84, 136, 11, 1) 85%, rgba(0, 0, 0, 1) 100%);
+}

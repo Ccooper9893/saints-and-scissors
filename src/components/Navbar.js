@@ -24,7 +24,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
       <div className="drawer-content flex flex-col">
 
         {/* NAVBAR START */}
-        <div className="fixed navbar z-20 justify-between lg:justify-around p-0 bg-black">
+        <div className="fixed navbar z-20 justify-between lg:justify-around p-0 bg-black shadow-md shadow-black">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -71,8 +71,8 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         {/* NAVBAR END */}
 
         {/* BOOK NOW BANNER BUTTON */}
-          <div className="absolute w-36 md:w-44 bottom-36 z-10 left-1/2 transform -translate-x-1/2">
-            <button className="normal-case w-full text-lg opacity-80 shadow shadow-black border border-stone-800 rounded-md bg-lime-500 text-black hover:shadow-none" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+          <div className="absolute w-36 md:w-44 top-16 z-10 left-1/2 transform -translate-x-1/2">
+            <button className="normal-case w-full text-lg rounded-b-full shadow shadow-black bg-green-black text-black hover:shadow-none" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
           </div>
 
 
@@ -102,7 +102,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
       {/* BEGIN NAV MENU DRAWER */}
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-60 min-h-full bg-black">
+        <ul className="menu p-4 w-3/4 min-h-full bg-black">
           <img className="mx-auto mb-4" src={logoNoLogo} alt="Saints and Scissors"></img>
           {/* Sidebar content here */}
           {availablePages.map((page) => {
