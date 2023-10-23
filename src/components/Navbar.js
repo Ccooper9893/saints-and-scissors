@@ -71,8 +71,8 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         {/* NAVBAR END */}
 
         {/* BOOK NOW BANNER BUTTON */}
-          <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-            <button className="btn-ghost ghost text-black normal-case w-full bg-lime-400" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+          <div className="absolute w-36 md:w-44 bottom-36 z-10 left-1/2 transform -translate-x-1/2">
+            <button className="normal-case w-full text-lg opacity-80 shadow shadow-black border border-stone-800 rounded-md bg-lime-500 text-black hover:shadow-none" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
           </div>
 
 

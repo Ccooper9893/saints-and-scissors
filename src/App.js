@@ -38,11 +38,10 @@ function App() {
   return (
     <main>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} availablePages={availablePages}>
-        <div className='w-full mx-auto'>
           {renderPage()}
-        </div>
+                {/* <Footer /> */}
       </Navbar>
-      {/* <Footer /> */}
+
     </main>
   );
 };

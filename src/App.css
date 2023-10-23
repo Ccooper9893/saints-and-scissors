@@ -21,10 +21,21 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-html {
+body, html {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
   scroll-behavior: smooth;
 }
 
+body {
+  margin:0;
+  padding:0;
+}
 
 /* Navbar */
 .menu a, .menu label {
@@ -48,8 +59,7 @@ html {
   background-size: cover;
   z-index: -5;
   height: 100vh;
-  filter: grayscale(50%);
-  overflow-y: hidden;
+  filter: grayscale(65%);
 }
 
 .bg-home {
@@ -63,7 +73,5 @@ html {
     /* Backgrounds  */
     .bg-home {
       background-attachment: scroll;
-
     }
-
   }
