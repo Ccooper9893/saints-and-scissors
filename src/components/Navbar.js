@@ -24,7 +24,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
       <div className="drawer-content flex flex-col">
 
         {/* NAVBAR START */}
-        <div className="fixed navbar z-20 justify-between lg:justify-around p-0 bg-black shadow-2xl shadow-lime-900">
+        <div className="fixed navbar z-20 justify-between lg:justify-around p-0 bg-black shadow-2xl shadow-black">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -74,12 +74,12 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         {currentPage === 'Home' 
       ? (
         <div className="absolute w-36 md:w-44 bottom-44 z-10 left-1/2 transform -translate-x-1/2">
-        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest shadow-stone-400 text-lime-400 bg-stone-950" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
       </div>
       )
       : (
         <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest shadow-stone-400 text-lime-400 bg-stone-950" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest rounded-t-full shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
       </div>
       )
     }
