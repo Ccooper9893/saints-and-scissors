@@ -43,7 +43,7 @@ html {
 
 /* Home page */
 .bg-home {
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;

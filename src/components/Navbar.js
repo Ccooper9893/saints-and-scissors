@@ -72,7 +72,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
 
         {/* BOOK NOW BANNER BUTTON */}
           <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-            <button className="btn-ghost ghost text-black normal-case w-full" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+            <button className="btn-ghost ghost text-black normal-case w-full bg-lime-400" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
           </div>
 
 
@@ -109,7 +109,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
             return (
               <li className={currentPage === page ? 'w-1/2 p-1 m-2 border-l-2 border-lime-400' : 'p-1 m-2'} key={`${page}2`}>
                 <button
-                  className={currentPage === page ? 'navBtn p-0' : 'p-0 text-md'}
+                  className={currentPage === page ? 'navBtn p-0 text-lg' : 'p-0 text-lg'}
                   onClick={() => { toggleNav(); handlePageChange(page); }}
                   aria-label="Go to  page">
                   {page.toUpperCase()}
