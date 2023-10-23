@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import logo from '../assets/logos/nav-logo.png';
-import calenderIcon from '../assets/icons/calender-icon.png';
-import logoSm from '../assets/logos/logo-bg.png';
-import logoNoLogo from '../assets/logos/nav-nologo-.png';
+import logo from '../assets/img/logos/nav-logo.png';
+import calenderIcon from '../assets/img/icons/calender-icon.png';
+import logoSm from '../assets/img/logos/logo-bg.png';
+import logoNoLogo from '../assets/img/logos/nav-nologo-.png';
 import '../assets/styles/nav.css';
 export default function Navbar({ children, currentPage, handlePageChange, availablePages }) {
 
