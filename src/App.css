@@ -4,13 +4,24 @@
 @import 'daisyui/dist/full.css';
 
 /* 
-    font-family: 'Merienda', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Rajdhani', sans-serif;
+font-family: 'Calligraffitti', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Sedgwick Ave', cursive;
+font-family: 'Abel', sans-serif;
 */
 
-.font1 {
-  font-family: 'Merienda', serif;
+.font5 {
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+.font4 {
+  font-family: 'Rock Salt', cursive;
+}
+
+.font3 {
+  font-family: 'Calligraffitti', cursive;
 }
 
 .font2 {
@@ -18,7 +29,7 @@
 }
 
 * {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Abel', sans-serif;
 }
 
 body,
@@ -81,6 +92,6 @@ body {
 /* Colors */
 
 .bg-green-black {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(84,136,11,1) 14%, rgba(99,159,13,1) 21%, rgba(101,163,13,1) 28%, rgba(101,163,13,1) 70%, rgba(101,163,13,1) 78%, rgba(84,136,11,1) 85%, rgba(0,0,0,1) 100%);
+  background: rgb(101, 163, 13);
+  background: linear-gradient(0deg, rgba(101, 163, 13, 1) 70%, rgba(101, 163, 13, 1) 79%, rgba(84, 136, 11, 1) 85%, rgba(0, 0, 0, 1) 100%);
 }
