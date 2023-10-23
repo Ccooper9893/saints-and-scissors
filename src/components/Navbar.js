@@ -1,11 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import logo from '../assets/img/logos/nav-logo.png';
 import calenderIcon from '../assets/img/icons/calender-icon.png';
 import logoSm from '../assets/img/logos/logo-bg.png';
 import logoNoLogo from '../assets/img/logos/nav-nologo-.png';
 import '../assets/styles/nav.css';
-
-export default function Navbar({ children }) {
+export default function Navbar({ children, currentPage, handlePageChange, availablePages }) {
 
   const drawerRef = useRef(false);
   const drawerRef2 = useRef(false);
@@ -18,32 +17,6 @@ export default function Navbar({ children }) {
     drawerRef2.current.checked = status;
   };
 
-  const [activeTab, setActiveTab] = useState("home");
-
-  // Define the section IDs
-  const availablePages = ["home", "about", "stylists", "services", "gallery", "contact"];
-
-  // Add event listener to handle scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      console.log(scrollPosition);
-      // Determine which section is in view based on scroll position
-      for (const page of availablePages) {
-        const section = document.getElementById(page);
-        if (section && scrollPosition >= section.offsetTop + 100) {
-          setActiveTab(page);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-
-  }, []);
 
   return (
     <div className="drawer">
@@ -58,14 +31,14 @@ export default function Navbar({ children }) {
             </label>
           </div>
           <div className="hidden md:flex md:justify-center lg:w-1/4 lg:ml-5 ">
-            <a href="home" className="mx-auto" aria-label="Go to Home page">
+            <button onClick={() => { handlePageChange('Home'); }} className="mx-auto" aria-label="Go to Home page">
               <img src={logo} alt="Hair stylist clippers with wings logo"></img>
-            </a>
+            </button>
           </div>
           <div className="md:hidden w-1/5">
-            <a href="#home" className="mx-auto" aria-label="Go to Home page">
+            <button onClick={() => { handlePageChange('Home'); }} className="mx-auto" aria-label="Go to Home page">
               <img className="max-h-20 ml-1" src={logoSm} alt="Hair stylist clippers with wings logo"></img>
-            </a>
+            </button>
           </div>
 
           {/* LARGE SCREEN NAV BAR */}
@@ -74,12 +47,12 @@ export default function Navbar({ children }) {
               {availablePages.map((page) => {
                 return (
                   <li key={page}>
-                    <a
-                      className={activeTab === page ? 'navBtn border-b border-lime-400' : 'navBtn focus:border-lime-400 bg-black'}
-                      href={`#${page}`}
+                    <button
+                      className={currentPage === page ? 'navBtn border-b border-lime-400' : 'navBtn focus:border-lime-400 bg-black'}
+                      onClick={() => { handlePageChange(page) }}
                       aria-label="Go to About page">
                       {page.toUpperCase()}
-                    </a>
+                    </button>
                   </li>
                 )
               })
@@ -98,17 +71,18 @@ export default function Navbar({ children }) {
         {/* NAVBAR END */}
 
         {/* BOOK NOW BANNER BUTTON */}
-        <div className="relative">
-          <div className="absolute w-36 md:w-44 top-custom z-10 left-1/2 transform -translate-x-1/2">
+        {currentPage === 'Home' && (
+          <div className="absolute w-36 md:w-44 bottom-6 z-10 left-1/2 transform -translate-x-1/2">
             <button className="normal-case w-full pt-1 shadow-md hover:shadow-stone-600 shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
           </div>
-        </div>
+        )}
+
 
         {/* BEGIN MAIN PAGE CONTENT */}
-          {/* BEGIN Booking Drawer */}
+        {/* BEGIN Booking Drawer */}
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
-          <div className="drawer-content mt-16">
+          <div className="drawer-content">
             {children}
           </div>
           <div className="drawer-side z-20">
@@ -118,11 +92,11 @@ export default function Navbar({ children }) {
                 <img className="mx-auto p-3" src={logoSm} alt="Hair stylist clippers with wings logo" />
                 <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
               </div>
-              {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> */}
+              <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe>
             </div>
           </div>
         </div>
-          {/* END Booking Drawer */}
+        {/* END Booking Drawer */}
         {/* END MAIN PAGE CONTENT */}
 
 
@@ -135,15 +109,13 @@ export default function Navbar({ children }) {
           {/* Sidebar content here */}
           {availablePages.map((page) => {
             return (
-              <li className={activeTab === page ? 'w-1/2 border-l-2 mb-2 border-lime-400' : 'mb-2 w-1/2'} key={`${page}2`}>
-                <a
-                  className={activeTab === page ? 'navBtn py-2 tracking-wider' : 'navBtn py-2 tracking-wider'}
-                  href={`#${page}`}
-                  aria-label="Go to  page"
-                  onClick={toggleNav}
-                >
+              <li className={currentPage === page ? 'w-1/2 border-l-2 mb-2 border-lime-400' : 'mb-2 w-1/2'} key={`${page}2`}>
+                <button
+                  className={currentPage === page ? 'navBtn py-2 tracking-wider' : 'navBtn py-2 tracking-wider'}
+                  onClick={() => { toggleNav(); handlePageChange(page); }}
+                  aria-label="Go to  page">
                   {page.toUpperCase()}
-                </a>
+                </button>
               </li>
             )
           })
@@ -151,6 +123,7 @@ export default function Navbar({ children }) {
         </ul>
       </div>
       {/* END NAV MENU DRAWER */}
+
     </div>
   );
 };

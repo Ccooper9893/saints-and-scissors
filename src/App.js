@@ -11,12 +11,40 @@ import Contact from './components/pages/Contact';
 import './App.css';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('Home');
+
+  const availablePages = ['Home', 'About', 'Services', 'Stylists', 'Gallery', 'Contact'];
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'Home':
+        return <Home handlePageChange={handlePageChange}></Home>;
+      case 'About':
+        return <About handlePageChange={handlePageChange}></About>
+      case 'Services':
+        return <Services handlePageChange={handlePageChange}></Services>
+      case 'Stylists':
+        return <Stylists handlePageChange={handlePageChange}></Stylists>
+      case 'Gallery':
+        return <Gallery handlePageChange={handlePageChange}></Gallery>
+      case 'Contact':
+        return <Contact handlePageChange={handlePageChange}></Contact>
+        // case 'Booking':
+        //   return <Booking handlePageChange={handlePageChange}></Booking>
+      default:
+        break;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <main>
-      <Navbar >
-          <Home />
-          <About />
+      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} availablePages={availablePages}>
+          {renderPage()}
+          {/* Uncomment for 1 page scroll */}
+          {/* <About />
+          <Services /> */}
       </Navbar>
 
     </main>

@@ -9,6 +9,5 @@ export default function Home() {
             <Carousel />
             <img className='centerOfBg md:w-1/3 pt-16' src={logoHeader} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
         </div>
-
     )
 }

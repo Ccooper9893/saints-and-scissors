@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    height: calc(100vh - 64px);
+    height: calc(100vh);
     filter: grayscale(65%);
   }
   
