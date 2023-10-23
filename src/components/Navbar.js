@@ -85,7 +85,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         } */}
 
 {currentPage === 'Home' && (
-              <div className="absolute w-36 md:w-44  z-20 left-1/2 transform -translate-x-1/2">
+              <div className="absolute w-36 md:w-44 top-16 rounded-b-full z-20 left-1/2 transform -translate-x-1/2">
               <button className="normal-case w-full pt-1 shadow shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
             </div>
 )}
@@ -96,7 +96,9 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
           <div className="drawer-content">
+            <div className="mt-16">
             {children}
+            </div>
           </div>
           <div className="drawer-side z-20">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>

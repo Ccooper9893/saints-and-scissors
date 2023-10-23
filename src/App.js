@@ -44,9 +44,7 @@ function App() {
           {renderPage()}
           {/* Uncomment for 1 page scroll */}
           <About />
-          <Services />
       </Navbar>
-
     </main>
   );
 };

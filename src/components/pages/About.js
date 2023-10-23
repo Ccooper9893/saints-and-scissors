@@ -2,7 +2,7 @@ import aboutBg from "../../assets/decals/decal-2.png";
 import Rating from "../misc/Rating";
 export default function About() {
     return (
-        <div className='h-full w-full bg-black pt-28 md:pt-14'>
+        <div className='w-full bg-black pt-16 md:pt-14'>
             <div className='flex flex-col justify-center lg:w-3/5 mx-3 lg:mx-auto text-center'>
                 <h2 className='font2 text-5xl text-white mb-4'>Unlock Your Hair's Potential.</h2>
                 <p className='text-lg'>At Saints and Scissors, we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
