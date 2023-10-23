@@ -71,19 +71,24 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         {/* NAVBAR END */}
 
         {/* BOOK NOW BANNER BUTTON */}
-        {currentPage === 'Home' 
-      ? (
-        <div className="absolute w-36 md:w-44 bottom-44 z-10 left-1/2 transform -translate-x-1/2">
-        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
-      </div>
-      )
-      : (
-        <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
-        <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest rounded-t-full shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
-      </div>
-      )
-    }
+        {/* {currentPage === 'Home'
+          ? (
+            <div className="absolute w-36 md:w-44 bottom-0 md:bottom-44 z-10 left-1/2 transform -translate-x-1/2">
+              <button className="normal-case w-full pt-1 text-lg border border-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+            </div>
+          )
+          : (
+            <div className="absolute w-36 md:w-44 bottom-0 z-10 left-1/2 transform -translate-x-1/2">
+              <button className="normal-case w-full py-1 text-lg shadow-sm tracking-widest rounded-t-full shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+            </div>
+          )
+        } */}
 
+{currentPage === 'Home' && (
+              <div className="absolute w-36 md:w-44 bottom-0 md:bottom-44 z-10 left-1/2 transform -translate-x-1/2">
+              <button className="normal-case w-full pt-1 text-lg border border-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+            </div>
+)}
 
 
         {/* BEGIN MAIN PAGE CONTENT */}
@@ -95,13 +100,13 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
           </div>
           <div className="drawer-side z-20">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                <div className="h-full w-full bg-black">
-                  <div className="relative w-full top-0 text-center h-16">
-                    <img className="mx-auto p-3" src={logoSm} alt="Hair stylist clippers with wings logo" />
-                    <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
-                  </div>
-                  {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> */}
-                </div>
+            <div className="h-full w-full bg-black">
+              <div className="relative w-full top-0 text-center h-16">
+                <img className="mx-auto p-3" src={logoSm} alt="Hair stylist clippers with wings logo" />
+                <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
+              </div>
+              <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe>
+            </div>
           </div>
         </div>
         {/* END Booking Drawer */}

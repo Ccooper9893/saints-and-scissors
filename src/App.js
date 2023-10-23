@@ -7,6 +7,7 @@ import Services from './components/pages/Services';
 import Stylists from './components/pages/Stylists';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
+// import Booking from './components/pages/Booking';
 import './App.css';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         return <Gallery handlePageChange={handlePageChange}></Gallery>
       case 'Contact':
         return <Contact handlePageChange={handlePageChange}></Contact>
+        // case 'Booking':
+        //   return <Booking handlePageChange={handlePageChange}></Booking>
       default:
         break;
     }

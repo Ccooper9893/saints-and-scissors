@@ -1,10 +1,14 @@
 import React from "react";
 import Carousel from "../misc/Carousel";
+import logoHeader from '../../assets/logos/title-and-logo.png';
 
 export default function Home() {
 
     return (
+        <>
+
         <Carousel />
+        </>
     )
 }
 

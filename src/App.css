@@ -67,7 +67,7 @@ body {
 
 /* Home page */
 .bg-slide-1, .bg-slide-2, .bg-slide-3 {
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
@@ -75,9 +75,22 @@ body {
   filter: grayscale(65%);
 }
 
+.centerOfBg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .bg-slide-1 {
   background-image: url(assets/backgrounds/slides-home-1.jpg);
-  background-position: left;
+  background-position: center;
 }
 
 .bg-slide-2 {
@@ -87,7 +100,7 @@ body {
 
 .bg-slide-3 {
   background-image: url(assets/backgrounds/slides-home-3.jpg);
-  background-position: left;
+  background-position: right;
 }
 
 /* Colors */
@@ -102,3 +115,4 @@ body {
   flex: 0 0 100%;
   min-width: 0;
 }
+
