@@ -62,9 +62,6 @@ body {
   height: 26px;
 }
 
-/* Header (const page) */
-
-
 /* Home page */
 .bg-slide-1, .bg-slide-2, .bg-slide-3 {
   background-attachment: fixed;
@@ -77,12 +74,11 @@ body {
 
 .centerOfBg {
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -5;
+  z-index: 10;
   position: absolute;
-  top: 40%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -90,7 +86,7 @@ body {
 
 .bg-slide-1 {
   background-image: url(assets/backgrounds/slides-home-1.jpg);
-  background-position: center;
+  background-position: left;
 }
 
 .bg-slide-2 {
@@ -103,7 +99,7 @@ body {
   background-position: right;
 }
 
-/* Colors */
+/* Embla Carousel */
 
 .embla {
   overflow: hidden;

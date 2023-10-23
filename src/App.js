@@ -43,9 +43,8 @@ function App() {
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} availablePages={availablePages}>
           {renderPage()}
           {/* Uncomment for 1 page scroll */}
-          {/* <Home />
           <About />
-          <Services /> */}
+          <Services />
       </Navbar>
 
     </main>

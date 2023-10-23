@@ -85,8 +85,8 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
         } */}
 
 {currentPage === 'Home' && (
-              <div className="absolute w-36 md:w-44 bottom-0 md:bottom-44 z-10 left-1/2 transform -translate-x-1/2">
-              <button className="normal-case w-full pt-1 text-lg border border-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
+              <div className="absolute w-36 md:w-44  z-20 left-1/2 transform -translate-x-1/2">
+              <button className="normal-case w-full pt-1 shadow shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
             </div>
 )}
 
@@ -117,14 +117,14 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
       {/* BEGIN NAV MENU DRAWER */}
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-3/4 min-h-full bg-black">
+        <ul className="menu p-4 w-3/5 min-h-full bg-black">
           <img className="mx-auto mb-4" src={logoNoLogo} alt="Saints and Scissors"></img>
           {/* Sidebar content here */}
           {availablePages.map((page) => {
             return (
-              <li className={currentPage === page ? 'w-1/2 border-l-2 border-lime-400' : ''} key={`${page}2`}>
+              <li className={currentPage === page ? 'w-1/2 border-l-2 mb-2 border-lime-400' : 'mb-2 w-1/2'} key={`${page}2`}>
                 <button
-                  className={currentPage === page ? 'navBtn py-2 text-lg tracking-wider' : 'py-2 m-2 text-lg tracking-wider'}
+                  className={currentPage === page ? 'navBtn py-2 tracking-wider' : 'navBtn py-2 tracking-wider'}
                   onClick={() => { toggleNav(); handlePageChange(page); }}
                   aria-label="Go to  page">
                   {page.toUpperCase()}

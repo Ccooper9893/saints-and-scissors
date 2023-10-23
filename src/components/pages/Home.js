@@ -5,10 +5,11 @@ import logoHeader from '../../assets/logos/title-and-logo.png';
 export default function Home() {
 
     return (
-        <>
+        <div>
+            <Carousel />
+            <img className='centerOfBg md:w-1/3 pt-16' src={logoHeader} alt='Saints and Scissors Title and logo. Scissors with angel wings.'></img>
+        </div>
 
-        <Carousel />
-        </>
     )
 }
 
@@ -23,12 +24,12 @@ export default function Home() {
 //     </div>
 //   </div>
 // </div>
-        // <div className='bg-black'>
-        //     <div className='bg-home'>
-        //     <header className='fixed top-1/4 lg:top-36 w-full'>
-        //         <img className='homeLogo mx-auto mt-12 lg:w-2/5' src={logoHeader} alt='Title and Logo of Saints and Scissors'></img>
-        //     </header>
-        //     </div>
-        // </div>
+// <div className='bg-black'>
+//     <div className='bg-home'>
+//     <header className='fixed top-1/4 lg:top-36 w-full'>
+//         <img className='homeLogo mx-auto mt-12 lg:w-2/5' src={logoHeader} alt='Title and Logo of Saints and Scissors'></img>
+//     </header>
+//     </div>
+// </div>
 //     )
 // }
