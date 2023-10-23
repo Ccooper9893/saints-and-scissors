@@ -117,9 +117,9 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
           {/* Sidebar content here */}
           {availablePages.map((page) => {
             return (
-              <li className={currentPage === page ? 'w-1/2 p-1 m-2 border-l-2 border-lime-400' : 'p-1 m-2'} key={`${page}2`}>
+              <li className={currentPage === page ? 'w-1/2 border-l-2 border-lime-400' : ''} key={`${page}2`}>
                 <button
-                  className={currentPage === page ? 'navBtn p-0 text-lg' : 'p-0 text-lg'}
+                  className={currentPage === page ? 'navBtn py-2 text-lg tracking-wider' : 'py-2 m-2 text-lg tracking-wider'}
                   onClick={() => { toggleNav(); handlePageChange(page); }}
                   aria-label="Go to  page">
                   {page.toUpperCase()}
