@@ -49,6 +49,7 @@ html {
   z-index: -5;
   height: 100vh;
   filter: grayscale(50%);
+  overflow-y: hidden;
 }
 
 .bg-home {
