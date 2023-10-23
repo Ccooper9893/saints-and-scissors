@@ -72,7 +72,7 @@ export default function Navbar({ children, currentPage, handlePageChange, availa
 
         {/* BOOK NOW BANNER BUTTON */}
         {currentPage === 'Home' && (
-          <div className="absolute w-36 md:w-44 bottom-6 z-10 left-1/2 transform -translate-x-1/2">
+          <div className="absolute w-36 md:w-44 bottom-24 z-10 left-1/2 transform -translate-x-1/2">
             <button className="normal-case w-full pt-1 shadow-md hover:shadow-stone-600 shadow-black text-black bg-lime-500" onClick={() => { toggleBooking(true); }} aria-label="Open Vagaro booking drawer">BOOK NOW</button>
           </div>
         )}
