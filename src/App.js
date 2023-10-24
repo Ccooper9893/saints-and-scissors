@@ -29,8 +29,6 @@ function App() {
         return <Gallery handlePageChange={handlePageChange}></Gallery>
       case 'Contact':
         return <Contact handlePageChange={handlePageChange}></Contact>
-        // case 'Booking':
-        //   return <Booking handlePageChange={handlePageChange}></Booking>
       default:
         break;
     }
