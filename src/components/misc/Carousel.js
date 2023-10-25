@@ -1,42 +1,41 @@
-import React, { useEffect, useRef } from 'react';
-import EmblaCarousel from 'embla-carousel';
-import Autoplay from 'embla-carousel-autoplay';
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import slide1 from '../../assets/img/backgrounds/slides-home-1.jpg';
+import slide2 from '../../assets/img/backgrounds/slides-home-2.jpg';
+import slide3 from '../../assets/img/backgrounds/slides-home-3.jpg';
+import slide4 from '../../assets/img/backgrounds/slides-home-4.jpg';
 
-
-export default function Home() {
-    const emblaRef = useRef(null);
-
-    useEffect(() => {
-        if (emblaRef.current) {
-            const embla = EmblaCarousel(emblaRef.current, { loop: true }, [
-                Autoplay({ delay: 4500, rootNode: (emblaRoot) => emblaRoot.parentElement }),
-            ]);
-
-            return () => {
-                embla.destroy(); // Cleanup when the component unmounts
-            };
-        }
-    }, []);
-
+export default function Carousel() {
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+      };
+  
     return (
-        <div className="embla h-full" ref={emblaRef}>
-            <div className="embla__container">
-                <div className="embla__slide">
-                    <div className='bg-slide-2'>
-                        <h1>A NEW BREED OF SALON</h1>
-                        <h2>WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSPHERE</h2>
-                    </div>
-                </div>
-                <div className="embla__slide">
-                    <div className='bg-slide-1'>
-                    </div>
-                </div>
-                <div className="embla__slide">
-                    <div className='bg-slide-3'></div>
-                </div>
-            </div>
+      <Slider {...settings}>
+        <div>
+          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide1})` }}></div>
         </div>
+        <div>
+          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide2})` }}></div>
+        </div>
+        <div>
+          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide3})` }}></div>
+        </div>
+        <div>
+          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide4})` }}></div>
+        </div>
+      </Slider>
     );
-}
-
-
+  }
