@@ -41,4 +41,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.calender {
+  width: 28px;
+  height: 28px;
+}
+
 

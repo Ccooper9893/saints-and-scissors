@@ -20,22 +20,22 @@ export default function Carousel() {
         autoplaySpeed: 3000,
         pauseOnFocus: false,
         pauseOnHover: false,
-      };
-  
+    };
+
     return (
-      <Slider {...settings}>
-        <div>
-          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide1})` }}></div>
-        </div>
-        <div>
-          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide2})` }}></div>
-        </div>
-        <div>
-          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide3})` }}></div>
-        </div>
-        <div>
-          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${slide4})` }}></div>
-        </div>
-      </Slider>
+        <Slider {...settings}>
+            <div className="h-full bg-cover bg-center" style={{ backgroundImage: `url(${slide1})` }}>
+            
+            </div>
+            <div className="h-full bg-cover bg-left" style={{ backgroundImage: `url(${slide2})` }}>
+
+            </div>
+            <div className="h-full bg-cover bg-center" style={{ backgroundImage: `url(${slide3})` }}>
+
+            </div>
+            <div className="h-full bg-cover bg-center" style={{ backgroundImage: `url(${slide4})` }}>
+
+            </div>
+        </Slider>
     );
-  }
+}
