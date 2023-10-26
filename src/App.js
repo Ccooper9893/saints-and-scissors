@@ -18,9 +18,9 @@ export default function App() {
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
 
-
+    <div className='absolute h-screen'>
         <img className='fixed mx-auto z-10 mt-80 centerOfBg md:1/2 lg:w-1/3' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-
+        </div>
       {/* </Parallax> */}
       <Parallax speed={-5}>
       <Carousel />
