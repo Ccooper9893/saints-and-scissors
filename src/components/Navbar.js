@@ -33,7 +33,7 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
                     <div className="hidden md:block w-full">
                         <img src={logoLarge}></img>
                     </div>
-
+    
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
@@ -93,4 +93,4 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
             </div>
         </div>
     )
-}
+};
