@@ -51,10 +51,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -5;
-  min-height: 100vh;
 }
-
-.parallax-banner {
-  height: 100vh;
+.centerOfBg {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

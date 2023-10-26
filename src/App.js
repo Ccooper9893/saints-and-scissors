@@ -15,14 +15,14 @@ const drawerRef2 = useRef(false);
 
   return (
     <ParallaxProvider>
-    <div className='relative'>
-      <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2}/>
-      <Parallax speed={-28}>
-      <img className='absolute fade-in -z-10 fast' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-    </Parallax>
 
+      <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2}/>
+      <Parallax speed={-30} className='z-0'>
+      <img className='fixed fade-in mx-auto -z-10 slow centerOfBg' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
+    </Parallax>
+    <div className='relative'>
       <Carousel />
-      <div id='1' className='h-screen bg-black z-50'>
+      <div id='1' className='h-screen bg-black'>
       </div>
       <div id='2' className='h-screen bg-green-900'>
       </div>
