@@ -19,7 +19,7 @@ export default function App() {
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
 
 
-        <img className='fixed fade-in mx-auto z-10 slow centerOfBg' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
+        <img className='fixed mx-auto z-10 mt-44 centerOfBg' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
 
       {/* </Parallax> */}
       <Parallax speed={-5}>
