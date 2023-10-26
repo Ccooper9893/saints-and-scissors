@@ -23,7 +23,7 @@ export default function Carousel() {
       };
 
     return (
-        <Slider {...settings} className='-z-20'>
+        <Slider {...settings}>
         <div>
           <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide1})` }}></div>
         </div>

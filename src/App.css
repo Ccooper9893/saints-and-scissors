@@ -38,7 +38,6 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 .calender {
@@ -46,14 +45,12 @@ html {
   height: 28px;
 }
 
-.titleAndLogo {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .centerOfBg {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.h-100 {
+  height: 100vh;
 }

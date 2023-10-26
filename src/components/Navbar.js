@@ -13,7 +13,7 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
     };
 
     return (
-        <div className="drawer z-10">
+        <div className="drawer z-50">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
             <div className="drawer-content flex flex-col">
 
