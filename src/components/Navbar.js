@@ -1,29 +1,43 @@
 
-
+import { useState, useRef } from 'react';
 import logoSmall from '../assets/img/logos/nav-logo.png';
 import logoLarge from '../assets/img/logos/nav-title-and-logo.png';
 import calenderIcon from '../assets/img/icons/calender-icon.png';
 
-export default function Navbar({ children }) {
+export default function Navbar({ drawerRef2, toggleBooking }) {
+
+    const drawerRef = useRef(false);
+
+    const toggleNav = () => {
+        drawerRef.current.checked = false;
+    };
+
     return (
         <div className="drawer z-10">
-            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
             <div className="drawer-content flex flex-col">
 
                 {/* Navbar */}
-                <div className="fixed w-full navbar justify-between md:justify-evenly py-0 bg-base-300">
+                <div className="fixed w-full navbar justify-between md:justify-around py-0 bg-black bg-opacity-90">
                     <div className="flex justify-start lg:hidden w-24">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
 
                     </div>
-                    <div className="px-2 mx-2 md:hidden"><img src={logoSmall}></img></div>
-                    <div className="px-2 mx-2 hidden md:block"><img src={logoLarge}></img></div>
+
+                    <div className="md:hidden">
+                        <img src={logoSmall}></img>
+                        </div>
+
+                    <div className="hidden md:block w-full">
+                        <img src={logoLarge}></img>
+                    </div>
+
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-                            <li><a>HOME</a></li>
+                            <li><a href='#5'>HOME</a></li>
                             <li><a>ABOUT</a></li>
                             <li><a>SERVICES</a></li>
                             <li><a>STYLISTS</a></li>
@@ -31,25 +45,50 @@ export default function Navbar({ children }) {
                             <li><a>CONTACT</a></li>
                         </ul>
                     </div>
-                    <div className='flex justify-end w-24'>
-                        <button className="btn btn-ghost px-3 normal-case font-thin" aria-label="Open Vagaro booking drawer">
+                    {/* <div className='flex justify-end w-24 md:w-1/4 lg:w-1/5'>
+                        <button onClick={() => { toggleBooking(true); }} className="btn btn-ghost px-3 normal-case font-thin" aria-label="Open Vagaro booking drawer">
                             <img className="calender" src={calenderIcon} alt="calender icon, book now with vigaro"></img>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 {/* Page content here */}
-                {children}
+                <div className="drawer">
+                    <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
+                    <div className="drawer-content">
+
+
+
+                    </div>
+                    <div className="drawer-side z-50">
+                        <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+                        <div className="w-full min-h-full bg-stone-950">
+
+                            {/* Sidebar content here */}
+                            <div className="w-full h-screen text-center bg-stone-950">
+                                <div className="h-full bg-black">
+                                    <div className="relative w-full top-0 text-center h-16">
+                                        <img className="mx-auto p-3" src={logoSmall} alt="Hair stylist clippers with wings logo" />
+                                        <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
+                                    </div>
+
+                                    {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80 min-h-full bg-base-200">
+                <ul className="menu p-4 w-2/3 min-h-full text-lg bg-stone-950 border-r-2 border-stone-800">
                     {/* Sidebar content here */}
-                    <li><a>HOME</a></li>
-                    <li><a>ABOUT</a></li>
-                    <li><a>SERVICES</a></li>
-                    <li><a>STYLISTS</a></li>
-                    <li><a>GALLERY</a></li>
-                    <li><a>CONTACT</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>HOME</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>ABOUT</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>SERVICES</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>STYLISTS</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>GALLERY</a></li>
+                    <li><a href='#5' onClick={() => { toggleNav(); }}>CONTACT</a></li>
                 </ul>
             </div>
         </div>

@@ -12,18 +12,18 @@ export default function Carousel() {
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 1000,
+        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         pauseOnFocus: false,
         pauseOnHover: false,
       };
 
     return (
-        <Slider {...settings}>
+        <Slider {...settings} className='-z-20'>
         <div>
           <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide1})` }}></div>
         </div>

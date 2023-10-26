@@ -46,4 +46,15 @@ html {
   height: 28px;
 }
 
+.titleAndLogo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+  min-height: 100vh;
+}
 
+.parallax-banner {
+  height: 100vh;
+}
