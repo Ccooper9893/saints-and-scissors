@@ -3,10 +3,10 @@ import Rating from '../misc/Rating';
 
 export default function About() {
     return (
-        <div id='about' className='h-full bg-black'>
-        <div className='pt-4 md:pt-14'>
+        <div id='about' className='h-full bg-stone-300 text-black shadow-inner shadow-black'>
+        <div className='pt-4'>
           <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
-            <h2 className='font2 text-5xl text-stone-100 mb-4'>Unlock Your Hair's Potential.</h2>
+            <h2 className='font2 text-7xl lg:text-9xl text-black mb-4'>Unlock Your Hair's Potential.</h2>
             <p className='text-lg'>At Saints and Scissors, we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
             <hr className='w-4/5 lg:w-3/4 mx-auto my-2'></hr>
             <div className='flex flex-col justify-center my-4 text-center '>

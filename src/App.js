@@ -23,7 +23,7 @@ export default function App() {
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
 
       <img className='absolute centerOfBg mx-auto z-10 mt-80 md:1/2 lg:w-1/3' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-      <button onClick={() => { toggleBooking(true); }} className='absolute centerOfBg bottom-0 tracking-widest z-10 w-60 py-1 text-black text-center text-sm bg-lime-500 bg-opacity-80 shadow shadow-black'>BOOK NOW</button>
+      <button onClick={() => { toggleBooking(true); }} className='absolute centerOfBg top-3/4 tracking-widest z-10 w-60 py-1 text-black text-center text-sm bg-lime-400 bg-opacity-90 shadow shadow-black hover:shadow-none'>BOOK NOW</button>
 
       <Parallax speed={-25}>
         <Carousel />
