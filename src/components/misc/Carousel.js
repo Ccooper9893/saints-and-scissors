@@ -2,10 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slide1 from '../../assets/img/backgrounds/slides-home-1.jpg';
+import slide1 from '../../assets/img/backgrounds/slides-home-1-edited.jpg';
 import slide2 from '../../assets/img/backgrounds/slides-home-2-edited.jpg';
-import slide3 from '../../assets/img/backgrounds/slides-home-3.jpg';
-import slide4 from '../../assets/img/backgrounds/slides-home-4.jpg';
+import slide3 from '../../assets/img/backgrounds/slides-home-3-edited.jpg';
+import slide4 from '../../assets/img/backgrounds/slides-home-4-edited.jpg';
 
 export default function Carousel() {
     const settings = {
