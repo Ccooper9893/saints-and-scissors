@@ -52,6 +52,7 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
                     </div> */}
                 </div>
                 {/* Page content here */}
+                
                 <div className="drawer">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
                     <div className="drawer-content">

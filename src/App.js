@@ -22,10 +22,10 @@ export default function App() {
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
 
-      <img className='fixed centerOfBg mx-auto z-10 mt-80 md:1/2 lg:w-1/3' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-      <button onClick={() => { toggleBooking(true); }} className='fixed centerOfBg bottom-10 tracking-widest z-10 w-72 text-center text-sm py-2 text-md text-stone-200 bg-black bg-opacity-50 shadow shadow-stone-500 hover:bg-opacity-80'>BOOK NOW</button>
+      <img className='absolute centerOfBg mx-auto z-10 mt-80 md:1/2 lg:w-1/3' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
+      <button onClick={() => { toggleBooking(true); }} className='absolute centerOfBg bottom-0 tracking-widest z-10 w-60 py-1 text-black text-center text-sm bg-lime-500 bg-opacity-80 shadow shadow-black'>BOOK NOW</button>
 
-      <Parallax speed={-30}>
+      <Parallax speed={-25}>
         <Carousel />
       </Parallax>
 
@@ -34,7 +34,7 @@ export default function App() {
 
         <About />
 
-        <div id='services' className='h-screen bg-green-900'>
+        <div id='services' className='h-screen bg-stone-200 border-custom border-x-2 border-black'>
         </div>
 
 
