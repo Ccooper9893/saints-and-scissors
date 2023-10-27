@@ -24,16 +24,16 @@ export default function Carousel() {
 
     return (
         <Slider {...settings}>
-        <div>
+        <div className='z-0'>
           <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide1})` }}></div>
         </div>
-        <div>
+        <div className='z-0'>
           <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide2})` }}></div>
         </div>
-        <div>
+        <div className='z-0'>
           <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide3})` }}></div>
         </div>
-        <div>
+        <div className='z-0'>
           <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide4})` }}></div>
         </div>
       </Slider>
