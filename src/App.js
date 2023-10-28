@@ -25,18 +25,18 @@ useEffect(() => {
 
   return (
     <ParallaxProvider>
-        <motion.div
+        {/* <motion.div
         initial={{ opacity: 0 }} // Initial animation state
         animate={navVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
         transition={{ duration: 0.5 }} // Animation duration
-      >
-  <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
-  </motion.div>
+      > */}
+  <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible}/>
+  {/* </motion.div> */}
 
       <Home toggleBooking={toggleBooking}/>
 
       <div className='relative z-20'>
-        <About   navAboutRef={navAboutRef}/>
+        <About navAboutRef={navAboutRef}/>
 
         <div id='services' className='h-screen bg-stone-200 border-custom border-x-2 border-black'>
         </div>
