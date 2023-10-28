@@ -5,6 +5,7 @@
   "homepage": "https://ccooper9893.github.io/saints-and-scissors/",
   "dependencies": {
     "daisyui": "^3.8.2",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
