@@ -6,7 +6,7 @@ export default function About({navAboutRef}) {
         <div id='about' className='h-full bg-stone-950 text-stone-300'>
         <div className='pt-4'>
           <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
-            <h2 className='font2 text-7xl lg:text-9xl text-stone-100 mb-4'>Unlock Your Hair's <span className='text-violet-500 font2'>Potential</span>.</h2>
+            <h2 className='font2 text-6xl lg:text-9xl text-stone-100 mb-4'>Unlock <br></br>Your Hair's <span className='text-violet-500 font2'>Potential</span>.</h2>
             <div className='relative w-full md:w-3/4 lg:mt-6 mx-auto'>
             <img className='opacity-80 mx-auto' src={aboutBg} alt='Grunge style women' ref={navAboutRef}></img>
             {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}

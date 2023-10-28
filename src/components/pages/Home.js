@@ -8,10 +8,10 @@ import logo from '../../assets/img/logos/logo.png';
 export default function Home({ toggleBooking }) {
     return (
         <>
-            <div className='hidden lg:block'>
+            {/* <div className='hidden lg:block'>
                 <img className='absolute centerOfBg mx-auto z-10 mt-80 md:1/2 lg:w-1/3' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
                 <button onClick={() => { toggleBooking(true); }} className='absolute centerOfBg top-3/4 tracking-widest z-10 w-60 py-1 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-90 shadow shadow-black hover:bg-lime-400'>BOOK NOW</button>
-            </div>
+            </div> */}
 
 
                 <motion.img initial={{ opacity: 0, y: -4 }} whileInView={{ opacity: 1, y: 40 }} transition={{ ease: "easeOut", duration: 1, delay: .5 }}
