@@ -21,7 +21,7 @@ export default function Home({ toggleBooking }) {
                 className='absolute lg:hidden right-0 bottom-16 z-10 w-72 text-right py-2 text-md text-white'>A NEW BREED OF SALON<br /><span className='text-xs'>WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSTPHERE.</span></motion.p>
 
                 <motion.button initial={{ opacity: 0, x:200}} whileInView={{opacity: 1, x: 0}} transition={{ ease: "easeIn", duration: .5 }}
-                onClick={() => { toggleBooking(true); }} className='absolute lg:hidden right-0 bottom-4 tracking-widest z-10 w-64 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>BOOK NOW</motion.button>
+                onClick={() => { toggleBooking(true); }} className='absolute lg:hidden right-0 bottom-4 tracking-widest z-10 w-52 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>BOOK NOW</motion.button>
 
             </div>
             <Parallax speed={-10}>
