@@ -28,6 +28,7 @@ export default function App() {
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
+
       <Home toggleBooking={toggleBooking} navRef={navRef}/>
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}

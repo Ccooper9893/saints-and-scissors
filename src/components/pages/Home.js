@@ -23,7 +23,7 @@ export default function Home({ toggleBooking, navRef }) {
 
                 </motion.div>
 
-                <motion.p initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
+                <motion.p initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ ease: "easeOut", duration: 1, delay: 1.5 }} ref={navRef}
                     className=' fixed right-0 bottom-20 z-10 w-full tracking-wide md:text-4xl text-right py-2 pr-6 text-xl text-white bg-black bg-opacity-50'>A NEW BREED OF SALON. <br /><span className='text-sm  md:text-xl '>WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSTPHERE.</span></motion.p>
 
                 <motion.button initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ ease: "easeOut", duration: 1, delay: 2 }}
