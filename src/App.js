@@ -30,9 +30,9 @@ export default function App() {
 
 
       <img className='fixed lg:hidden centerOfBg z-10 mt-title max-h-5/6' src={titleAndLogoV} alt='Saints and Scissors Logo'></img>
-        <button onClick={() => { toggleBooking(true); }} className='absolute lg:hidden bottom-0 w-full tracking-widest z-10 py-2 text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow shadow-black hover:shadow-none'>BOOK NOW</button>
+        <button onClick={() => { toggleBooking(true); }} className='absolute lg:hidden right-6 bottom-10 tracking-widest z-10 w-60 py-2 text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow shadow-black hover:shadow-none'>BOOK NOW</button>
 
-      <Parallax speed={-28}>
+      <Parallax speed={-25}>
       <Carousel />
       </Parallax>
       <div className='relative z-20'>
