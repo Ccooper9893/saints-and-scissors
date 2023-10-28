@@ -33,7 +33,7 @@ export default function App() {
       <div className='relative z-20'>
         <About navAboutRef={navAboutRef} />
 
-        <div id='services' className='h-screen bg-stone-200 border-custom border-x-2 border-black'>
+        <div id='services' className='h-screen bg-stone-300 border-custom border-x-2 border-black shadow-inner shadow-black'>
         </div>
 
         <div id='stylists' className='h-screen bg-green-200'>

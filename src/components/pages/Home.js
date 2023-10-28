@@ -16,12 +16,12 @@ export default function Home({ toggleBooking }) {
 
                 <motion.img initial={{ opacity: 0, y: -4 }} whileInView={{ opacity: 1, y: 40 }} transition={{ ease: "easeOut", duration: 1, delay: .5 }}
                     className='absolute left-4 z-10 mt-title h-5/6' src={titleAndLogoV} alt='Saints and Scissors Logo'></motion.img>
-            <div className='lg-hidden'>
+
                 <motion.div  initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: "easeIn", duration: 1, delay: 2.5 }}
                 className='fixed bottom-40 right-8 z-10'>
                     <p className='text-center text-xs opacity-30 animate-bounce'>&#9650;</p>
                     <p className='text-center text-xs opacity-60 animate-bounce'>&#9650;</p>
-                    <img src={logo}></img>
+                    <a href='#about'><img src={logo}></img></a>
 
                 </motion.div>
 
@@ -30,7 +30,7 @@ export default function Home({ toggleBooking }) {
 
                 <motion.button initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                     onClick={() => { toggleBooking(true); }} className='fixed right-6 bottom-8 tracking-widest z-10 w-1/2 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>BOOK NOW</motion.button>
-            </div>
+     
 
             <Parallax speed={-10}>
             <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1 }} transition={{ ease: "easeIn", duration: 2, delay: 1 }}>

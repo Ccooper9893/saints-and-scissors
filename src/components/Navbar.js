@@ -43,12 +43,12 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-                            <li><a href='#5'>HOME</a></li>
-                            <li><a>ABOUT</a></li>
-                            <li><a>SERVICES</a></li>
-                            <li><a>STYLISTS</a></li>
-                            <li><a>GALLERY</a></li>
-                            <li><a>CONTACT</a></li>
+                            <li><a href='#home'>HOME</a></li>
+                            <li><a href='#about'>ABOUT</a></li>
+                            <li><a href='#services'>SERVICES</a></li>
+                            <li><a href='#stylists'>STYLISTS</a></li>
+                            <li><a href='#gallery'>GALLERY</a></li>
+                            <li><a href='#contact'>CONTACT</a></li>
                         </ul>
                     </div>
                     <div className='flex justify-end w-24 md:w-1/4 lg:w-1/5'>
@@ -90,12 +90,12 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-2/3 min-h-full text-lg bg-stone-950 border-r-2 border-stone-800">
                     {/* Sidebar content here */}
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>HOME</a></li>
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>ABOUT</a></li>
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>SERVICES</a></li>
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>STYLISTS</a></li>
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>GALLERY</a></li>
-                    <li><a href='#5' onClick={() => { toggleNav(); }}>CONTACT</a></li>
+                    <li><a href='#home' onClick={() => { toggleNav(); }}>HOME</a></li>
+                    <li><a href='#about' onClick={() => { toggleNav(); }}>ABOUT</a></li>
+                    <li><a href='#services' onClick={() => { toggleNav(); }}>SERVICES</a></li>
+                    <li><a href='#stylists' onClick={() => { toggleNav(); }}>STYLISTS</a></li>
+                    <li><a href='#gallery' onClick={() => { toggleNav(); }}>GALLERY</a></li>
+                    <li><a href='#contact' onClick={() => { toggleNav(); }}>CONTACT</a></li>
                 </ul>
             </div>
         </div>
