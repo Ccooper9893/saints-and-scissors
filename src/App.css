@@ -60,3 +60,14 @@ html {
 .h-custom {
   height: 45rem;
 }
+
+.mt-title {
+  margin-top: 30rem;
+  left: 5rem;
+}
+
+@media screen and (max-height: 770px) {
+  .mt-title {
+    margin-top: 25rem;
+  }
+}

@@ -7,17 +7,18 @@ import slide2 from '../../assets/img/backgrounds/slides-home-2-edited.jpg';
 import slide3 from '../../assets/img/backgrounds/slides-home-3-edited.jpg';
 import slide4 from '../../assets/img/backgrounds/slides-home-4-edited.jpg';
 
+
 export default function Carousel() {
     const settings = {
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 4500,
         pauseOnFocus: false,
         pauseOnHover: false,
       };
@@ -32,9 +33,6 @@ export default function Carousel() {
         </div>
         <div className='z-0'>
           <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide3})` }}></div>
-        </div>
-        <div className='z-0'>
-          <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide4})` }}></div>
         </div>
       </Slider>
     );

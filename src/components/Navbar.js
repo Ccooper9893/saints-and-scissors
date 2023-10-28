@@ -45,11 +45,11 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
                             <li><a>CONTACT</a></li>
                         </ul>
                     </div>
-                    {/* <div className='flex justify-end w-24 md:w-1/4 lg:w-1/5'>
+                    <div className='flex justify-end w-24 md:w-1/4 lg:w-1/5'>
                         <button onClick={() => { toggleBooking(true); }} className="btn btn-ghost px-3 normal-case font-thin" aria-label="Open Vagaro booking drawer">
                             <img className="calender" src={calenderIcon} alt="calender icon, book now with vigaro"></img>
                         </button>
-                    </div> */}
+                    </div>
                 </div>
                 {/* Page content here */}
                 
