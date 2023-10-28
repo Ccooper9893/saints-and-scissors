@@ -13,8 +13,7 @@ export default function Home({ toggleBooking }) {
             </div>
 
             <div>
-
-                <motion.img initial={{ opacity: 0, y: -4 }} whileInView={{opacity: 1, y: 10 }} transition={{ ease: "easeOut", duration: 1, delay: .5 }}
+                <motion.img initial={{ opacity: 0, y: -4 }} whileInView={{opacity: 1, y: 40 }} transition={{ ease: "easeOut", duration: 1, delay: .5 }}
                 className='fixed lg:hidden left-4 z-10 mt-title max-h-5/6' src={titleAndLogoV} alt='Saints and Scissors Logo'></motion.img>
 
                 <motion.p  initial={{ opacity: 0, x:200}} whileInView={{opacity: 1, x: 0}} transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
@@ -22,7 +21,6 @@ export default function Home({ toggleBooking }) {
 
                 <motion.button initial={{ opacity: 0, x:-200}} whileInView={{opacity: 1, x: 0}} transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }} className='fixed lg:hidden right-6 bottom-4 tracking-widest z-10 w-1/2 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>BOOK NOW</motion.button>
-
             </div>
             <Parallax speed={-10}>
                 <Carousel />
