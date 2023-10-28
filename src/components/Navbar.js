@@ -22,8 +22,8 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                 
                 <motion.div
                 initial={{ opacity: 0 }} // Initial animation state
-                animate={navVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
-                transition={{ duration: 0.5 }} // Animation duration 
+                animate={navVisible ? { opacity: 0, y: -6 } : { opacity: 1, y: 0 }} // Animate based on visibility
+                transition={{ duration: 1 }} // Animation duration 
                 className="fixed w-full navbar justify-between md:justify-around py-0 bg-black bg-opacity-90 shadow-2xl shadow-stone-600">
                     <div className="flex justify-start lg:hidden w-24">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -33,11 +33,11 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     </div>
 
                     <div className="md:hidden">
-                        <img src={logoSmall}></img>
+                        <img src={logoSmall} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
                         </div>
 
                     <div className="hidden md:block md:w-1/5">
-                        <img src={logoLarge}></img>
+                        <img src={logoLarge} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
                     </div>
     
                     <div className="flex-none hidden lg:block">

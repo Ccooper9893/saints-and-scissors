@@ -9,8 +9,8 @@ import { useInView, motion } from 'framer-motion';
 
 export default function App() {
 
-  const navAboutRef = useRef(null);
-  const isInView = useInView(navAboutRef);
+  const navRef = useRef(null);
+  const isInView = useInView(navRef);
   const [navVisible, setNavVisible] = useState(false);
 
   //Booking drawer toggle
@@ -24,16 +24,17 @@ export default function App() {
   }, [isInView])
 
   return (
+
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
-      <Home toggleBooking={toggleBooking} />
+      <Home toggleBooking={toggleBooking} navRef={navRef}/>
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
       <div className='relative z-20'>
-        <About navAboutRef={navAboutRef} />
+        <About/>
 
-        <div id='services' className='h-screen bg-stone-300 border-custom border-x-2 border-black shadow-inner shadow-black'>
+        <div id='services' className='h-screen bg-black'>
         </div>
 
         <div id='stylists' className='h-screen bg-green-200'>
@@ -44,8 +45,8 @@ export default function App() {
 
         <div id='contact' className='h-screen bg-green-700'>
         </div>
-
       </div>
+
     </ParallaxProvider>
   );
 };
