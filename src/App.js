@@ -1,12 +1,11 @@
 import './App.css';
 import { useRef, useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Carousel from './components/misc/Carousel';
-import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
-import titleAndLogo from './assets/img/logos/title-and-logo.png';
-import titleAndLogoV from './assets/img/logos/title-vertical-2.png';
-import About from './components/pages/About';
 
+import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+
+import About from './components/pages/About';
+import Home from './components/pages/Home';
 export default function App() {
 
 
@@ -22,21 +21,9 @@ export default function App() {
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} />
+      <Home toggleBooking={toggleBooking}/>
 
-      <div className='hidden lg:block'>
-        <img className='absolute centerOfBg mx-auto z-10 mt-80 md:1/2 lg:w-1/2' src={titleAndLogo} alt='Saints and Scissors Logo'></img>
-        <button onClick={() => { toggleBooking(true); }} className='absolute centerOfBg top-3/4 tracking-widest z-10 w-60 py-1 text-black text-center text-sm bg-lime-400 bg-opacity-90 shadow shadow-black hover:shadow-none'>BOOK NOW</button>
-      </div>
-
-
-      <img className='fixed lg:hidden centerOfBg z-10 mt-title max-h-5/6' src={titleAndLogoV} alt='Saints and Scissors Logo'></img>
-        <button onClick={() => { toggleBooking(true); }} className='absolute lg:hidden right-6 bottom-10 tracking-widest z-10 w-60 py-2 text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow shadow-black hover:shadow-none'>BOOK NOW</button>
-
-      <Parallax speed={-25}>
-      <Carousel />
-      </Parallax>
       <div className='relative z-20'>
-
 
         <About />
 

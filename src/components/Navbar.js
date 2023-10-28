@@ -30,7 +30,7 @@ export default function Navbar({ drawerRef2, toggleBooking }) {
                         <img src={logoSmall}></img>
                         </div>
 
-                    <div className="hidden md:block w-full">
+                    <div className="hidden md:block md:w-1/5">
                         <img src={logoLarge}></img>
                     </div>
     
