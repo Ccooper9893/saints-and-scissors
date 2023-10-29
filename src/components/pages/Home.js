@@ -44,15 +44,16 @@ export default function Home({ toggleBooking, navRef }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-6 bottom-8 tracking-widest z-10 w-1/2 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>
+                className='fixed right-1/4 bottom-8 tracking-widest z-10 w-1/2 py-2 rounded-sm text-black text-center text-sm bg-lime-400 bg-opacity-70 shadow-lg shadow-black hover:shadow-none'>
                 BOOK NOW
             </motion.button>
+            <motion.p className='absolute bottom-0 z-40 w-full text-center animate-bounce'>&#9660;</motion.p>
 
             <Parallax speed={-10}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ ease: "easeIn", duration: 2, delay: 1 }}>
+                    transition={{ ease: "easeOut", duration: 2, delay: 1 }}>
                     <Carousel />
                 </motion.div>
             </Parallax>
