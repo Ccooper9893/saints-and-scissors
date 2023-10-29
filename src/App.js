@@ -1,10 +1,12 @@
 import './App.css';
 import { useRef, useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import { useInView } from 'framer-motion';
 import { ParallaxProvider } from 'react-scroll-parallax';
+
+import Navbar from './components/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
-import { useInView } from 'framer-motion';
+import Services from './components/pages/Services';
 
 
 export default function App() {
@@ -47,19 +49,21 @@ export default function App() {
       <Home toggleBooking={toggleBooking}/>
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
-      <div className='relative z-20'>
+      <div className='relative z-20 bg-black'>
+
         <About navAboutRef={navAboutRef} />
+        <Services toggleBooking={toggleBooking} navServicesRef={navServicesRef} />
+        {/* <div id='services' className='h-screen bg-black' ref={navServicesRef}>
+          <h2 className='text-6xl'>We Know Hair.</h2>
+        </div> */}
 
-        <div id='services' className='h-screen bg-black' ref={navServicesRef}>
+        <div id='stylists' className='h-screen bg-stone-200' ref={navStylistsRef}>
         </div>
 
-        <div id='stylists' className='h-screen bg-green-200' ref={navStylistsRef}>
+        <div id='gallery' className='h-screen bg-stone-400' ref={navGalleryRef}>
         </div>
 
-        <div id='gallery' className='h-screen bg-green-400' ref={navGalleryRef}>
-        </div>
-
-        <div id='contact' className='h-screen bg-green-700' ref={navContactRef}>
+        <div id='contact' className='h-screen bg-stone-700' ref={navContactRef}>
         </div>
       </div>
 

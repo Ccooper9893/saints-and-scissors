@@ -62,6 +62,20 @@ html {
   height: 45rem;
 }
 
+tr {
+  border-bottom: 1px solid rgb(70, 70, 70) !important;
+ }
+ 
+ .table {
+   width: 85%;
+   margin: auto auto;
+ }
+ 
+ tr td:nth-child(3) {
+   text-align: right;
+   color: #39e70e;
+ }
+
 /* .mt-title {
   margin-top: 28rem;
   left: 5rem;
@@ -72,3 +86,13 @@ html {
     margin-top: 25rem;
   }
 } */
+
+.bg1 {
+  background-image: url(./assets/img/backgrounds/dark-honeycomb.png);
+  background-repeat: repeat;
+}
+
+.bg2 {
+  background-image: url(./assets/img/backgrounds/dark_wood.png);
+  background-repeat: repeat;
+}
