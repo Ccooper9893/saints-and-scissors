@@ -46,14 +46,14 @@ export default function Rating() {
 
     return (
         <div>
-            <Parallax speed={-10}>
+            {/* <Parallax speed={-10}>
             <img src={bgWall}></img>
-            </Parallax>
+            </Parallax> */}
         <Slider {...settings}>
             {reviews.map((review) => {
                 return (
                     <div className='flex flex-col justify-center my-4 text-center'>
-                        <p className='text-lg p-5'>{review.review}</p>
+                        <p className='text-lg p-5'>"{review.review}"</p>
                         <div className='w-full'>
                             <Stars />
                         </div>

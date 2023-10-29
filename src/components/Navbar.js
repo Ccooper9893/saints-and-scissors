@@ -62,13 +62,10 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                 <div className="drawer">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
                     <div className="drawer-content">
-
                     </div>
-                    
                     <div className="drawer-side z-50">
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                         <div className="w-full min-h-full bg-stone-950">
-
                             {/* Sidebar content here */}
                             <div className="w-full h-screen text-center bg-stone-950">
                                 <div className="h-full bg-black">
@@ -83,7 +80,6 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                         </div>
                     </div>
                 </div>
-
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>

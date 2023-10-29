@@ -1,7 +1,10 @@
+import decal2 from '../../assets/img/decals/decal-1.png';
+
 export default function Services({ toggleBooking }) {
     return (
         <div className="py-6bg1">
             {/* <h2 className="text-3xl text-center text-stone-100 ">SERVICES</h2> */}
+            <img src={decal2}></img>
             <div className="py-5 my-4 mx-6 lg:mx-96 bg-stone-900">
                 <h2 className='title text-center text-3xl text-stone-50 font2 py-4'>CUTS AND STYLING</h2>
                 <hr className='w-4/5 lg:w-3/4 mx-auto mb-4 opacity-30'></hr>
