@@ -6,7 +6,7 @@ export default function About({navAboutRef}) {
     <div id='about' className='h-full bg-black text-stone-300'>
       <div className='pt-4'>
         <div className='flex flex-col justify-center lg:w-3/5 mt-6 mx-3 lg:mx-auto text-center'>
-          <h2 className='font2 text-6xl lg:text-9xl text-stone-100 mb-4'>
+          <h2 className='font2 text-7xl lg:text-9xl text-stone-100 mb-4'>
             Unlock <br />
             Your Hair's< br/>
             <span className='text-violet-500 font2'>Potential</span>.
