@@ -19,12 +19,11 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
             <div className="drawer-content flex flex-col">
 
                 {/* Navbar */}
-                
                 <motion.div
-                initial={{ opacity: 0 }} // Initial animation state
-                animate={navVisible ? { opacity: 0, y: -6 } : { opacity: 1, y: 0 }} // Animate based on visibility
-                transition={{ duration: 1 }} // Animation duration 
-                className="fixed w-full navbar justify-between md:justify-around py-0 bg-black bg-opacity-90 shadow-2xl shadow-stone-600">
+                    initial={{ opacity: 0 }} // Initial animation state
+                    animate={navVisible ? { opacity: 0, y: -6 } : { opacity: 1, y: 0 }} // Animate based on visibility
+                    transition={{ duration: 1 }} // Animation duration 
+                    className="fixed w-full navbar justify-between md:justify-around py-0 bg-black bg-opacity-90 shadow-2xl shadow-stone-600">
                     <div className="flex justify-start lg:hidden w-24">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -34,12 +33,12 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
 
                     <div className="md:hidden">
                         <img src={logoSmall} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
-                        </div>
+                    </div>
 
                     <div className="hidden md:block md:w-1/5">
                         <img src={logoLarge} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
                     </div>
-    
+
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
@@ -57,15 +56,15 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                         </button>
                     </div>
                 </motion.div>
+
                 {/* Page content here */}
-                
+
                 <div className="drawer">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={drawerRef2} />
                     <div className="drawer-content">
 
-
-
                     </div>
+                    
                     <div className="drawer-side z-50">
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                         <div className="w-full min-h-full bg-stone-950">
