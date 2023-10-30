@@ -29,7 +29,7 @@ font-family: 'Abel', sans-serif;
 }
 
 * {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 body,
@@ -95,4 +95,10 @@ tr {
 .bg2 {
   background-image: url(./assets/img/backgrounds/dark_wood.png);
   background-repeat: repeat;
+}
+
+.bgGraffiti {
+  background-image: url(./assets/img/backgrounds/graffiti.jpg);
+  background-position: left;
+  background-size: cover;
 }
