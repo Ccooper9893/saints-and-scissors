@@ -38,7 +38,7 @@ export default function About({ navAboutRef }) {
         </div>
       </div>
 
-      <div className='w-full h-full py-44 bg3 z-0'>
+      <div className='w-3/4 h-full py-44 bg3 z-0 mx-auto'>
         <Parallax speed={-5}>
       <Rating />
       </Parallax>
