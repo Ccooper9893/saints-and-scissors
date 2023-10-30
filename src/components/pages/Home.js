@@ -32,7 +32,7 @@ export default function Home({ toggleBooking, navRef }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
                 ref={navRef}
-                className=' fixed right-0 bottom-20 z-10 w-full tracking-wide md:text-4xl text-right py-2 pr-6 text-xl text-white bg-black bg-opacity-50'>
+                className=' fixed right-0 bottom-24 z-10 w-full tracking-wide md:text-4xl text-right py-2 pr-6 text-xl text-white bg-black bg-opacity-50'>
                 A NEW BREED OF SALON. <br />
                 <span className='text-sm  md:text-xl '
                 >WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSTPHERE.
@@ -44,7 +44,7 @@ export default function Home({ toggleBooking, navRef }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-1/4 bottom-8 tracking-widest z-10 w-1/2 py-2 font-extrabold rounded-sm text-black text-center text-sm bg-lime-500 bg-opacity-50 shadow-lg shadow-black hover:shadow-none'>
+                className='fixed right-1/4 bottom-12 tracking-widest z-10 w-1/2 py-2 font-extrabold rounded-sm text-black text-center text-sm bg-lime-500 bg-opacity-50 shadow-lg shadow-black hover:shadow-none'>
                 BOOK NOW
             </motion.button>
             <motion.p className='absolute bottom-0 w-full text-center animate-bounce z-0'>&#9660;</motion.p>
