@@ -47,7 +47,7 @@ export default function Home({ toggleBooking, navRef }) {
                 className='fixed right-1/4 bottom-8 tracking-widest z-10 w-1/2 py-2 font-extrabold rounded-sm text-black text-center text-sm bg-lime-500 bg-opacity-50 shadow-lg shadow-black hover:shadow-none'>
                 BOOK NOW
             </motion.button>
-            <motion.p className='absolute bottom-0 z-40 w-full text-center animate-bounce'>&#9660;</motion.p>
+            <motion.p className='absolute bottom-0 w-full text-center animate-bounce z-0'>&#9660;</motion.p>
 
             <Parallax speed={-10}>
                 <motion.div
