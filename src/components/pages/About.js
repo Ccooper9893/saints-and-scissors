@@ -37,10 +37,10 @@ export default function About({ navAboutRef }) {
 
         </div>
       </div>
-      <div className='w-4/5 py-10 bg-black z-0'>
+      <div className='w-4/5 py-4 mx-auto bg-black z-0'>
         <Rating />
       </div>
-      <hr className='w-4/5 lg:w-5/6 mx-auto my-6 md:my-24 opacity-90'></hr>
+      <hr className='w-4/5 lg:w-5/6 mx-auto my-6 md:my-24 opacity-40'></hr>
     </div>
   )
 }
