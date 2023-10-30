@@ -35,12 +35,13 @@ export default function About({ navAboutRef }) {
   
           </div>
           {/* <hr className='w-4/5 lg:w-5/6 mx-auto my-6 md:my-24 opacity-90'></hr> */}
+          <div className='w-full py-12 bg-black z-0 mx-auto'>
+      <Rating />
+      </div>
         </div>
       </div>
 
-      <div className='w-3/4 py-24 bg-black z-0 mx-auto'>
-      <Rating />
-      </div>
+
 
 
     </div>
