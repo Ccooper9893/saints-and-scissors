@@ -24,26 +24,23 @@ export default function About({ navAboutRef }) {
               <p className='py-6 text-xl p-4 tracking-wide md:text-left'>At <span className='font4'>Saints and Scissors,</span><br />we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
               <div className='flex flex-row justify-center rounded-r-lg'>
 
-              <img className='w-5 h-5 opacity-10' src={logo}></img>
-              <img className='w-5 h-5 opacity-20' src={logo}></img>
-              <img className='w-5 h-5 opacity-30' src={logo}></img>
-              <img className='w-5 h-5 opacity-40' src={logo}></img>
-              <img className='w-5 h-5 opacity-50' src={logo}></img>
+                <img className='w-5 h-5 opacity-10' src={logo}></img>
+                <img className='w-5 h-5 opacity-20' src={logo}></img>
+                <img className='w-5 h-5 opacity-30' src={logo}></img>
+                <img className='w-5 h-5 opacity-40' src={logo}></img>
+                <img className='w-5 h-5 opacity-50' src={logo}></img>
 
               </div>
             </div>
-  
+
           </div>
-          {/* <hr className='w-4/5 lg:w-5/6 mx-auto my-6 md:my-24 opacity-90'></hr> */}
-          <div className='w-full py-12 bg-black z-0 mx-auto'>
-      <Rating />
-      </div>
+
         </div>
       </div>
-
-
-
-
+      <div className='w-4/5 py-10 bg-black z-0'>
+        <Rating />
+      </div>
+      <hr className='w-4/5 lg:w-5/6 mx-auto my-6 md:my-24 opacity-90'></hr>
     </div>
   )
 }
