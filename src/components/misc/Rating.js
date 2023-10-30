@@ -49,11 +49,12 @@ export default function Rating() {
     ]
 
     return (
-        <div className='w-5/6 md:w-3/4 mx-auto md:my-8 md:py-24 bg-black bg-opacity-30'>
+        <div className='w-5/6 md:w-3/4 mx-auto glass bg-opacity-90 shadow-inner shadow-black -rotate-2'>
+            <h2 className='text-center py-6 text-lime-100 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2>
             <Slider {...settings}>
                 {reviews.map((review) => {
                     return (
-                        <div className='flex flex-col justify-center my-4 text-center bg-opacity-0'>
+                        <div className='flex flex-col justify-center my-4 text-center bg-opacity-0' key={review.review.length}>
                             <p className='text-2xl md:text-4xl p-5 text-white'>"{review.review}"</p>
                             <div className='w-full'>
                                 <Stars />
@@ -66,6 +67,7 @@ export default function Rating() {
             {/* <div className='bgGraffiti h-96 rotate-90 bg-opacity-20'>
                 <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
             </div> */}
+            <p className='text-center py-4 normal'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn normal-case'>More Reviews {'\u2192'}</a></p>
         </div>
     )
 }

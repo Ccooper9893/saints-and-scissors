@@ -113,16 +113,21 @@ tr {
   background-size: cover;
 }
 
+.bgPictures {
+  background-image: url(./assets/img/backgrounds/pictures.png);
+  background-size: cover;
+}
+
 .custom-prev-arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 0px; /* Adjust the left position as needed */
+  left: -2rem; /* Adjust the left position as needed */
 }
 
 .custom-next-arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 0px; /* Adjust the right position as needed */
+  right: -2rem; /* Adjust the right position as needed */
 }
