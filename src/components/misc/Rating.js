@@ -49,7 +49,7 @@ export default function Rating() {
     ]
 
     return (
-        <div className='w-5/6 md:w-3/4 mx-auto glass bg-opacity-90 shadow-inner shadow-black -rotate-2'>
+        <div className='w-5/6 md:w-3/4 mx-auto glass bg-opacity-90 shadow-2xl shadow-black -rotate-2'>
             <h2 className='text-center py-6 text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2>
             <Slider {...settings}>
                 {reviews.map((review) => {
