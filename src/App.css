@@ -92,8 +92,18 @@ tr {
   background-repeat: repeat;
 }
 
-.bg2 {
+.bg1 {
   background-image: url(./assets/img/backgrounds/dark_wood.png);
+  background-repeat: repeat;
+}
+
+.bg2 {
+  background-image: url(./assets/img/backgrounds/dark_wood-2.png);
+  background-repeat: repeat;
+}
+
+.bg3 {
+  background-image: url(./assets/img/backgrounds/dark_wood-3.png);
   background-repeat: repeat;
 }
 
@@ -101,4 +111,18 @@ tr {
   background-image: url(./assets/img/backgrounds/graffiti.jpg);
   background-position: left;
   background-size: cover;
+}
+
+.custom-prev-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0px; /* Adjust the left position as needed */
+}
+
+.custom-next-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0px; /* Adjust the right position as needed */
 }

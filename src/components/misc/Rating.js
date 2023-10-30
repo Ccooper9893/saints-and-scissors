@@ -6,19 +6,22 @@ import Stars from './Stars';
 import bgWall from '../../assets/img/backgrounds/pictures.png';
 import { Parallax } from 'react-scroll-parallax';
 import bgGraffiti from '../../assets/img/backgrounds/graffiti.jpg';
+import { CustomPrevArrow, CustomNextArrow } from './Arrows';
 
 export default function Rating() {
+
     const settings = {
         dots: false,
-        arrows: false,
+        prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
+        nextArrow: <CustomNextArrow />, // Your custom next arrow component
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true,
+        fade: false,
         autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnFocus: false,
+        autoplaySpeed: 6000,
+        pauseOnFocus: true,
         pauseOnHover: false,
     }
 
@@ -46,23 +49,23 @@ export default function Rating() {
     ]
 
     return (
-        <div>
-                <Slider {...settings}>
-                    {reviews.map((review) => {
-                        return (
-                            <div className='flex flex-col justify-center my-4 text-center bg-opacity-0'>
-                                <p className='text-lg p-5'>"{review.review}"</p>
-                                <div className='w-full'>
-                                    <Stars />
-                                </div>
-                                <small><em>{review.author}</em></small>
+        <div className='w-5/6 md:w-3/4 mx-auto md:my-8 md:py-24 bg-black bg-opacity-30'>
+            <Slider {...settings}>
+                {reviews.map((review) => {
+                    return (
+                        <div className='flex flex-col justify-center my-4 text-center bg-opacity-0'>
+                            <p className='text-2xl md:text-4xl p-5 text-white'>"{review.review}"</p>
+                            <div className='w-full'>
+                                <Stars />
                             </div>
-                        )
-                    })}
-                </Slider>
-                <div className='bgGraffiti h-96 rotate-90 bg-opacity-20'>
-                    <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
-                </div>
-                </div>
+                            <small><em className='md:text-xl'>{review.author}</em></small>
+                        </div>
+                    )
+                })}
+            </Slider>
+            {/* <div className='bgGraffiti h-96 rotate-90 bg-opacity-20'>
+                <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
+            </div> */}
+        </div>
     )
 }
