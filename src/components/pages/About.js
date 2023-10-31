@@ -21,7 +21,7 @@ export default function About({ navAboutRef }) {
               {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}
             </div>
             <div className='py-6 md:py-24 bg-stone-200 z-10'>
-              <p className='text-xl md:text-4xl md:w-5/6 md:text-center md:mx-auto p-4 tracking-wide'>At <span className='font4'>Saints and Scissors,</span><br />we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
+              <p className='text-xl md:text-4xl md:w-5/6 md:text-center md:mx-auto p-4 tracking-wide text-stone-950'>At <span className='font4'>Saints and Scissors,</span><br />we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
 
               <div className='flex flex-row justify-center rounded-r-lg my-12'>
                 <img className='w-4 h-4 opacity-10' src={logo}></img>

@@ -50,7 +50,7 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto bg-stone-300 bg-opacity-10 md:mx-44 shadow-inner shadow-stone-950 mb-24'>
+            <div className='mx-auto bg-stone-800 md:mx-44 shadow-inner shadow-stone-600 mb-24'>
                 {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
                 <Slider {...settings}>
                     {reviews.map((review) => {

@@ -11,7 +11,7 @@ export default function Carousel() {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
