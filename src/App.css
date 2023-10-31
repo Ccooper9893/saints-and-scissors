@@ -121,13 +121,13 @@ tr {
 .custom-prev-arrow {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  left: -2rem; /* Adjust the left position as needed */
+  top: 60%;
+  left: 0; /* Adjust the left position as needed */
 }
 
 .custom-next-arrow {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  right: -2rem; /* Adjust the right position as needed */
+  top: 60%;
+  right: 0; /* Adjust the right position as needed */
 }
