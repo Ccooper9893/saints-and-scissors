@@ -1,4 +1,5 @@
 import titleAndLogoV from '../../assets/img/logos/title-vertical-2.png';
+import titleAndLogo from '../../assets/img/logos/title-and-logo.png';
 import Carousel from '../misc/Carousel';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from "framer-motion";
@@ -8,15 +9,22 @@ export default function Home({ toggleBooking, navRef }) {
     return (
         <div id='home'>
 
-            <motion.img
+            {/* <motion.img
                 initial={{ opacity: 0, y: -4 }}
                 whileInView={{ opacity: 1, y: 40 }}
                 transition={{ ease: "easeOut", duration: 1, delay: .5 }}
                 className='absolute left-4 md:left-12 lg:left-44 z-10 mt-title h-5/6'
                 src={titleAndLogoV}
                 alt='Saints and Scissors Logo'>
+            </motion.img> */}
+            <motion.img
+                initial={{ opacity: 0, y: -4 }}
+                whileInView={{ opacity: 1, y: 40 }}
+                transition={{ ease: "easeOut", duration: 1, delay: .5 }}
+                className='absolute z-10 top-32 transform -translate-y-1/2'
+                src={titleAndLogo}
+                alt='Saints and Scissors Logo'>
             </motion.img>
-
             {/* <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -44,7 +52,7 @@ export default function Home({ toggleBooking, navRef }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-1/4 bottom-12 tracking-widest z-10 w-1/2 py-2 font-extrabold rounded-full text-black text-center text-sm bg-lime-500 bg-opacity-50 shadow-lg shadow-black hover:shadow-none'>
+                className='fixed right-1/4 bottom-12 tracking-widest z-10 w-1/2 md:w-1/4 py-2 font-extrabold rounded-full text-black text-center text-sm bg-lime-500 bg-opacity-50 shadow-lg shadow-black hover:shadow-none'>
                 BOOK NOW
             </motion.button>
             <motion.p className='absolute bottom-0 w-full text-center text-stone-300 z-10'>&#9660;</motion.p>
