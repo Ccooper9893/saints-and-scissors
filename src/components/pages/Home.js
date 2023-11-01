@@ -4,19 +4,9 @@ import Carousel from '../misc/Carousel';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from "framer-motion";
 import logo from '../../assets/img/logos/logo.png';
-
 export default function Home({ toggleBooking, navRef }) {
     return (
         <div id='home'>
-
-            {/* <motion.img
-                initial={{ opacity: 0, y: -4 }}
-                whileInView={{ opacity: 1, y: 40 }}
-                transition={{ ease: "easeOut", duration: 1, delay: .5 }}
-                className='absolute left-4 md:left-12 lg:left-44 z-10 mt-title h-5/6'
-                src={titleAndLogoV}
-                alt='Saints and Scissors Logo'>
-            </motion.img> */}
             <motion.img
                 initial={{ opacity: 0, y: -4 }}
                 whileInView={{ opacity: 1, y: 40 }}
@@ -25,16 +15,6 @@ export default function Home({ toggleBooking, navRef }) {
                 src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
             </motion.img>
-            {/* <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ ease: "easeIn", duration: 1, delay: 2.5 }}
-                className='fixed bottom-40 md:bottom-52 right-20 md:right-44 z-10'>
-                <p className='text-center text-xs opacity-30 animate-bounce'>&#9650;</p>
-                <p className='text-center text-xs opacity-60 animate-bounce'>&#9650;</p>
-                <a href='#about'><img src={logo} alt='Saints and scissors icon, white circle with scissors that have angel wings.'></img></a>
-            </motion.div> */}
-
             <motion.p
                 initial={{ opacity: 0, x: 200 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -46,7 +26,6 @@ export default function Home({ toggleBooking, navRef }) {
                 >WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSTPHERE.
                 </span>
             </motion.p>
-
             <motion.button
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +35,6 @@ export default function Home({ toggleBooking, navRef }) {
                 BOOK NOW
             </motion.button>
             <motion.p className='absolute bottom-0 w-full text-center text-stone-950 z-10'>&#9660;</motion.p>
-
             <Parallax speed={-10}>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -65,7 +43,6 @@ export default function Home({ toggleBooking, navRef }) {
                     <Carousel />
                 </motion.div>
             </Parallax>
-
         </div>
     )
 };
