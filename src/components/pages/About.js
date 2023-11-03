@@ -5,7 +5,7 @@ import logo from '../../assets/img/logos/logo.png';
 
 export default function About({ navAboutRef }) {
   return (
-    <div id='about' className='h-full text-stone-950 shadow-lg shadow-stone-950'>
+    <div id='about' className='h-full text-stone-950'>
       <div>
         <div className='flex flex-col justify-center lg:w-3/4 mt-6 lg:mx-auto text-center'>
           <div className='border-t border-stone-900'>
