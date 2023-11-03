@@ -1,6 +1,4 @@
-import { Parallax } from 'react-scroll-parallax';
 import decal2 from '../../assets/img/decals/decal-1.png';
-import logo from '../../assets/img/logos/logo.png';
 
 export default function Services({ toggleBooking, navServicesRef }) {
     return (
@@ -8,7 +6,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
             <div id='navServicesRef'>
                 {/* <h2 className="text-3xl text-center text-stone-100 ">SERVICES</h2> */}
 
-                <h2 className='font2 text-6xl text-left lg:text-center text-stone-950 px-4 py-4 z-10 bg-stone-300'>
+                <h2 className='font2 text-6xl text-left lg:text-center text-stone-950 px-4 py-24 z-10 bg-stone-300'>
                 Haircuts That Define<br /><span className='text-lime-500 font2'>Your Style<span className='text-stone-950'>.</span></span>
                 </h2>
                 <img className='w-4/5 md:hidden bg-stone-100' src={decal2} alt='Punk style artwork of a rocker screaming.'></img>
