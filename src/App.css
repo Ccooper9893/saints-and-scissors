@@ -131,3 +131,7 @@ tr {
   top: 60%;
   right: 0; /* Adjust the right position as needed */
 }
+
+.z5 {
+  z-index: 5 !important;
+}

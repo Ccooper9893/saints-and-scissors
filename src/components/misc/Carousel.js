@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import slide1 from '../../assets/img/backgrounds/slides-home-1-bottom-white.jpg';
-import slide2 from '../../assets/img/backgrounds/slides-home-2-bottom-white.jpg';
-import slide3 from '../../assets/img/backgrounds/slides-home-3-bottom-white.jpg';
+import slide1 from '../../assets/img/backgrounds/slides-home-1.jpg';
+import slide2 from '../../assets/img/backgrounds/slides-home-2.jpg';
+import slide3 from '../../assets/img/backgrounds/slides-home-3.jpg';
 
 export default function Carousel() {
   const settings = {

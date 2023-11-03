@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
-
+import bgBtm from './assets/img/backgrounds/bottom-white.png';
 
 export default function App() {
 
@@ -41,11 +41,14 @@ export default function App() {
   }, [isInView, isInView2, isInView3, isInView4, isInView5])
 
   return (
-
+    
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
-
+      <div className='absolute h-screen w-screen -bottom-10 z5'>
+          <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${bgBtm})` }}>
+          </div>
+          </div>
       <Home toggleBooking={toggleBooking}/>
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
