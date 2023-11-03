@@ -62,6 +62,12 @@ html {
   height: 45rem;
 }
 
+.bgGradient {
+  /* background: rgb(27,27,27);
+background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(231,229,228,1) 100%); */
+background-color: #e7e5e4;
+}
+
 tr {
   border-bottom: 1px solid rgb(70, 70, 70) !important;
  }
