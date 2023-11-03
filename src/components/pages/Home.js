@@ -18,7 +18,7 @@ export default function Home({ toggleBooking, navRef }) {
                 initial={{ opacity: 0, y: -4 }}
                 whileInView={{ opacity: 1, y: 40 }}
                 transition={{ ease: "easeOut", duration: 1, delay: .5 }}
-                className='fixed h-5/6 top-0 z4 md:hidden'
+                className='absolute h-5/6 top-0 z4 md:hidden'
                 src={titleAndLogoV}
                 alt='Saints and Scissors Logo'>
             </motion.img>
@@ -30,7 +30,7 @@ export default function Home({ toggleBooking, navRef }) {
                 className=' fixed right-0 bottom-20 md:bottom-24 z-10 w-full tracking-wide text-xl text-right py-2 pr-6 text-white bg-black bg-opacity-50'>
                 A NEW BREED OF SALON. <br />
                 <span className='text-xs md:text-lg '
-                >WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSTPHERE.
+                >WHERE THE HAIR IS AS IMPORTANT AS THE ATMOSPHERE.
                 </span>
             </motion.p>
             <motion.button
@@ -38,7 +38,7 @@ export default function Home({ toggleBooking, navRef }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-1/4 md:right-6 bottom-6 md:bottom-4 tracking-widest z-10 w-1/2 md:w-1/4 py-1 md:py-3 font-extrabold bg-lime-500 text-stone-950 shadow-lg hover:shadow-stone-700 shadow-stone-950'>
+                className='fixed right-1/4 md:right-6 bottom-6 md:bottom-4 tracking-widest z-10 w-1/2 md:w-1/4 py-1 md:py-3 font-extrabold bg-lime-500 bg-opacity-80 text-stone-950 shadow-lg hover:shadow-stone-700 shadow-stone-950'>
                 BOOK NOW
             </motion.button>
             <motion.p className='absolute bottom-0 w-full text-center text-stone-950 z-10 animate-bounce'>&#9660;</motion.p>

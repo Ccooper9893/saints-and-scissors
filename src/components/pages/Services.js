@@ -8,20 +8,14 @@ export default function Services({ toggleBooking, navServicesRef }) {
             <div id='navServicesRef'>
                 {/* <h2 className="text-3xl text-center text-stone-100 ">SERVICES</h2> */}
 
-                <h2 className='font2 text-6xl text-center center text-stone-200 mx-4 py-4 z-10 bg-stone-900'>
-                Haircuts That Define<br /><span className='text-lime-500 font2'>Your Style</span>
+                <h2 className='font2 text-6xl text-left lg:text-center text-stone-950 px-4 py-4 z-10 bg-stone-300'>
+                Haircuts That Define<br /><span className='text-lime-500 font2'>Your Style<span className='text-stone-950'>.</span></span>
                 </h2>
-                <img className='w-4/5 md:hidden bg-stone-300' src={decal2} alt='Punk style artwork of a rocker screaming.'></img>
-                <div className="lg:mx-64 bg-stone-800 shadow-inner shadow-white">
-                <p className='text-xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide text-stone-300 text-center bg-stone-900'>We offer a wide range of services, catering to all your haircare needs. Our expert team is skilled in everything from basic cuts to full-color transformations, ensuring that you leave our salon discovering your unique style and inner confidence.</p>
-                <div className='flex flex-row justify-center rounded-r-lg my-12'>
-                <img className='w-4 h-4 opacity-10' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-20' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-30' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-40' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-50' src={logo} alt='Tiny Saints and Scissors logo'></img>
-              </div>
-                    <h2 className='title text-center text-3xl text-stone-50 py-4'>Our Services</h2>
+                <img className='w-4/5 md:hidden bg-stone-100' src={decal2} alt='Punk style artwork of a rocker screaming.'></img>
+                <div className="lg:mx-64 bg-stone-800">
+                <p className='text-xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide text-stone-300 text-center bg-stone-800'>We offer a wide range of services, catering to all your haircare needs. Our expert team is skilled in everything from basic cuts to full-color transformations, ensuring that you leave our salon discovering your unique style and inner confidence.</p>
+                <div className='bg-stone-950'>
+                    <h2 className='title text-center text-3xl text-stone-50 py-8'>Our Services</h2>
                     <hr className='w-4/5 lg:w-3/4 mx-auto mb-4 opacity-30'></hr>
 
                     <table className="table text-white">
@@ -95,6 +89,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
                             VIEW ALL
                         </button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
