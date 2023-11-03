@@ -45,7 +45,7 @@ export default function App() {
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
-      <div className='absolute h-screen w-screen -bottom-10 z5'>
+      <div className='fixed h-screen w-screen -bottom-10 z5'>
           <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${bgBtm})` }}>
           </div>
           </div>
