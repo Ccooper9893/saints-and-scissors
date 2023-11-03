@@ -9,7 +9,7 @@ export default function About({ toggleBooking, navAboutRef }) {
       <div>
         <div className='flex flex-col justify-center lg:w-3/4 mt-6 lg:mx-auto text-center'>
           <div className='border-t border-stone-900'>
-          <h2 className='font2 text-6xl lg:text-9xl center text-stone-200 py-14 md:mb-24 z-10 border-b border-stone-950 bg-stone-900'>
+          <h2 className='font2 text-7xl lg:text-9xl center text-stone-200 py-14 md:mb-24 z-10 border-b border-stone-950 bg-stone-900'>
             Unlock
             Your Hair's< br />
             <span className='text-violet-700 font2'>Potential</span>.
@@ -32,7 +32,7 @@ export default function About({ toggleBooking, navAboutRef }) {
                 <img className='w-4 h-4 opacity-40' src={logo} alt='Tiny Saints and Scissors logo'></img>
                 <img className='w-4 h-4 opacity-50' src={logo} alt='Tiny Saints and Scissors logo'></img>
               </div>
-              <div className='w-5/6 py-4 mx-auto z-0 shadow shadow-stone-500'>
+              <div className='w-5/6 py-4 mx-auto z-0'>
                 <Rating />
               </div>
               {/* <button onClick={() => { toggleBooking(true); }} className='py-2 px-12 font-extrabold border border-lime-400 text-stone-300'>BOOK NOW</button> */}
