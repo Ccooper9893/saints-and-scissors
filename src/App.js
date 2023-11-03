@@ -46,7 +46,7 @@ export default function App() {
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
       <div className='fixed h-screen w-full -bottom-24 md:bottom-0 md:fixed z5'>
-          <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${bgBtm})` }}>
+          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgBtm})` }}>
           </div>
           </div>
       <Home toggleBooking={toggleBooking}/>
