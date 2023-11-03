@@ -50,13 +50,13 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto bg-stone-800 md:mx-44 shadow-inner shadow-stone-600 mb-24'>
+            <div className='mx-auto md:mx-44 bg-stone-100 shadow-inner shadow-stone-600 mb-24'>
                 {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
                             <div className='flex flex-col justify-center my-4 text-center' key={review.review.length}>
-                                <p className='text-md md:text-4xl p-5 text-white'>"{review.review}"</p>
+                                <p className='text-md md:text-4xl p-5 text-black'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -69,7 +69,7 @@ export default function Rating() {
                 {/* <div className='bgGraffiti h-96 rotate-90 bg-opacity-20'>
                 <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
             </div> */}
-                <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8 normal-case border-stone-200 bg-opacity-0'>See More Reviews {'\u2192'}</a></p>
+                <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8 normal-case bg-stone-900 bg-opacity-70'>See More Reviews {'\u2192'}</a></p>
             </div>
         </>
     )
