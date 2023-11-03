@@ -6,12 +6,12 @@ export default function Services({ toggleBooking, navServicesRef }) {
             <div id='navServicesRef'>
                 {/* <h2 className="text-3xl text-center text-stone-100 ">SERVICES</h2> */}
 
-                <h2 className='font2 text-6xl md:text-7xl text-left lg:text-center text-stone-950 px-4 py-24 z-10 bg-stone-300 border-l-2 border-b-2 border-stone-900'>
+                <h2 className='font2 text-6xl md:text-7xl text-left lg:text-center text-stone-950 px-4 py-24 z-10 bg-stone-300'>
                 Haircuts That Define<br /><span className='text-lime-500 font2'>Your Style<span className='text-stone-950'>.</span></span>
                 </h2>
-                <img className='w-4/5 md:hidden bg-stone-100' src={decal2} alt='Punk style artwork of a rocker screaming.'></img>
-                <div className="lg:mx-64 bg-stone-300 border-t-2 border-l-2 border-stone-900">
-                <p className='text-xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide text-stone-950 text-center border-t border-stone-950'>We offer a wide range of services, catering to all your haircare needs. Our expert team is skilled in everything from basic cuts to full-color transformations, ensuring that you leave our salon discovering your unique style and inner confidence.</p>
+                {/* <img className='w-4/5 md:hidden bg-stone-100' src={decal2} alt='Punk style artwork of a rocker screaming.'></img> */}
+                <div className="lg:mx-64 bg-stone-300">
+                <p className='text-xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide text-stone-950 text-center'>We offer a wide range of services, catering to all your haircare needs. Our expert team is skilled in everything from basic cuts to full-color transformations, ensuring that you leave our salon discovering your unique style and inner confidence.</p>
                 <div className='bg-stone-900 border-8 border-stone-300 mx-4 md:mx-12'>
                     <h2 className='title text-center text-3xl text-stone-50 py-8 font4'>Cuts & Styling</h2>
                     <hr className='w-4/5 lg:w-3/4 mx-auto mb-4 opacity-30'></hr>

@@ -61,7 +61,6 @@ export default function Rating() {
                                     <Stars />
                                 </div>
                                 <small><em className='md:text-xl'>{review.author}</em></small>
-
                             </div>
                         )
                     })}

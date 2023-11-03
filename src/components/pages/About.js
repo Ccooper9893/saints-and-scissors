@@ -9,13 +9,13 @@ export default function About({ toggleBooking, navAboutRef }) {
       <div>
         <div className='flex flex-col justify-center lg:w-3/4 mt-6 lg:mx-auto text-center'>
           <div className='border-t border-stone-900'>
-          <h2 className='font2 text-7xl lg:text-9xl center text-stone-950 py-14 md:mb-24 z-10 border-b border-stone-950 bg-stone-200'>
+          <h2 className='font2 text-7xl lg:text-9xl center text-stone-950 py-14 md:mb-24 z-10'>
             Unlock
             Your Hair's< br />
             <span className='text-violet-700 font2'>Potential</span>.
           </h2>
           <div className='flex flex-col z-0'>
-            <div className='relative px-8 w-full bg-stone-900'>
+            <div className='relative px-8 w-full'>
               <Parallax speed={-1}>
                 <img className='mx-auto z-0 rotate-2' src={aboutBg} alt='Grunge style women'></img>
               </Parallax>
