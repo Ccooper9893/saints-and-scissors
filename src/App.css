@@ -62,10 +62,6 @@ html {
   border-bottom-width: 8px;
 }
 
-.h-custom {
-  height: 45rem;
-}
-
 .bgGradient {
   background: rgb(27,27,27);
 background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(231,229,228,1) 100%);
@@ -98,35 +94,8 @@ tr {
 } */
 
 .bg1 {
-  background-image: url(./assets/img/backgrounds/dark-honeycomb.png);
+  background-image: url(./assets/img/backgrounds/white-waves-2.jpg);
   background-repeat: repeat;
-}
-
-.bg1 {
-  background-image: url(./assets/img/backgrounds/dark_wood.png);
-  background-repeat: repeat;
-}
-
-.bg2 {
-  background-image: url(./assets/img/backgrounds/dark_wood-2.png);
-  background-repeat: repeat;
-}
-
-.bg3 {
-  background-image: url(./assets/img/backgrounds/dark_wood-3.png);
-  background-repeat: repeat;
-  opacity: 85%;
-}
-
-.bgGraffiti {
-  background-image: url(./assets/img/backgrounds/graffiti.jpg);
-  background-position: left;
-  background-size: cover;
-}
-
-.bgPictures {
-  background-image: url(./assets/img/backgrounds/pictures.png);
-  background-size: cover;
 }
 
 .custom-prev-arrow {

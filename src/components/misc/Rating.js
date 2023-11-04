@@ -3,15 +3,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Stars from './Stars';
-import bgWall from '../../assets/img/backgrounds/pictures.png';
-import { Parallax } from 'react-scroll-parallax';
-import bgGraffiti from '../../assets/img/backgrounds/graffiti.jpg';
+// import logo from '../../assets/img/logos/logo.png';
 import { CustomPrevArrow, CustomNextArrow } from './Arrows';
 
 export default function Rating() {
 
     const settings = {
-        dots: true,
+        dots: false,
         prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
         nextArrow: <CustomNextArrow />, // Your custom next arrow component
         infinite: true,
@@ -50,13 +48,14 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto md:mx-24 bg-stone-800 mb-10 shadow-inner shadow-stone-300'>
+            <div className='mx-auto md:mx-24 bg1 shadow-inner shadow-stone-950'>
                 {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
-                            <div className='flex flex-col justify-center my-4 text-center text-stone-200' key={review.review.length}>
-                                <p className='text-lg p-5'>"{review.review}"</p>
+                            <div className='flex flex-col justify-center my-4 text-center text-stone-950' key={review.review.length}>
+                                {/* <img className='w-6 h-6 mx-auto mt-2 opacity-50' src={logo}></img> */}
+                                <p className='text-xl p-5'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -70,11 +69,11 @@ export default function Rating() {
             </div> */}
                 {/* <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8'>MORE REVIEWS {'\u2192'}</a></p> */}
                 <div className='flex justify-center'>
-                <button
+                <a
                     href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' 
-                    className='my-8 px-8 py-2 border border-stone-300 shadow-sm shadow-stone-600 text-stone-200 hover:shadow-stone-400'>
-                            More Reviews
-                </button>
+                    className='my-8 px-8 py-2 border bg-stone-100 border-stone-300 shadow-sm shadow-stone-600 text-stone-950 hover:shadow-stone-400'>
+                            Leave us a review!
+                </a>
                 </div>
             </div>
         </>

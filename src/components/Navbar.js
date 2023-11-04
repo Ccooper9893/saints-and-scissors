@@ -1,5 +1,5 @@
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import logoSmall from '../assets/img/logos/nav-logo.png';
 import logoLarge from '../assets/img/logos/nav-title-and-logo.png';
 import calenderIcon from '../assets/img/icons/calender-icon.png';
@@ -13,6 +13,21 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
         drawerRef.current.checked = false;
     };
 
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+
+    useEffect(() => {
+      const loadIframe = () => {
+        setIframeLoaded(true);
+      };
+  
+      document.onload = loadIframe;
+  
+      return () => {
+        // Cleanup event listener to prevent memory leaks
+        document.onload = null;
+      };
+    }, []);
+
     return (
         <div className="drawer z-50">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
@@ -23,16 +38,16 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     initial={{ opacity: 0 }} // Initial animation state
                     animate={navVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
                     transition={{ duration: 1 }} // Animation duration 
-                    className="fixed w-full navbar justify-between md:justify-around py-0 bg-stone-900 shadow-md shadow-stone-800">
+                    className="fixed w-full navbar justify-between md:justify-around py-2 bg-stone-950">
                     <div className="flex justify-start lg:hidden w-24">
-                        <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
+                        <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost text-stone-100">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
 
                     </div>
 
                     <div className="md:hidden">
-                        <img src={logoSmall} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
+                        <img src={logoLarge} alt='Saints and Scissors logo. Scissors with angel wings and a neon green halo'></img>
                     </div>
 
                     <div className="hidden md:block md:w-1/5">
@@ -51,9 +66,9 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                         </ul>
                     </div>
                     <div className='flex justify-end w-24 md:w-1/4 lg:w-1/5'>
-                        <button onClick={() => { toggleBooking(true); }} className="btn btn-ghost px-3 normal-case font-thin" aria-label="Open Vagaro booking drawer">
+                        {/* <button onClick={() => { toggleBooking(true); }} className="btn btn-ghost px-3 normal-case font-thin" aria-label="Open Vagaro booking drawer">
                             <img className="calender" src={calenderIcon} alt="calender icon, book now with vigaro"></img>
-                        </button>
+                        </button> */}
                     </div>
                 </motion.div>
 
@@ -67,14 +82,14 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                         <div className="w-full md:w-3/4 min-h-full bg-stone-950">
                             {/* Sidebar content here */}
-                            <div className="w-full h-screen text-center bg-stone-950">
-                                <div className="h-full bg-stone-950">
+                            <div className="w-full h-screen text-center">
+                                <div className="h-full">
                                     <div className="relative w-full top-0 text-center h-16">
                                         <img className="mx-auto p-3" src={logoSmall} alt="Hair stylist clippers with wings logo" />
                                         <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
                                     </div>
-
-                                    {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> */}
+                                    { iframeLoaded ? <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> : null}
+                                    {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/book-now" title="Vagaro Saints and Scissors Booking Service"></iframe> */}
                                 </div>
                             </div>
                         </div>
@@ -83,7 +98,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-2/3 min-h-full text-lg bg-stone-900">
+                <ul className="menu p-4 w-2/3 min-h-full text-lg bg-stone-950">
                     {/* Sidebar content here */}
                     <li><a href='#home' onClick={() => { toggleNav(); }}>Home</a></li>
                     <li><a href='#about' onClick={() => { toggleNav(); }}>About</a></li>

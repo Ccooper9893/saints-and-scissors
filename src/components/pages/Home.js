@@ -3,6 +3,8 @@ import Carousel from '../misc/Carousel';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from "framer-motion";
 import titleAndLogoV from '../../assets/img/logos/title-vertical-2.png';
+
+
 export default function Home({ toggleBooking, navRef }) {
     return (
         <div id='home'>
@@ -58,14 +60,14 @@ export default function Home({ toggleBooking, navRef }) {
                 BOOK NOW
             </motion.button> */}
             <motion.p className='fixed bottom-4 text-sm w-full text-center text-stone-200 z-10 animate-bounce'>&#9660;</motion.p>
-            {/* <Parallax speed={-5}> */}
+            <Parallax speed={-5}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 2, delay: 1 }}>
                     <Carousel />
                 </motion.div>
-            {/* </Parallax> */}
+            </Parallax>
         </div>
     )
 };
