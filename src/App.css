@@ -111,6 +111,7 @@ tr {
 .bg3 {
   background-image: url(./assets/img/backgrounds/dark_wood-3.png);
   background-repeat: repeat;
+  opacity: 85%;
 }
 
 .bgGraffiti {

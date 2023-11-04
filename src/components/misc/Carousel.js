@@ -5,20 +5,22 @@ import 'slick-carousel/slick/slick-theme.css';
 import slide1 from '../../assets/img/backgrounds/slides-home-1.jpg';
 import slide2 from '../../assets/img/backgrounds/slides-home-2.jpg';
 import slide3 from '../../assets/img/backgrounds/slides-home-3.jpg';
+import { CustomPrevArrow, CustomNextArrow } from './Arrows';
 
 export default function Carousel() {
   const settings = {
     dots: false,
-    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 4500,
-    pauseOnFocus: false,
+    autoplaySpeed: 5500,
+    pauseOnFocus: true,
     pauseOnHover: false,
+    prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
+    nextArrow: <CustomNextArrow />, // Your custom next arrow component
   };
 
   return (
@@ -28,12 +30,14 @@ export default function Carousel() {
           </div>
         </div>
         <div className='z-0'>
-          <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide2})` }}></div>
+          <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide2})` }}></div>
         </div>
         <div className='z-0'>
-          <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide3})` }}></div>
+          <div className="h-screen bg-cover bg-right" style={{ backgroundImage: `url(${slide3})` }}></div>
         </div>
-
+        <div className='z-0'>
+          <div className="h-screen bg-cover bg-left" style={{ backgroundImage: `url(${slide2})` }}></div>
+        </div>
       </Slider>
 
 

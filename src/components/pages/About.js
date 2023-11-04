@@ -1,46 +1,57 @@
 import { Parallax } from 'react-scroll-parallax';
 import aboutBg from '../../assets/img/backgrounds/paintedGirl.png';
 import Rating from '../misc/Rating';
-import logo from '../../assets/img/logos/logo.png';
 
 export default function About({ toggleBooking, navAboutRef }) {
   return (
-    <div id='about' className='h-full text-stone-950'>
-      <div>
-        <div className='flex flex-col justify-center lg:w-3/4 mt-6 lg:mx-auto text-center'>
-          <div className='border-t border-stone-900'>
-          <h2 className='font2 text-7xl lg:text-9xl center text-stone-950 py-14 md:mb-24 z-10'>
-            Unlock
-            Your Hair's< br />
-            <span className='text-violet-700 font2'>Potential</span>.
-          </h2>
-          <div className='flex flex-col z-0'>
+    <div id='about' className='h-full text-stone-950 md:w-3/4 mx-auto'>
+        <div className='flex flex-col justify-center mt-6 lg:mx-auto text-center'>
+          <div>
+          {/* <h2 className='font2 text-4xl lg:text-5xl center text-stone-950 pt-14 z-10'>
+            EXCEPTIONAL HAIR SERVICES TAILORED TO YOUR NEEDS
+          </h2> */}
+              <h2 className='font2 text-6xl md:text-7xl text-center text-stone-950 px-4 pt-12 z-10'>
+                Unlock Your Hair's<br /><span className='text-lime-500 font2'>Potential<span className='text-stone-950'>.</span></span>
+              </h2>
+          {/* <div className='flex flex-col z-0'>
             <div className='relative px-8 w-full'>
               <Parallax speed={-1}>
-                <img className='mx-auto z-0 rotate-2' src={aboutBg} alt='Grunge style women'></img>
+                <img className='mx-auto w-1/2 z-0 rotate-2 rounded-full' src={aboutBg} alt='Grunge style women'></img>
               </Parallax>
-              {/* <p className='absolute w-3/4 p-4 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-black bg-opacity-75'><em>“Life is more beautiful when you meet the right hairdresser.”<br></br><small className='mt-3 text-sm'> – Peter Coppola</small></em></p> */}
             </div>
-            </div>
-            <div className='py-6 md:py-10 z-10 bg-stone-900 border-t border-stone-950'>
-              <p className='text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide text-stone-100'>At <span className='font4'>Saints and Scissors,</span><br />we are more than just hairstylists - we are <strong>artists</strong>, <strong>creators</strong>, and <strong>visionaries</strong> dedicated to transforming your hair into a work of art. With a passion for perfection and an unwavering commitment to making you look and feel your best, we have become a go-to destination for exceptional hair design and care.</p>
-
-              <div className='flex flex-row justify-center rounded-r-lg my-12'>
-                <img className='w-4 h-4 opacity-10' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-20' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-30' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-40' src={logo} alt='Tiny Saints and Scissors logo'></img>
-                <img className='w-4 h-4 opacity-50' src={logo} alt='Tiny Saints and Scissors logo'></img>
-              </div>
+            </div> */}
+              <p className='pb-12 text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide  text-stone-700'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique salon experience that reflects the individuality and style of our salon. </p>
+              {/* We understand that everyone is unique and deserves to look their best, and that's why we bring our own distinct sets of skills and styles to every appointment.  */}
+              <div className='flex justify-center my-20'>
+                        <button
+                            onClick={() => { toggleBooking(true); }}
+                            className=' px-8 py-2 border border-stone-950 text-black hover:bg-stone-300'>
+                            VIEW OUR SERVICES
+                        </button>
+                        </div>
+              {/* <hr />
               <div className='w-5/6 py-4 mx-auto z-0'>
                 <Rating />
-              </div>
-              {/* <button onClick={() => { toggleBooking(true); }} className='py-2 px-12 font-extrabold border border-lime-400 text-stone-300'>BOOK NOW</button> */}
+              </div> */}
+              {/* <div className='flex flex-row justify-center rounded-r-lg my-12'>
+                <img className='w-3 h-3 opacity-10' src={logo} alt='Tiny Saints and Scissors logo'></img>
+                <img className='w-3 h-3 opacity-20' src={logo} alt='Tiny Saints and Scissors logo'></img>
+                <img className='w-3 h-3 opacity-30' src={logo} alt='Tiny Saints and Scissors logo'></img>
+                <img className='w-3 h-3 opacity-40' src={logo} alt='Tiny Saints and Scissors logo'></img>
+                <img className='w-3 h-3 opacity-50' src={logo} alt='Tiny Saints and Scissors logo'></img>
+              </div> */}
+            {/* <div className='flex flex-col z-0'>
+            <div className='relative w-full'>
+              <Parallax speed={-1}>
+                <img className='mx-auto w-full z-0' src={logo} alt='Grunge style women'></img>
+              </Parallax>
+
             </div>
+              </div> */}
+              {/* <button onClick={() => { toggleBooking(true); }} className='py-2 px-12 font-extrabold border border-lime-400 text-stone-300'>BOOK NOW</button> */}
 
           </div>
         </div>
-      </div>
 
       {/* <hr className='w-full lg:w-5/6 mx-auto my-6 md:my-24 bg-stone-950'></hr> */}
     </div>

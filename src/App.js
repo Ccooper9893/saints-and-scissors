@@ -7,7 +7,6 @@ import Navbar from './components/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
-import bgBtm from './assets/img/backgrounds/bottom-white.png';
 
 export default function App() {
 
@@ -45,16 +44,13 @@ export default function App() {
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
-      {/* <div className='fixed h-screen w-full -bottom-24 md:bottom-0 md:fixed z5'>
-        <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgBtm})` }}>
-        </div>
-      </div> */}
+
       <Home toggleBooking={toggleBooking} />
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
-      <div className='relative z-20 bgGradient' ref={navAboutRef}>
-
-        <About navAboutRef={navAboutRef} />
+      <div className='relative z-20 bg-stone-100' ref={navAboutRef}>
+        <div className='w-full mx-auto'>
+        <About toggleBooking={toggleBooking} navAboutRef={navAboutRef} />
         <Services toggleBooking={toggleBooking} navServicesRef={navServicesRef} />
         {/* <div id='services' className='h-screen bg-black' ref={navServicesRef}>
           <h2 className='text-6xl'>We Know Hair.</h2>
@@ -69,7 +65,7 @@ export default function App() {
         <div id='contact' className='h-screen' ref={navContactRef}>
         </div>
       </div>
-
+      </div>
     </ParallaxProvider>
   );
 };

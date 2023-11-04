@@ -50,13 +50,13 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto md:mx-12 bg-stone-300 mb-10 shadow-inner shadow-stone-900'>
+            <div className='mx-auto md:mx-24 bg-stone-400 mb-10 border border-stone-200 shadow-inner shadow-stone-950 bg-opacity-30'>
                 {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
-                            <div className='flex flex-col justify-center my-4 text-center' key={review.review.length}>
-                                <p className='text-md md:text-4xl p-5 text-black'>"{review.review}"</p>
+                            <div className='flex flex-col justify-center my-4 text-center text-stone-900' key={review.review.length}>
+                                <p className='text-md p-5'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -68,7 +68,12 @@ export default function Rating() {
                 {/* <div className='bgGraffiti h-96 rotate-90 bg-opacity-20'>
                 <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
             </div> */}
-                <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8 normal-case bg-stone-900 bg-opacity-70'>See More Reviews {'\u2192'}</a></p>
+                {/* <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8'>MORE REVIEWS {'\u2192'}</a></p> */}
+                <button
+                    href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' 
+                    className='my-6 px-8 py-2 border border-stone-500 shadow-sm shadow-stone-600 text-stone-900 hover:shadow-stone-400'>
+                            More Reviews
+                </button>
             </div>
         </>
     )
