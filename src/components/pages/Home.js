@@ -14,12 +14,20 @@ export default function Home({ toggleBooking, navRef }) {
                 src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
             </motion.img>
-            <motion.img
+            {/* <motion.img
                 initial={{ opacity: 0, y: -4 }}
                 whileInView={{ opacity: 1, y: 40 }}
                 transition={{ ease: "easeOut", duration: 1, delay: .5 }}
                 className='absolute h-5/6 top-0 z4 md:hidden'
                 src={titleAndLogoV}
+                alt='Saints and Scissors Logo'>
+            </motion.img> */}
+            <motion.img
+                initial={{ opacity: 0, y: -4 }}
+                whileInView={{ opacity: 1, y: 40 }}
+                transition={{ ease: "easeOut", duration: 1, delay: .5 }}
+                className='fixed top-24 z4 md:hidden'
+                src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
             </motion.img>
             <motion.p
@@ -41,8 +49,8 @@ export default function Home({ toggleBooking, navRef }) {
                 className='fixed right-1/4 md:right-6 bottom-6 md:bottom-4 tracking-widest z-10 w-1/2 md:w-1/4 py-1 md:py-3 font-extrabold bg-lime-500 bg-opacity-80 text-stone-950 shadow-lg hover:shadow-stone-700 shadow-stone-950'>
                 BOOK NOW
             </motion.button>
-            <motion.p className='absolute bottom-0 w-full text-center text-stone-950 z-10 animate-bounce'>&#9660;</motion.p>
-            <Parallax speed={-10}>
+            <motion.p className='fixed bottom-0 w-full text-center text-stone-200 z-10 animate-bounce'>&#9660;</motion.p>
+            <Parallax speed={-5}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

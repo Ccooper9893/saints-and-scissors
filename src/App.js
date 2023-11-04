@@ -22,7 +22,7 @@ export default function App() {
   const isInView3 = useInView(navStylistsRef);
   const isInView4 = useInView(navGalleryRef);
   const isInView5 = useInView(navContactRef);
-  
+
   const [navVisible, setNavVisible] = useState(false);
 
   //Booking drawer toggle
@@ -32,7 +32,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    if(isInView || isInView2 || isInView3 || isInView4 || isInView5) {
+    if (isInView || isInView2 || isInView3 || isInView4 || isInView5) {
       setNavVisible(true);
     } else {
       setNavVisible(false);
@@ -41,15 +41,15 @@ export default function App() {
   }, [isInView, isInView2, isInView3, isInView4, isInView5])
 
   return (
-    
+
     <ParallaxProvider>
 
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
-      <div className='fixed h-screen w-full -bottom-24 md:bottom-0 md:fixed z5'>
-          <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgBtm})` }}>
-          </div>
-          </div>
-      <Home toggleBooking={toggleBooking}/>
+      {/* <div className='fixed h-screen w-full -bottom-24 md:bottom-0 md:fixed z5'>
+        <div className="h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bgBtm})` }}>
+        </div>
+      </div> */}
+      <Home toggleBooking={toggleBooking} />
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
       <div className='relative z-20 bgGradient' ref={navAboutRef}>
