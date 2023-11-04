@@ -5,7 +5,7 @@ import Rating from '../misc/Rating';
 export default function About({ toggleBooking, navAboutRef }) {
   return (
     <div id='about' className='h-full text-stone-950 md:w-3/4 mx-auto'>
-        <div className='flex flex-col justify-center mt-6 lg:mx-auto text-center'>
+        <div className='flex flex-col justify-center pt-4 lg:mx-auto text-center'>
           <div>
           {/* <h2 className='font2 text-4xl lg:text-5xl center text-stone-950 pt-14 z-10'>
             EXCEPTIONAL HAIR SERVICES TAILORED TO YOUR NEEDS
@@ -13,6 +13,7 @@ export default function About({ toggleBooking, navAboutRef }) {
               <h2 className='font2 text-6xl md:text-7xl text-center text-stone-950 px-4 pt-12 z-10'>
                 Unlock Your Hair's<br /><span className='text-lime-500 font2'>Potential<span className='text-stone-950'>.</span></span>
               </h2>
+              <hr className='w-5/6 mx-auto my-6 bg-stone-950'></hr>
           {/* <div className='flex flex-col z-0'>
             <div className='relative px-8 w-full'>
               <Parallax speed={-1}>
@@ -53,7 +54,7 @@ export default function About({ toggleBooking, navAboutRef }) {
           </div>
         </div>
 
-      {/* <hr className='w-full lg:w-5/6 mx-auto my-6 md:my-24 bg-stone-950'></hr> */}
+
     </div>
   )
 }

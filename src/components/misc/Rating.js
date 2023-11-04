@@ -11,7 +11,7 @@ import { CustomPrevArrow, CustomNextArrow } from './Arrows';
 export default function Rating() {
 
     const settings = {
-        dots: false,
+        dots: true,
         prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
         nextArrow: <CustomNextArrow />, // Your custom next arrow component
         infinite: true,
@@ -50,13 +50,13 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto md:mx-24 bg-stone-400 mb-10 border border-stone-200 shadow-inner shadow-stone-950 bg-opacity-30'>
+            <div className='mx-auto md:mx-24 bg-stone-800 mb-10 shadow-inner shadow-stone-300'>
                 {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
-                            <div className='flex flex-col justify-center my-4 text-center text-stone-900' key={review.review.length}>
-                                <p className='text-md p-5'>"{review.review}"</p>
+                            <div className='flex flex-col justify-center my-4 text-center text-stone-200' key={review.review.length}>
+                                <p className='text-lg p-5'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -69,11 +69,13 @@ export default function Rating() {
                 <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
             </div> */}
                 {/* <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8'>MORE REVIEWS {'\u2192'}</a></p> */}
+                <div className='flex justify-center'>
                 <button
                     href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' 
-                    className='my-6 px-8 py-2 border border-stone-500 shadow-sm shadow-stone-600 text-stone-900 hover:shadow-stone-400'>
+                    className='my-8 px-8 py-2 border border-stone-300 shadow-sm shadow-stone-600 text-stone-200 hover:shadow-stone-400'>
                             More Reviews
                 </button>
+                </div>
             </div>
         </>
     )

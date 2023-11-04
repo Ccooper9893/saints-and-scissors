@@ -5,11 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import slide1 from '../../assets/img/backgrounds/slides-home-1.jpg';
 import slide2 from '../../assets/img/backgrounds/slides-home-2.jpg';
 import slide3 from '../../assets/img/backgrounds/slides-home-3.jpg';
-import { CustomPrevArrow, CustomNextArrow } from './Arrows';
 
 export default function Carousel() {
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
@@ -17,10 +17,10 @@ export default function Carousel() {
     fade: true,
     autoplay: true,
     autoplaySpeed: 5500,
-    pauseOnFocus: true,
+    pauseOnFocus: false,
     pauseOnHover: false,
-    prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
-    nextArrow: <CustomNextArrow />, // Your custom next arrow component
+    // prevArrow: <CustomPrevArrow />, 
+    // nextArrow: <CustomNextArrow />, 
   };
 
   return (
