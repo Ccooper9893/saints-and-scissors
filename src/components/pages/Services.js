@@ -11,7 +11,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         <img className='md:w-5/6 mx-auto shadow-inner shadow-stone-900' src={logo} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
                     <div className='md:hidden'>
-                        <img className='bg-stone-200' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
+                        <img className='bg-stone-200 pt-12' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
                     <div className='mt-6 md:mt-28 md:mx-16 md:w-3/5 text-center'>
                         <h2 className='text-stone-900 font2 text-4xl py-4 md:text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-700 font2'>Unique</span> Style</h2>
