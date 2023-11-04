@@ -27,7 +27,7 @@ export default function About({ toggleBooking, navAboutRef }) {
                         <button
                             onClick={() => { toggleBooking(true); }}
                             className=' px-8 py-2 border border-stone-950 text-black hover:bg-stone-300'>
-                            VIEW OUR SERVICES
+                            BOOK AN APPOINTMENT
                         </button>
                         </div>
               {/* <hr />
