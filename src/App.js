@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
+import Stylists from './components/pages/Stylists';
 
 export default function App() {
 
@@ -50,21 +51,14 @@ export default function App() {
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
       <div className='relative z-20 bg-stone-100' ref={navAboutRef}>
         <div className='w-full mx-auto'>
-        <About toggleBooking={toggleBooking} navAboutRef={navAboutRef} />
-        <Services toggleBooking={toggleBooking} navServicesRef={navServicesRef} />
-        {/* <div id='services' className='h-screen bg-black' ref={navServicesRef}>
-          <h2 className='text-6xl'>We Know Hair.</h2>
-        </div> */}
 
-        <div id='stylists' className='h-screen' ref={navStylistsRef}>
-        </div>
+          <About toggleBooking={toggleBooking} navAboutRef={navAboutRef} />
 
-        <div id='gallery' className='h-screen' ref={navGalleryRef}>
-        </div>
+          <Services toggleBooking={toggleBooking} navServicesRef={navServicesRef} />
 
-        <div id='contact' className='h-screen' ref={navContactRef}>
+          <Stylists toggleBooking={toggleBooking} navStylistsRef={navStylistsRef} />
+
         </div>
-      </div>
       </div>
     </ParallaxProvider>
   );

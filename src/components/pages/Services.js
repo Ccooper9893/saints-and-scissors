@@ -1,16 +1,20 @@
 import Rating from '../misc/Rating';
 import logo from '../../assets/img/backgrounds/serviceBg.jpg';
+import girl from '../../assets/img/backgrounds/paintedGirl.png';
 import { Parallax } from 'react-scroll-parallax';
 export default function Services({ toggleBooking, navServicesRef }) {
     return (
         <div id='services'>
             <div ref={navServicesRef}>
-                <div className='flex flex-col lg:flex-row bg-stone-900 my-12 md:py-12'>
-                    <div className='p-6 md:p-12 md:py-12 shadow-inner shadow-stone-900 bg-stone-800'>
-                        <img className='md:w-3/4 mx-auto shadow-inner shadow-stone-900' src={logo} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
+                <div className='flex flex-col lg:flex-row bg-stone-200 md:bg-stone-900 mt-12 md:py-24'>
+                    <div className='hidden md:block border border-stone-950 md:p-8 shadow-inner shadow-stone-900 md:bg-stone-300'>
+                        <img className='md:w-5/6 mx-auto shadow-inner shadow-stone-900' src={logo} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
-                    <div className='mt-6 md:mt-44 md:mx-16 md:w-3/5 text-center'>
-                        <h2 className='text-stone-200 font2 text-4xl py-4 md:text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-700 font2'>Unique</span> Style</h2>
+                    <div className='md:hidden'>
+                        <img className='bg-stone-200' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
+                    </div>
+                    <div className='mt-6 md:mt-28 md:mx-16 md:w-3/5 text-center'>
+                        <h2 className='text-stone-900 font2 text-4xl py-4 md:text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-700 font2'>Unique</span> Style</h2>
                         <p className='text-xl md:right md:mx-auto p-2 tracking-wide text-stone-400'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling confident, beautiful, and absolutely unique. We offer a wide range of services to cater to your unique preferences and needs.</p>
                         {/* <div className='w-5/6 py-24 mx-auto z-0'>
                             <Rating />
@@ -18,7 +22,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         <div className='flex justify-center my-20'>
                         <button
                             onClick={() => { toggleBooking(true); }}
-                            className=' px-8 py-2 border border-stone-200 text-stone-200 hover:bg-stone-900'>
+                            className=' px-8 py-2 border border-stone-950 text-stone-950 hover:bg-stone-900'>
                             VIEW OUR SERVICES
                         </button>
                         </div>
