@@ -9,7 +9,7 @@ import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Stylists from './components/pages/Stylists';
 import Contact from './components/pages/Contact';
-
+import Footer from './components/Footer';
 
 export default function App() {
   const navAboutRef = useRef(null);
@@ -60,6 +60,8 @@ export default function App() {
           <Stylists toggleBooking={toggleBooking} navStylistsRef={navStylistsRef} />
 
           <Contact toggleBooking={toggleBooking} navContactRef={navContactRef} />
+
+          <Footer />
 
         </div>
       </div>

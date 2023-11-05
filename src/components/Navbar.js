@@ -61,7 +61,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                             <li><a href='#about'>ABOUT</a></li>
                             <li><a href='#services'>SERVICES</a></li>
                             <li><a href='#stylists'>STYLISTS</a></li>
-                            <li><a href='#gallery'>GALLERY</a></li>
+                            {/* <li><a href='#gallery'>GALLERY</a></li> */}
                             <li><a href='#contact'>CONTACT</a></li>
                         </ul>
                     </div>
@@ -88,8 +88,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                                         <img className="mx-auto p-3" src={logoSmall} alt="Hair stylist clippers with wings logo" />
                                         <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
                                     </div>
-                                    {/* { iframeLoaded ? <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> : null} */}
-                                    <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe>
+                                    {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe> */}
                                 </div>
                             </div>
                         </div>
@@ -104,7 +103,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     <li><a href='#about' onClick={() => { toggleNav(); }}>About</a></li>
                     <li><a href='#services' onClick={() => { toggleNav(); }}>Services</a></li>
                     <li><a href='#stylists' onClick={() => { toggleNav(); }}>Stylists</a></li>
-                    <li><a href='#gallery' onClick={() => { toggleNav(); }}>Gallery</a></li>
+                    {/* <li><a href='#gallery' onClick={() => { toggleNav(); }}>Gallery</a></li> */}
                     <li><a href='#contact' onClick={() => { toggleNav(); }}>Contact</a></li>
                 </ul>
             </div>
