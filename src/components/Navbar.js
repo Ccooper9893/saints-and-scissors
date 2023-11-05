@@ -80,7 +80,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     </div>
                     <div className="drawer-side z-50">
                         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <div className="w-full md:w-3/4 min-h-full bg-stone-950">
+                        <div className="w-full md:w-1/2 min-h-full bg-stone-950">
                             {/* Sidebar content here */}
                             <div className="w-full h-screen text-center">
                                 <div className="h-full">
@@ -89,7 +89,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                                         <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
                                     </div>
                                     {/* { iframeLoaded ? <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="W3Schools Free Online Web Tutorials"></iframe> : null} */}
-                                    <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/book-now" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe>
+                                    <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
