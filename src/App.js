@@ -8,9 +8,10 @@ import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Stylists from './components/pages/Stylists';
+import Contact from './components/pages/Contact';
+
 
 export default function App() {
-
   const navAboutRef = useRef(null);
   const navServicesRef = useRef(null);
   const navStylistsRef = useRef(null);
@@ -57,6 +58,8 @@ export default function App() {
           <Services toggleBooking={toggleBooking} navServicesRef={navServicesRef} />
 
           <Stylists toggleBooking={toggleBooking} navStylistsRef={navStylistsRef} />
+
+          <Contact toggleBooking={toggleBooking} navContactRef={navContactRef} />
 
         </div>
       </div>

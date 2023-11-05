@@ -48,12 +48,13 @@ export default function Rating() {
 
     return (
         <>
-            <div className='mx-auto md:mx-24 bg1 shadow-inner shadow-stone-950'>
-                {/* <h2 className='text-center text-stone-50 text-3xl font3 bg-black bg-opacity-50 border-b border-lime-900'>Customer Testimony</h2> */}
+                        <h2 className='text-2xl text-stone-900 font4 py-2 text-center'>Testimonials</h2>
+            <div className='mx-auto md:mx-24 bg-stone-100 shadow-inner shadow-stone-300'>
+
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
-                            <div className='flex flex-col justify-center my-4 text-center text-stone-950' key={review.review.length}>
+                            <div className='flex flex-col justify-center my-4 text-center text-stone-800' key={review.review.length}>
                                 {/* <img className='w-6 h-6 mx-auto mt-2 opacity-50' src={logo}></img> */}
                                 <p className='text-xl p-5'>"{review.review}"</p>
                                 <div className='w-full'>

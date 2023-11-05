@@ -36,7 +36,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                 {/* Navbar */}
                 <motion.div
                     initial={{ opacity: 0 }} // Initial animation state
-                    animate={navVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
+                    animate={navVisible ? { opacity: 1 } : { opacity: 0, }} // Animate based on visibility
                     transition={{ duration: 1 }} // Animation duration 
                     className="fixed w-full navbar justify-between md:justify-around py-2 bg-stone-950">
                     <div className="flex justify-start lg:hidden w-24">

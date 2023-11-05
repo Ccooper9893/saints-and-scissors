@@ -119,3 +119,7 @@ tr {
 .z4 {
   z-index: 4 !important;
 }
+
+.bgCustom {
+  background-color: #F0F0F0;
+}
