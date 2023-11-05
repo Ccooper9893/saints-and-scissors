@@ -88,7 +88,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                                         <img className="mx-auto p-3" src={logoSmall} alt="Hair stylist clippers with wings logo" />
                                         <button onClick={() => { toggleBooking(false); }} className="btn btn-sm absolute top-0 right-0 h-16 w-16 text-white" aria-label="Close Vagaro booking drawer">✕</button>
                                     </div>
-                                    {/* <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe> */}
+                                    <iframe className="h-full w-full" src="https://www.vagaro.com/saintsandscissors/services" title="Vagaro Saints and Scissors Booking Service"                            loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
