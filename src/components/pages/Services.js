@@ -13,17 +13,85 @@ export default function Services({ toggleBooking, navServicesRef }) {
                     <div className='md:hidden'>
                         <img className='bg-stone-200 pt-12 opacity-80' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
-                    <div className='mt-6 md:mt-28 md:mx-2 md:w-3/5 text-center'>
+                    <div className='mt-6 md:mx-2 md:w-3/5 text-center'>
                         <h2 className='text-stone-900 font2 py-4 text-5xl md:text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-500 font2'>Unique</span> Style</h2>
 
-                        <p className='text-xl md:right md:mx-auto py-2 px-10 tracking-wide text-stone-700'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling confident, beautiful, and absolutely unique. We offer a wide range of services to cater to your unique preferences and needs.</p>
-                        <div className='flex justify-center my-20'>
+                        <p className='text-xl md:right md:mx-auto py-2 px-10 tracking-wide text-stone-600'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling confident, beautiful, and absolutely unique. We offer a wide range of services to cater to your unique preferences and needs.</p>
+                        <div className="my-10 mx-6 bg-stone-800 shadow-inner shadow-stone-400">
+                            <h2 className='text-center text-2xl py-4 text-stone-100'>CUTS AND STYLING</h2>
+                            <table className="table text-stone-300">
+                                <tbody>
+                                    <tr>
+                                        <td>Womans Cut and Blowdry</td>
+                                        <td></td>
+                                        <td>$60+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blowdry Style</td>
+                                        <td></td>
+                                        <td>$50+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mens Cut</td>
+                                        <td></td>
+                                        <td>$40+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mens Cut and Color</td>
+                                        <td></td>
+                                        <td>$75+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conditioning Treatment &amp; Blowdry</td>
+                                        <td></td>
+                                        <td>$70+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Single Process Color</td>
+                                        <td></td>
+                                        <td>$85+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Touch up</td>
+                                        <td></td>
+                                        <td>$70+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bleach Retouch</td>
+                                        <td></td>
+                                        <td>$85+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Partial Highlight</td>
+                                        <td></td>
+                                        <td>$120+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Full Highlight</td>
+                                        <td></td>
+                                        <td>$160+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Color Correction</td>
+                                        <td></td>
+                                        <td>By Consultation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extensions</td>
+                                        <td></td>
+                                        <td>By Consultation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div className='flex justify-center py-12'>
                             <button
                                 onClick={() => { toggleBooking(true); }}
-                                className=' px-8 py-2 border border-stone-900 text-stone-900 hover:bg-stone-300'>
-                                VIEW OUR SERVICES
+                                className=' px-8 py-2 bg-stone-100 border border-stone-900 text-stone-900 hover:bg-stone-300'>
+                                VIEW ALL SERVICES
                             </button>
                         </div>
+                        </div>
+
                         {/* <hr className='mx-6 mt-16 bg-stone-950'></hr>
                         <div className='w-5/6 md:w-full py-12 md:py-4 md:bg-stone-300 mx-auto z-0'>
                             <Rating />
