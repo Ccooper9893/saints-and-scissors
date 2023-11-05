@@ -12,7 +12,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
             <div ref={navStylistsRef}>
                 <div className="md:w-4/5 mx-auto py-16">
                     <div className='flex-row flex-wrap'>
-                        <img className='mx-auto h-10 -rotate-12 my-6' src={scissors}></img>
+                        <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
                         <h2 className='text-stone-900 text-center font2 text-4xl md:text-5xl px-4 md:px-12 uppercase'>MEET THE SAINTS <br />BEHIND THE SCISSORS</h2>
 
                     </div>
@@ -23,7 +23,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={sherriPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600'></img>
+                                <img src={sherriPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Sherri'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -36,7 +36,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={juliPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 '></img>
+                                <img src={juliPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 ' alt='Expert Stylist Juli'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -47,7 +47,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={amandaPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600'></img>
+                                <img src={amandaPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Amanda'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -60,7 +60,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={kendalPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 '></img>
+                                <img src={kendalPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 ' alt='Expert Stylist Kendal'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -71,7 +71,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={paulPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600'></img>
+                                <img src={paulPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -83,7 +83,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
                         <div className='flex justify-items-start'>
                             <div className='w-3/4 md:w-full mx-auto'>
-                                <img src={ccPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 '></img>
+                                <img src={ccPhoto} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600 ' alt='Expert Stylist CC'></img>
                             </div>
                         </div>
                         <div className='text-center md:text-left text-stone-950 mt-2 mb-12'>
@@ -95,7 +95,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
 
                     </div>
-                    <hr className='mx-6 my-6 bg-stone-500'></hr>
+                    <hr className='mx-6 my-6 bg-stone-800'></hr>
                 </div>
             </div>
         </div>

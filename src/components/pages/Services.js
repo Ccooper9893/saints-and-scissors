@@ -14,9 +14,9 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         <img className='bgGradient pt-12' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
                     <div className='mt-6 md:mt-28 md:mx-2 md:w-3/5 text-center'>
-                        <h2 className='text-stone-950 font2 py-4 text-4xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-700 font2'>Unique</span> Style</h2>
+                        <h2 className='text-stone-950 font2 py-4 text-5xl md:text-7xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-700 font2'>Unique</span> Style</h2>
                         
-                        <p className='text-xl md:right md:mx-auto p-2 tracking-wide text-stone-800'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling confident, beautiful, and absolutely unique. We offer a wide range of services to cater to your unique preferences and needs.</p>
+                        <p className='text-xl md:right md:mx-auto p-2 tracking-wide text-stone-900'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling confident, beautiful, and absolutely unique. We offer a wide range of services to cater to your unique preferences and needs.</p>
                         <div className='flex justify-center my-20'>
                             <button
                                 onClick={() => { toggleBooking(true); }}
