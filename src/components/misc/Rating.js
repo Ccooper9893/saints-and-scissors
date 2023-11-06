@@ -49,7 +49,7 @@ export default function Rating() {
     return (
         <>
 {/* <h2 className='text-2xl text-stone-900 font4 py-2 text-center'></h2> */}
-            <div className='mx-auto md:mx-24 bg-slate-50 shadow-inner shadow-stone-500'>
+            <div className='mx-auto md:mx-24 bg-stone-300 shadow-inner shadow-stone-900'>
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (

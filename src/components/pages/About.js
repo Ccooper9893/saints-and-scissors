@@ -3,14 +3,14 @@ import Rating from '../misc/Rating';
 
 export default function About({ toggleBooking }) {
   return (
-    <div id='about' className='h-full text-stone-950 md:w-3/4 mx-auto bg-stone-100 z-10'>
+    <div id='about' className='h-full text-stone-200 md:w-3/4 mx-auto bg-stone-900 z-10'>
       <div className='flex flex-col justify-center pt-4 pb-20 lg:mx-auto text-center'>
         <div>
           {/* <h2 className='font2 text-4xl lg:text-5xl center text-stone-950 pt-14 z-10'>
             EXCEPTIONAL HAIR SERVICES TAILORED TO YOUR NEEDS
           </h2> */}
           <h2 className='font2 text-7xl md:text-7xl text-center text-stone-950 px-4 pt-12 z-10'>
-            Unlock Your Hair's<br /><span className='text-lime-500 font2'>Potential<span className='text-stone-950'>.</span></span>
+            Unlock Your Hair's<br /><span className='text-lime-400 font2'>Potential<span className='text-stone-950'>.</span></span>
           </h2>
           <hr className='w-5/6 mx-auto my-6 bg-stone-950'></hr>
           {/* <div className='flex flex-col z-0'>
@@ -20,7 +20,7 @@ export default function About({ toggleBooking }) {
               </Parallax>
             </div>
             </div> */}
-          <p className='pb-12 text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide  text-stone-700'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique <strong>full-service salon experience.</strong> Come and discover the artistry of hair styling at our salon – where beauty is not just a result, but a journey.</p>
+          <p className='pb-12 text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide  text-stone-300'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique <strong>full-service salon experience.</strong> Come and discover the artistry of hair styling at our salon – where beauty is not just a result, but a journey.</p>
           <hr className='mx-6 mt-16 bg-stone-950'></hr>
           <div className='w-5/6 py-12 md:py-4 mx-auto z-0'>
             <Rating />
@@ -29,7 +29,7 @@ export default function About({ toggleBooking }) {
           <div className='flex justify-center my-20'>
             <a
               href='#stylists'
-              className=' px-8 py-2 border border-stone-950 text-black hover:bg-stone-300'>
+              className=' px-8 py-2 border border-stone-200 text-stone-200 hover:bg-stone-800'>
               MEET OUR STYLISTS
             </a>
           </div>

@@ -4,7 +4,7 @@ import scissors from '../../assets/img/icons/scissors.png';
 
 export default function Services({ toggleBooking, navServicesRef }) {
     return (
-        <div id='services' className=' bg-zinc-200 shadow shadow-stone-900 border-b border-stone-900 pb-24'>
+        <div id='services' className=' bg-stone-800 shadow shadow-stone-900 border-b border-stone-500 pb-24'>
             <div ref={navServicesRef}>
                 <div className='flex flex-col lg:flex-row mt-12 md:py-24'>
                     <div className='hidden h-1/2 md:block md:ml-4 md:p-8 '>
@@ -14,10 +14,10 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         <img className='bg-stone-100 pt-12 opacity-80' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                     </div>
                     <div className='mt-6 md:mx-2 md:w-3/5 text-center'>
-                        <h2 className='text-stone-900 font2 py-4 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-500 font2'>Unique</span> Style.</h2>
+                        <h2 className='text-stone-200 font2 py-4 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-500 font2'>Unique</span> Style.</h2>
 
-                        <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-600'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
-                        <div className="py-8 mt-24 mx-6 md:mx-24 lg:mx-44 bg-stone-100 shadow-inner shadow-stone-800">
+                        <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-300'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
+                        <div className="py-8 mt-24 mx-6 md:mx-24 lg:mx-44 bg-stone-200 shadow-inner shadow-stone-800">
                         <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
                             <h2 className='text-center text-2xl py-4 text-stone-900'>CUTS AND STYLING</h2>
                             <table className="table text-lg text-stone-700">
