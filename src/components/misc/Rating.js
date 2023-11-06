@@ -48,15 +48,14 @@ export default function Rating() {
 
     return (
         <>
-                        <h2 className='text-2xl text-stone-900 font4 py-2 text-center'>Testimonials</h2>
-            <div className='mx-auto md:mx-24 bg-stone-100 shadow-inner shadow-stone-300'>
-
+{/* <h2 className='text-2xl text-stone-900 font4 py-2 text-center'></h2> */}
+            <div className='mx-auto md:mx-24 bg-slate-50 shadow-inner shadow-stone-500'>
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
                             <div className='flex flex-col justify-center my-4 text-center text-stone-800' key={review.review.length}>
                                 {/* <img className='w-6 h-6 mx-auto mt-2 opacity-50' src={logo}></img> */}
-                                <p className='text-xl p-5'>"{review.review}"</p>
+                                <p className='text-xl p-5 font-medium'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -69,13 +68,13 @@ export default function Rating() {
                 <h2 className='rotate-180 text-5xl text-center'>WE KNOW HAIR.</h2>
             </div> */}
                 {/* <p className='text-center'><a href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' className='btn mb-8'>MORE REVIEWS {'\u2192'}</a></p> */}
-                <div className='flex justify-center'>
+                {/* <div className='flex justify-center'>
                 <a
                     href='https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale' target='_blank' rel='noreferrer' 
                     className='my-8 px-8 py-2 border bg-stone-100 border-stone-300 shadow-sm shadow-stone-600 text-stone-950 hover:shadow-stone-400'>
                             Leave us a review!
                 </a>
-                </div>
+                </div> */}
             </div>
         </>
     )

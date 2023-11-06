@@ -43,20 +43,20 @@ export default function Home({ toggleBooking, navRef }) {
                 >Where the hair is as important as the atmosphere.
                 </span>
             </motion.p> */}
-            <motion.a
+            {/* <motion.a
                 initial={{ opacity: 0, x: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 href='#contact'
                 className='fixed text-center bottom-24 right-1/4 md:right-24 tracking-widest z-10 w-1/2 md:w-1/5 py-1 md:py-1 border border-stone-100 text-stone-100 bg-white bg-opacity-10 hover:bg-opacity-60'>
                 CONTACT US
-            </motion.a>
+            </motion.a> */}
             <motion.button
                 initial={{ opacity: 0, x: 0 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-1/4 md:right-24 bottom-12 md:bottom-8 tracking-widest z-10 w-1/2 md:w-1/5 py-1 md:py-1  border border-stone-100 text-stone-100 bg-white bg-opacity-10 hover:bg-opacity-60'>
+                className='fixed right-1/4 lg:hidden bottom-12 md:bottom-8 tracking-widest z-10 w-1/2 py-1 text-stone-950 bg-lime-400 bg-opacity-70'>
                 BOOK ONLINE
             </motion.button>
             <motion.a href='#about' className='fixed bottom-4 text-sm w-full text-center text-stone-200 z-10 animate-bounce'>&#9660;</motion.a>

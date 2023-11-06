@@ -136,4 +136,5 @@ tr {
  tr td:nth-child(3) {
    text-align: right;
    color: #37d210;
+   font-weight: 600;
  }

@@ -7,7 +7,7 @@ export default function Contact({ toggleBooking, navContactRef }) {
                     <div className="md:full p-8 md:order-1 bg-stone-900">
                         <div className="w-full md:w-full text-center">
                             <h3 className="text-5xl md:text-6xl font2 text-stone-200 mt-8 mb-2 uppercase">Ready to Transform Your Look?</h3>
-                            <p className="text-xl md:right md:mx-auto p-2 tracking-wide text-stone-400">Contact us to schedule your next hair transformation. We welcome walk-ins, offer easy online booking, and are just a phone call away for appointments that suit your style.</p>
+                            <p className="text-xl md:right md:mx-auto p-2 tracking-wide text-stone-400">Contact us to schedule your next hair transformation. We accept walk-ins on a first-come first-serve basis and offer easy online booking. Feel free to give us a call to book your appointment today!</p>
                             <div className='flex justify-center my-12'>
                                 <button
                                     onClick={() => { toggleBooking(true); }}

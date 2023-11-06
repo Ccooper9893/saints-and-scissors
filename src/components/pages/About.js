@@ -20,7 +20,11 @@ export default function About({ toggleBooking }) {
               </Parallax>
             </div>
             </div> */}
-          <p className='pb-12 text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide  text-stone-700'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique full-service salon experience. Come and discover the artistry of hair styling at our salon – where beauty is not just a result, but a journey.</p>
+          <p className='pb-12 text-xl md:text-2xl md:w-5/6 md:text-center md:mx-auto p-6 tracking-wide  text-stone-700'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique <strong>full-service salon experience.</strong> Come and discover the artistry of hair styling at our salon – where beauty is not just a result, but a journey.</p>
+          <hr className='mx-6 mt-16 bg-stone-950'></hr>
+          <div className='w-5/6 py-12 md:py-4 mx-auto z-0'>
+            <Rating />
+          </div>
           {/* We understand that everyone is unique and deserves to look their best, and that's why we bring our own distinct sets of skills and styles to every appointment.  */}
           <div className='flex justify-center my-20'>
             <a
