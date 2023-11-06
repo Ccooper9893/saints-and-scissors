@@ -3,7 +3,7 @@ import Rating from '../misc/Rating';
 
 export default function About({ toggleBooking }) {
   return (
-    <div id='about' className='h-full text-stone-200 w-3/4 mx-auto bg-stone-900 z-10'>
+    <div id='about' className='h-full text-stone-200 w-5/6 mx-auto bg-stone-900 z-10'>
       <div className='flex flex-col justify-center pt-4 pb-20 lg:mx-auto text-center'>
         <div>
           {/* <h2 className='font2 text-4xl lg:text-5xl center text-stone-950 pt-14 z-10'>
