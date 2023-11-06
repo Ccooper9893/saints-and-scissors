@@ -9,7 +9,7 @@ export default function About({ toggleBooking }) {
           {/* <h2 className='font2 text-4xl lg:text-5xl center text-stone-950 pt-14 z-10'>
             EXCEPTIONAL HAIR SERVICES TAILORED TO YOUR NEEDS
           </h2> */}
-          <h2 className='font2 text-5xl md:text-7xl text-center text-stone-100 px-4 pt-12 z-10'>
+          <h2 className='font2 text-6xl md:text-7xl text-center text-stone-100 px-4 pt-12 z-10'>
             Unlock Your Hair's<br /><span className='text-lime-400 font2'>Potential<span className='text-stone-950'>.</span></span>
           </h2>
           <hr className='w-5/6 mx-auto my-6 bg-stone-950'></hr>
