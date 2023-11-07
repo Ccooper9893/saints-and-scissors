@@ -50,7 +50,7 @@ export default function App() {
       <Home toggleBooking={toggleBooking} />
 
       {/* Main Pages (About, Services, Stylists, Gallery, Contact) */}
-      <div className='relative z-20 bg-stone-100' ref={navAboutRef}>
+      <div className='relative z-20 bg-stone-800' ref={navAboutRef}>
         <div className='w-full mx-auto'>
 
           <About toggleBooking={toggleBooking} navAboutRef={navAboutRef} />
