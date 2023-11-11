@@ -39,7 +39,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                             </div>
                         </motion.div>
                         <dialog id="paulModal" className="modal md:mt-6">
-                            <div className="modal-box pt-12 text-stone-900 bg-stone-200 text-center">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
                                 <form method="dialog">
                                     {/* if there is a button in form, it will close the modal */}
                                     <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
@@ -57,16 +57,12 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         <li>Conditioning - $20</li>
                                     </ul>
                                 </div>
-
                             </div>
                         </dialog>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-
-                            <p className='text-xl'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
-                        </div> */}
 
 
                         <motion.div
+                            onClick={() => document.getElementById('amandaModal').showModal()}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeOut", duration: 1 }}
@@ -76,13 +72,31 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                 <h3 className='text-2xl text-stone-700 font4 text-center py-2'>Amanda</h3>
                             </div>
                         </motion.div>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-                            <h3 className='text-2xl text-stone-700 font4'>Amanda</h3>
-                            <p className='text-xl'>Bringing a decade of hairstyling experience, my expertise lies in crafting stunning blonde hair, delivering exquisite balayage designs, and creating fabulous extensions. My passion extends from perfecting classic men's haircuts to trendy women's haircuts.</p>
-                        </div> */}
+                        <dialog id="amandaModal" className="modal md:mt-6">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
+                                </form>
+                                <img src={amandaPhoto} className='w-36 mx-auto bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                <h3 className="font-bold text-4xl">Hello, my name is Amanda!</h3>
+                                <p className='text-lg'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
+                                <hr className='mx-6 my-6 bg-stone-900'></hr>
+                                <div className='text-center bg-stone-300 shadow-inner shadow-stone-900 p-6'>
+                                    <h4 className='text-2xl font-bold'>Specialties/Pricing</h4>
+                                    <ul>
+                                        <li>Men's Haircut - $40</li>
+                                        <li>Woman's Haircut - $50</li>
+                                        <li>Blowdry &amp Style - $20</li>
+                                        <li>Conditioning - $20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dialog>
 
 
                         <motion.div
+                            onClick={() => document.getElementById('sherriModal').showModal()}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeOut", duration: 1.5 }}
@@ -92,15 +106,33 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                 <h3 className='text-2xl text-stone-700 font4 text-center py-2'>Sherri</h3>
                             </div>
                         </motion.div>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-                            <h3 className='text-2xl text-stone-700 font4'>Sherri</h3>
-                            <p className='text-xl'>I have been a stylist for 12 years specializing in healthy blonde hair, balayage, and extensions. I have styled several Phoenix Fashion week runway shows and photo shoots. I am great with Bridal Updo's and special occasion styles! I also offer an onsite bridal service to accommodate any of your needs for that Special day!</p>
-                        </div> */}
+                        <dialog id="sherriModal" className="modal md:mt-6">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
+                                </form>
+                                <img src={sherriPhoto} className='w-36 mx-auto bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                <h3 className="font-bold text-4xl">Hello, my name is Sherri!</h3>
+                                <p className='text-lg'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
+                                <hr className='mx-6 my-6 bg-stone-900'></hr>
+                                <div className='text-center bg-stone-300 shadow-inner shadow-stone-900 p-6'>
+                                    <h4 className='text-2xl font-bold'>Specialties/Pricing</h4>
+                                    <ul>
+                                        <li>Men's Haircut - $40</li>
+                                        <li>Woman's Haircut - $50</li>
+                                        <li>Blowdry &amp Style - $20</li>
+                                        <li>Conditioning - $20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dialog>
 
 
 
 
                         <motion.div
+                            onClick={() => document.getElementById('juliModal').showModal()}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeOut", duration: 1 }}
@@ -110,13 +142,31 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                 <h3 className='text-2xl text-stone-700 font4 text-center py-2'>Juli</h3>
                             </div>
                         </motion.div>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-                            <h3 className='text-2xl text-stone-700 font4'>Juli</h3>
-                            <p className='text-xl'>With over 15 years in the industry, I specialize in creating vibrant blonde hair, perfecting the art of balayage, and providing seamless extensions. I've honed my skills through years of crafting beautiful Bridal Updo's and special occasion styles.</p>
-                        </div> */}
+                        <dialog id="juliModal" className="modal md:mt-6">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
+                                </form>
+                                <img src={juliPhoto} className='w-36 mx-auto bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                <h3 className="font-bold text-4xl">Hello, my name is Juli!</h3>
+                                <p className='text-lg'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
+                                <hr className='mx-6 my-6 bg-stone-900'></hr>
+                                <div className='text-center bg-stone-300 shadow-inner shadow-stone-900 p-6'>
+                                    <h4 className='text-2xl font-bold'>Specialties/Pricing</h4>
+                                    <ul>
+                                        <li>Men's Haircut - $40</li>
+                                        <li>Woman's Haircut - $50</li>
+                                        <li>Blowdry &amp Style - $20</li>
+                                        <li>Conditioning - $20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dialog>
 
 
                         <motion.div
+                            onClick={() => document.getElementById('kendalModal').showModal()}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeOut", duration: 1.5 }}
@@ -126,14 +176,32 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                 <h3 className='text-2xl text-stone-700 font4 text-center py-2'>Kendal</h3>
                             </div>
                         </motion.div>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-                            <h3 className='text-2xl text-stone-700 font4'>Kendal</h3>
-                            <p className='text-xl'>8+ years of hairstyling experience have allowed me to specialize in creating beautiful and healthy blonde hair, mastering the art of balayage, and delivering exceptional results with extensions.</p>
-                        </div> */}
+                        <dialog id="kendalModal" className="modal md:mt-6">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
+                                </form>
+                                <img src={kendalPhoto} className='w-36 mx-auto bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                <h3 className="font-bold text-4xl">Hello, my name is Kendal!</h3>
+                                <p className='text-lg'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
+                                <hr className='mx-6 my-6 bg-stone-900'></hr>
+                                <div className='text-center bg-stone-300 shadow-inner shadow-stone-900 p-6'>
+                                    <h4 className='text-2xl font-bold'>Specialties/Pricing</h4>
+                                    <ul>
+                                        <li>Men's Haircut - $40</li>
+                                        <li>Woman's Haircut - $50</li>
+                                        <li>Blowdry &amp Style - $20</li>
+                                        <li>Conditioning - $20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dialog>
 
 
 
                         <motion.div
+                            onClick={() => document.getElementById('ccModal').showModal()}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ ease: "easeOut", duration: 1 }}
@@ -144,10 +212,27 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                 <h3 className='text-2xl text-stone-700 font4 text-center py-2'>CC</h3>
                             </div>
                         </motion.div>
-                        {/* <div className='text-center md:text-left text-stone-700 mt-2 mb-12'>
-                            <h3 className='text-2xl text-stone-700 font4'>CC</h3>
-                            <p className='text-xl'>Over 5 years in the industry, I've honed my skills to specialize in creating vibrant and healthy blonde hair, perfecting exquisite balayage designs, and delivering top-notch extensions.</p>
-                        </div> */}
+                        <dialog id="ccModal" className="modal md:mt-6">
+                            <div className="modal-box h-full pt-12 text-stone-900 bg-stone-200 text-center">
+                                <form method="dialog">
+                                    {/* if there is a button in form, it will close the modal */}
+                                    <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2">✕</button>
+                                </form>
+                                <img src={ccPhoto} className='w-36 mx-auto bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                <h3 className="font-bold text-4xl">Hello, my name is CC!</h3>
+                                <p className='text-lg'>With a decade of experience, I've become an expert in crafting gorgeous, healthy blonde hair, perfecting stunning balayage transformations, and providing top-quality extensions.</p>
+                                <hr className='mx-6 my-6 bg-stone-900'></hr>
+                                <div className='text-center bg-stone-300 shadow-inner shadow-stone-900 p-6'>
+                                    <h4 className='text-2xl font-bold'>Specialties/Pricing</h4>
+                                    <ul>
+                                        <li>Men's Haircut - $40</li>
+                                        <li>Woman's Haircut - $50</li>
+                                        <li>Blowdry &amp Style - $20</li>
+                                        <li>Conditioning - $20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dialog>
 
 
 

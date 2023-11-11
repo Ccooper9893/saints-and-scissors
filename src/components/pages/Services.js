@@ -6,10 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Services({ toggleBooking, navServicesRef }) {
     return (
-        <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 1, delay: .5 }}
+        <div 
         id='services' 
         className=' bg-stone-900 shadow shadow-stone-900 pt-4 mb-12'>
             <div ref={navServicesRef}>
@@ -23,8 +20,9 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         </Parallax>
                     </div> */}
                     <div className='md:mx-auto md:w-3/5 text-center z-40 bg-stone-900'>
-                        <h2 className='text-stone-200 font2 py-4 text-4xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored<br /> Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
-                        <hr className='mx-6 my-4 bg-stone-800'></hr>
+                        {/* <h2 className='text-stone-200 font2 py-8 text-5xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored<br /> Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2> */}
+                        <h2 className='text-stone-200 font2 py-8 text-5xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
+                        {/* <hr className='mx-6 my-4 bg-stone-800'></hr> */}
                         <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-300'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
 
                         <div className="py-8 mt-12 mx-6 bg-stone-200 shadow-inner shadow-stone-800">
@@ -111,6 +109,6 @@ export default function Services({ toggleBooking, navServicesRef }) {
                 </div>
 
             </div>
-        </motion.div>
+        </div>
     )
 }
