@@ -22,14 +22,15 @@ export default function Services({ toggleBooking, navServicesRef }) {
                         <img className='bg-stone-100 pt-12 opacity-80 md:rounded-full shadow-inner shadow-stone-900' src={girl} alt='Grunge style headshot of a woman with beautiful flowing hair.'></img>
                         </Parallax>
                     </div> */}
-                    <div className='pt-6 md:mx-auto md:w-3/5 text-center z-40 bg-stone-900'>
-                        <h2 className='text-stone-200 font2 py-4 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <span className='text-violet-500 font2'>Unique</span> Style.</h2>
-
+                    <div className='md:mx-auto md:w-3/5 text-center z-40 bg-stone-900'>
+                        <h2 className='text-stone-200 font2 py-4 text-4xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored<br /> Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
+                        <hr className='mx-6 my-4 bg-stone-800'></hr>
                         <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-300'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
-                        <div className="py-8 mt-24 mx-6 bg-stone-200 shadow-inner shadow-stone-800">
+
+                        <div className="py-8 mt-12 mx-6 bg-stone-200 shadow-inner shadow-stone-800">
                         <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
                             <h2 className='text-center text-4xl py-4 text-stone-900'>Services</h2>
-                            <table className="table text-xl text-center text-stone-700">
+                            <table className="table text-lg text-center text-stone-700">
                                 <tbody>
                                     <tr>
                                         <td>Womans Cut and Blowdry</td>

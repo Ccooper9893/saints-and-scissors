@@ -121,7 +121,8 @@ tr {
 }
 
 .bgCustom {
-  background-color: #F0F0F0;
+  background-image: url(./assets/img/backgrounds/floral-background.jpg);
+  background-repeat: repeat;
 }
 
 tr {
@@ -138,3 +139,5 @@ tr {
    color: #37d210;
    font-weight: 600;
  }
+ 
+ 

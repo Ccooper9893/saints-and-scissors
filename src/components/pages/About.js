@@ -23,7 +23,7 @@ export default function About({ toggleBooking }) {
             <Rating />
           </div> */}
           {/* We understand that everyone is unique and deserves to look their best, and that's why we bring our own distinct sets of skills and styles to every appointment.  */}
-          <div className='flex justify-center my-8'>
+          <div className='flex justify-center my-24'>
             <a
               href='#stylists'
               className='px-8 py-2 border border-stone-800 text-stone-800 hover:bg-stone-100'>
