@@ -21,86 +21,60 @@ export default function Services({ toggleBooking, navServicesRef }) {
                     </div> */}
                     <div className='md:mx-auto md:w-3/5 text-center z-40 bg-stone-900'>
                         {/* <h2 className='text-stone-200 font2 py-8 text-5xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored<br /> Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2> */}
-                        <h2 className='text-stone-200 font2 py-8 text-5xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
+                        <h2 className='text-stone-200 font2 py-8 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
                         {/* <hr className='mx-6 my-4 bg-stone-800'></hr> */}
                         <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-300'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
 
-                        <div className="py-8 mt-12 mx-6 bg-stone-200 shadow-inner shadow-stone-800">
+                        <div className="w-4/5 md:w-3/5 mx-auto py-8 mt-12 bg-stone-200 shadow-inner shadow-stone-800">
                         <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
-                            <h2 className='text-center text-4xl py-4 text-stone-900'>Services</h2>
+                            <h2 className='text-center text-3xl font4 py-4 text-stone-900'>Services</h2>
                             <table className="table text-lg text-center text-stone-700">
                                 <tbody>
                                     <tr>
                                         <td>Womans Cut and Blowdry</td>
-                                        {/* <td></td>
-                                        <td>$60+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Blowdry &amp; Styling</td>
-                                        {/* <td></td>
-                                        <td>$50+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Mens Cuts</td>
-                                        {/* <td></td>
-                                        <td>$40+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Men's Cut and Color</td>
-                                        {/* <td></td>
-                                        <td>$75+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Conditioning Treatment &amp; Blowdry</td>
-                                        {/* <td></td>
-                                        <td>$70+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Single Process Color</td>
-                                        {/* <td></td>
-                                        <td>$85+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Touch ups</td>
-                                        {/* <td></td>
-                                        <td>$70+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Bleach Retouch</td>
-                                        {/* <td></td>
-                                        <td>$85+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Partial Highlights</td>
-                                        {/* <td></td>
-                                        <td>$120+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Full Highlights</td>
-                                        {/* <td></td>
-                                        <td>$160+</td> */}
                                     </tr>
                                     <tr>
                                         <td>Color Corrections</td>
-                                        {/* <td></td>
-                                        <td>By Consultation</td> */}
                                     </tr>
                                     <tr>
                                         <td>Extensions</td>
-                                        {/* <td></td>
-                                        <td>By Consultation</td> */}
                                     </tr>
                                     <tr>
                                         <td>Makeup</td>
-                                        {/* <td></td>
-                                        <td>By Consultation</td> */}
                                     </tr>
                                 </tbody>
                             </table>
                             <div className='flex justify-center py-12'>
                             <button
                                 onClick={() => { toggleBooking(true); }}
-                                className=' px-8 py-2 border border-stone-800 text-stone-800'>
+                                className=' px-8 py-2 hover:bg-violet-400 border border-stone-800 text-stone-800'>
                                 VIEW ALL SERVICES
                             </button>
                         </div>

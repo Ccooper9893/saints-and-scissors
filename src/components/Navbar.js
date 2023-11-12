@@ -54,7 +54,7 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                         <div className='flex justify-center w-full'>
                             <button
                                 onClick={() => { toggleBooking(true); toggleNav(); }}
-                                className=' px-16 border border-lime-300 text-lime-300 hover:bg-stone-800'>
+                                className=' px-16 border border-lime-300 text-lime-300 hover:text-stone-100 hover:border-stone-100'>
                                 BOOK NOW
                             </button>
                         </div>

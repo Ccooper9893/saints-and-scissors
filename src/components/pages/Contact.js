@@ -3,7 +3,7 @@ export default function Contact({ toggleBooking, navContactRef }) {
         <div id='contact' className='bg-stone-900'>
             <div ref={navContactRef}>
 
-                <div className="flex flex-col lg:grid lg:grid-cols-2 w-full md:p-16">
+                <div className="flex flex-col w-full md:w-3/5 mx-auto md:p-16">
                     <div className="md:full p-8 md:order-1 bg-stone-900">
                         <div className="w-full md:w-full text-center">
                             <h3 className="text-5xl md:text-6xl font2 text-stone-200 mt-8 mb-2 uppercase">Ready to Transform Your Look?</h3>
