@@ -188,7 +188,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
             whileInView={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: .75 }}
             id='stylists'
-            className='bg-zinc-100 md:py-44'>
+            className='bg-zinc-100 py-44'>
             <div ref={navStylistsRef}>
                 <div className="md:w-3/5 mx-auto py-16 md:py-6">
                     <div className='flex-row flex-wrap'>
