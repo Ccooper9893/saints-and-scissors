@@ -5,7 +5,7 @@ import amandaPhoto from '../../assets/img/stylists/amanda.jpg';
 import ccPhoto from '../../assets/img/stylists/cc.jpg';
 import paulPhoto from '../../assets/img/stylists/paul.jpg';
 import sherriPhoto from '../../assets/img/stylists/sherri.jpg';
-import scissors from '../../assets/img/icons/scissors.png';
+import scissors from '../../assets/img/icons/scissors-white.png';
 import Rating from '../misc/Rating';
 
 export default function Stylists({ toggleBooking, navStylistsRef }) {
@@ -196,7 +196,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                         <h2 className='text-stone-900 text-center font2 text-5xl px-4 md:px-12 uppercase'>MEET THE SAINTS <br />BEHIND THE SCISSORS</h2>
                     </div>
                     <hr className='mx-6 mt-16 bg-stone-500'></hr>
-                    {/* <p className='my-8 text-center text-stone-700 mx-12'><em>Click on each stylist's picture to access detailed information about their specialties, prices, and unique styles.</em></p> */}
+                    <p className='my-8 text-center text-stone-700 mx-12'><em>Click on each stylist's picture to access detailed information about their specialties, prices, and unique styles.</em></p>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 md:gap-y-12 px-8 py-12">
 
 
@@ -211,31 +211,39 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeOut", duration: 1.5 }}
                                         className='flex justify-items-start hover:opacity-25'>
-                                        <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer hover:bg-opacity-10 bg-lime-400 border border-stone-950 shadow-sm shadow-stone-900'>
-                                            {/* <img src={stylist.picture} className='object-cover mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img> */}
+                                        <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer hover:scale-105'>
+                                            <img src={stylist.picture} className='glass object-cover mx-auto p-2' alt={stylist.name}></img>
                                             <h3 className='font-thin text-xl text-stone-800 font4 text-center py-2'>{stylist.name}</h3>
                                         </div>
                                     </motion.div>
                                     <dialog id={`${stylist.id}Modal`} className="modal md:mt-6 md:w-full bg-black bg-opacity-50">
-                                        <div className="modal-box h-full pt-20 text-stone-900 bg-stone-200 text-center">
+                                        <div className="modal-box h-full pt-20 text-stone-400 bg-stone-900 text-center">
                                             <form method="dialog">
                                                 {/* if there is a button in form, it will close the modal */}
-                                                <button className="btn btn-md btn-square btn-primary absolute right-2 top-2">✕</button>
+                                                <button className="btn btn-md btn-square btn-primary absolute right-2 top-2 bg-lime-500 text-black">✕</button>
                                             </form>
-                                            <img src={stylist.picture} className='md:w-64 mx-auto p-2 bg-stone-200 shadow-inner shadow-stone-600' alt='Expert Stylist Paul'></img>
+                                            <img src={stylist.picture} className='md:w-64 mx-auto rounded-xl' alt='Expert Stylist Paul'></img>
                                             {/* <h3 className="font-bold text-4xl">Hello, my name is {stylist.name}</h3> */}
-                                            <h3 className='text-4xl py-4 font4'>{stylist.name}</h3>
-                                            <p className='text-lg'>{stylist.summary}</p>
-                                            <div className='text-center p-6'>
-                                            <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
-                                                <h4 className='text-xl font4'>Specialties/Pricing</h4>
+                                            <h3 className='text-4xl py-4 font4 text-stone-300'>{stylist.name}</h3>
+                                            <p className='text-lg py-4'>{stylist.summary}</p>
+                                            <div className='text-center pt-6 pb-12'>
+                                                <hr className='bg-stone-900 mx-3'></hr>
+                                                <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
+                                                <h4 className='text-xl font4 text-stone-300'>Specialties/Pricing</h4>
                                                 <ul className='text-xl'>
                                                     {stylist.services.map((service) => {
-                                                        return <li key={service.id}>{service.service} - <span className='text-lime-600'>{service.price}</span></li>
+                                                        return <li key={service.id}>{service.service} - <span className='text-lime-400'>{service.price}</span></li>
                                                     })}
                                                 </ul>
+                                                <div className='flex justify-center my-12'>
+                                                    <button
+                                                        onClick={() => { toggleBooking(true); }}
+                                                        className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
+                                                        BOOK NOW
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <hr className='bg-stone-900 mx-6'></hr>
+                                            <hr className='bg-stone-900 mx-16'></hr>
                                             <Rating name={stylist.name} />
                                         </div>
                                     </dialog>

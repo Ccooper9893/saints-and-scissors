@@ -13,7 +13,7 @@ export default function Rating({ name }) {
         prevArrow: <CustomPrevArrow />, // Your custom previous arrow component
         nextArrow: <CustomNextArrow />, // Your custom next arrow component
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
@@ -150,15 +150,15 @@ export default function Rating({ name }) {
     }
 
     return (
-        <div className='border border-stone-950 my-12 py-6 bg-stone-100 shadow-inner shadow-stone-800'>
-            <h2 className='text-2xl font-bold text-stone-800 py-2 text-center'>Customer Reviews</h2>
+        <div className='border border-stone-950 my-24 py-6 bg-stone-300 shadow-inner shadow-stone-800'>
+            <h2 className='text-xl font-bold text-stone-800 py-2 text-center'>Customer Testimonials</h2>
             <div className='mx-auto'>
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
                             <div className='flex flex-col justify-center my-4 text-center text-stone-800' key={review.review.length}>
                                 {/* <img className='w-6 h-6 mx-auto mt-2 opacity-50' src={logo}></img> */}
-                                <p className='text-xl px-2 pb-5 font-medium'>"{review.review}"</p>
+                                <p className='text-lg px-2 pb-5 font-medium'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
