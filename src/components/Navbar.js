@@ -1,8 +1,7 @@
 
-import { useState, useRef, useEffect } from 'react';
+import { useRef} from 'react';
 import logoSmall from '../assets/img/logos/nav-logo.png';
 import logoLarge from '../assets/img/logos/nav-title-and-logo.png';
-// import calenderIcon from '../assets/img/icons/calender-icon.png';
 import { motion } from "framer-motion";
 
 export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {

@@ -1,4 +1,4 @@
-import titleAndLogo from '../../assets/img/logos/title-and-logo.png';
+import titleAndLogo from '../../assets/img/logos/title-and-logo-glow.png';
 import Carousel from '../misc/Carousel';
 import { Parallax } from 'react-scroll-parallax';
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ export default function Home({ toggleBooking, navRef }) {
                 initial={{ opacity: 0, y: -4 }}
                 whileInView={{ opacity: 1, y: 20 }}
                 transition={{ ease: "easeOut", duration: 1, delay: .5 }}
-                className='fixed top-1/4 md:top-32 z4 md:w-1/3 md:right-1/3'
+                className='absolute top-1/4 md:top-32 z4 md:w-1/3 md:right-1/3'
                 src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
             </motion.img>

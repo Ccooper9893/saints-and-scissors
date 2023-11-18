@@ -1,14 +1,10 @@
-import hairDryerBg from '../../assets/img/backgrounds/serviceBg.jpg';
-import girl from '../../assets/img/backgrounds/paintedGirl.png';
 import scissors from '../../assets/img/icons/scissors.png';
-import { Parallax } from 'react-scroll-parallax';
-import { motion } from 'framer-motion';
 
 export default function Services({ toggleBooking, navServicesRef }) {
     return (
         <div 
         id='services' 
-        className=' bg-stone-900 shadow shadow-stone-900 pt-4 mb-12'>
+        className=' bg-stone-900 shadow shadow-stone-900 pt-4 pb-32'>
             <div ref={navServicesRef}>
                 <div className='flex flex-col justify-center md:py-24'>
                     {/* <div className='hidden h-1/2 md:block md:ml-4 md:p-8 '>
@@ -21,7 +17,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
                     </div> */}
                     <div className='md:mx-auto md:w-3/5 text-center z-40 bg-stone-900'>
                         {/* <h2 className='text-stone-200 font2 py-8 text-5xl md:text-6xl mx-4 md:px-16 uppercase'>Tailored<br /> Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2> */}
-                        <h2 className='text-stone-200 font2 py-8 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <br /><em className='text-violet-500 font2'>Unique </em>Style.</h2>
+                        <h2 className='text-stone-200 font2 py-8 text-5xl mx-4 md:px-16 uppercase'>Tailored Services for Your <br /><span className='text-violet-500 font4 text-3xl'>Unique Style.</span></h2>
                         {/* <hr className='mx-6 my-4 bg-stone-800'></hr> */}
                         <p className='text-xl md:right md:mx-auto py-2 px-6 tracking-wide text-stone-300'>Whether you're seeking a fresh, on-trend haircut, a bold and vibrant color transformation, or a classic, timeless look, our team is dedicated to creating a personalized, unparalleled experience that leaves you feeling <strong>confident</strong>, <strong>beautiful</strong>, and absolutely <strong>unique</strong>. We offer a wide range of services to cater to your unique preferences and needs.</p>
 
@@ -78,6 +74,7 @@ export default function Services({ toggleBooking, navServicesRef }) {
                                 VIEW ALL SERVICES
                             </button>
                         </div>
+                        <p className='text-stone-950 mx-6'>* Some services may require a consultation appointment. Prices may vary based on the stylist, with each professional specializing in certain areas that may be priced accordingly due to their expertise.</p>
                         </div>
                     </div>
                 </div>

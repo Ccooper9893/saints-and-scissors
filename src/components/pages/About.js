@@ -1,4 +1,3 @@
-import Rating from '../misc/Rating';
 import { motion } from "framer-motion";
 
 export default function About({ toggleBooking }) {
@@ -15,10 +14,11 @@ export default function About({ toggleBooking }) {
             EXCEPTIONAL HAIR SERVICES TAILORED TO YOUR NEEDS
           </h2> */}
           <h2 className='font2 text-6xl md:text-7xl text-center text-stone-900 px-4 pt-12 z-10'>
-            Unlock Your Hair's<br /><span className='text-lime-400 font2'>Potential<span className='text-stone-950'>.</span></span>
+            Unlock Your Hair's<br /><em className='text-lime-400 font4 text-5xl'>Potential</em><span className='text-stone-950'>.</span>
           </h2>
           {/* <hr className='w-5/6 mx-auto my-6 bg-stone-950'></hr> */}
-          <p className='pb-4 text-xl md:w-1/2 md:text-center md:mx-auto p-6 tracking-wide  text-stone-600'>At Saints & Scissors, we are not just hair stylists; we are <strong>artists</strong> who craft your unique look. Our mission is not only to make you look your best, but also to provide you with a truly exceptional and unique <strong>full-service salon experience.</strong> Come and discover the artistry of hair styling at our salon – where beauty is not just a result, but a journey.</p>
+          <p className='pb-4 text-xl md:w-1/2 md:text-center md:mx-auto p-6 tracking-wide  text-stone-600'>At Saints & Scissors, our mission extends beyond enhancing your appearance; we are committed to delivering an extraordinary and inclusive <strong>full-service salon experience</strong> that embraces individuals of all ages and backgrounds. Join us in exploring the artistry of hair styling at our salon — where beauty is not just an outcome, but an inclusive journey that celebrates diversity and caters to every unique individual.</p>
+          <p></p>
           {/* <div className='w-5/6 py-24 md:py-4 mx-auto z-0'>
             <Rating />
           </div> */}
