@@ -3,19 +3,12 @@ export default function Contact({ toggleBooking, navContactRef }) {
         <div id='contact' className='bg-stone-900'>
             <div ref={navContactRef}>
 
-                <div className="flex flex-col w-full md:w-3/5 mx-auto md:p-16">
+                <div className="flex flex-col w-full md:w-3/5 mx-auto md:px-16">
                     <div className="md:full p-8 md:order-1 bg-stone-900">
                         <div className="w-full md:w-full text-center">
-                            <h3 className="text-5xl md:text-6xl font2 text-stone-200 mt-8 mb-2 uppercase">Ready to <span className='text-violet-500 font4 text-3xl'>Transform</span> Your Look?</h3>
-                            <p className="text-xl md:right md:mx-auto p-2 tracking-wide text-stone-400">Contact us to schedule your next hair transformation. We accept walk-ins on a first-come first-serve basis and offer easy online booking. Feel free to give us a call to book your appointment today!</p>
-                            <div className='flex justify-center my-12'>
-                                <button
-                                    onClick={() => { toggleBooking(true); }}
-                                    className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
-                                    BOOK NOW
-                                </button>
-                            </div>
-                            <div className="mt-8 flex flex-col md:mt-6 md:flex-row justify-around bg-stone-200 shadow-inner shadow-stone-900">
+                            <h3 className="text-5xl font2 text-stone-200 mt-8 mb-2 uppercase">Ready to<br /> Transform Your Look?</h3>
+                            <p className="md:right md:mx-auto p-2 tracking-wide text-stone-400">Contact us to schedule your next hair transformation. We accept walk-ins on a first-come first-serve basis and offer easy online booking. Feel free to give us a call to book your appointment today!</p>
+                            <div className="mt-8 flex flex-col md:mt-6 md:flex-row justify-around bg-stone-300 shadow-inner shadow-stone-900">
 
                                 <div className="md:my-10 p-6 text-stone-900">
                                     <div className="flex justify-center">
@@ -51,10 +44,16 @@ export default function Contact({ toggleBooking, navContactRef }) {
                                     </ul>
                                 </div>
                             </div>
-
+                            <div className='flex justify-center my-12'>
+                                <button
+                                    onClick={() => { toggleBooking(true); }}
+                                    className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
+                                    BOOK NOW
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-3/4 px-6 h-3/4 pb-12 md:mt-16 mx-auto bg-stone-900 md:order-2">
+                    <div className="w-full md:w-3/4 px-6 h-3/4 pb-12 mx-auto bg-stone-900 md:order-2">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13308.742259374223!2d-111.9319385!3d33.4965489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0b95d3511a49%3A0x63b00696b163eb19!2sSaints%20%26%20Scissors%20Salon!5e0!3m2!1sen!2sus!4v1699143477823!5m2!1sen!2sus"
                             className="w-full h-96"

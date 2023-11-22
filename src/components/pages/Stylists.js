@@ -219,7 +219,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         transition={{ ease: "easeOut", duration: 1.5 }}
                                         className='flex justify-items-start hover:opacity-25'>
                                         <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer hover:scale-105'>
-                                            <img src={stylist.picture} className='bg-lime-400 object-cover mx-auto p-1 rounded-3xl' alt={stylist.name}></img>
+                                            <img src={stylist.picture} className=' object-cover mx-auto rounded-3xl shadow shadow-lime-400 border border-stone-900' alt={stylist.name}></img>
                                             <h3 className='font-thin text-xl text-stone-800 font4 text-center py-2'>{stylist.name}</h3>
                                         </div>
                                     </motion.div>
@@ -231,14 +231,14 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                             </form>
                                             <img src={stylist.picture} className='md:w-64 mx-auto rounded-xl' alt='Expert Stylist Paul'></img>
                                             {/* <h3 className="font-bold text-4xl">Hello, my name is {stylist.name}</h3> */}
-                                            <h3 className='text-4xl py-4 font4 text-stone-300'>{stylist.name}</h3>
+                                            <h3 className='text-4xl py-4 font4 text-stone-200'>{stylist.name}</h3>
+                                               <hr className='bg-stone-900 mx-3 opacity-30'></hr>
                                                 {stylist.summary.map((paragraph) => {
                                                     return (
-                                                        <p className='text-lg py-2' key={paragraph.length}>{paragraph}</p>
+                                                        <p className='text-lg py-2 text-stone-300' key={paragraph.length}>{paragraph}</p>
                                                     )
                                                 })}
-                                            <div className='text-center pt-6 pb-12'>
-                                                {/* <hr className='bg-stone-900 mx-3'></hr> */}
+                                            <div className='text-center pt-6'>
                                                 {/* <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
                                                 <h4 className='text-xl font4 text-stone-300'>Specialties/Pricing</h4>
                                                 <ul className='text-xl'>
@@ -246,16 +246,17 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                                         return <li key={service.id}>{service.service} - <span className='text-lime-400'>{service.price}</span></li>
                                                     })}
                                                 </ul> */}
-                                                <div className='flex justify-center my-12'>
+
+                                            </div>
+                                            {/* <hr className='bg-stone-900 mx-16'></hr> */}
+                                            <Rating name={stylist.name} />
+                                            <div className='flex justify-center my-12'>
                                                     <button
                                                         onClick={() => { toggleBooking(true); }}
                                                         className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
                                                         BOOK NOW
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <hr className='bg-stone-900 mx-16'></hr>
-                                            <Rating name={stylist.name} />
                                         </div>
                                     </dialog>
                                 </div>
