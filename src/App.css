@@ -63,9 +63,9 @@ html {
 }
 
 .bgGradient {
-  background: rgb(27,27,27);
-background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(231,229,228,1) 100%);
-/* background-color: #e7e5e4; */
+  background: rgb(27, 27, 27);
+  background: linear-gradient(0deg, rgba(27, 27, 27, 1) 0%, rgba(231, 229, 228, 1) 100%);
+  /* background-color: #e7e5e4; */
 }
 
 .bgFloral {
@@ -75,46 +75,32 @@ background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(231,229,228,1) 100%)
 
 tr {
   border-bottom: 1px solid rgb(70, 70, 70) !important;
- }
- 
- .table {
-   width: 85%;
-   margin: auto auto;
- }
- 
- tr td:nth-child(3) {
-   text-align: right;
-   color: #39e70e;
- }
-
-/* .mt-title {
-  margin-top: 28rem;
-  left: 5rem;
 }
 
-@media screen and (max-height: 770px) {
-  .mt-title {
-    margin-top: 25rem;
-  }
-} */
+.table {
+  width: 85%;
+  margin: auto auto;
+}
 
-.bg1 {
-  background-image: url(./assets/img/backgrounds/white-waves-2.jpg);
-  background-repeat: repeat;
+tr td:nth-child(3) {
+  text-align: right;
+  color: #39e70e;
 }
 
 .custom-prev-arrow {
   cursor: pointer;
   position: absolute;
   top: 60%;
-  left: 0; /* Adjust the left position as needed */
+  left: 0;
+  /* Adjust the left position as needed */
 }
 
 .custom-next-arrow {
   cursor: pointer;
   position: absolute;
   top: 60%;
-  right: 0; /* Adjust the right position as needed */
+  right: 0;
+  /* Adjust the right position as needed */
 }
 
 .z5 {
@@ -132,21 +118,20 @@ tr {
 
 tr {
   border-bottom: 1px solid rgb(58, 58, 58) !important;
- }
- 
- .table {
-   width: 85%;
-   margin: auto auto;
- }
- 
- tr td:nth-child(3) {
-   text-align: right;
-   color: #37d210;
-   font-weight: 600;
- }
- 
- .px-custom {
+}
+
+.table {
+  width: 85%;
+  margin: auto auto;
+}
+
+tr td:nth-child(3) {
+  text-align: right;
+  color: #37d210;
+  font-weight: 600;
+}
+
+.px-custom {
   padding-left: 3px;
   padding-right: 3px;
- }
- 
+}
