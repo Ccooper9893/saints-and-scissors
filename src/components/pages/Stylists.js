@@ -203,7 +203,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                         <h2 className='text-stone-900 text-center font2 text-5xl px-4 md:px-12 uppercase'>MEET THE <span className='text-lime-400 font4 text-4xl'>SAINTS</span> <br />BEHIND THE SCISSORS</h2>
                     </div>
                     <hr className='mx-6 mt-16 bg-stone-500'></hr>
-                    <p className='my-8 text-center text-stone-700 mx-12'><em>Click on each stylist's picture to access detailed information about their specialties, prices, and unique styles.</em></p>
+                    <p className='my-8 text-center text-stone-700 mx-12'><em>*Click on each stylist's picture to access detailed information about their specialties, prices, and unique styles.</em></p>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 md:gap-y-12 px-8 py-12">
 
 
@@ -218,45 +218,35 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         whileInView={{ opacity: 1 }}
                                         transition={{ ease: "easeOut", duration: 1.5 }}
                                         className='flex justify-items-start hover:opacity-25'>
-                                        <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer hover:scale-105'>
-                                            <img src={stylist.picture} className=' object-cover mx-auto rounded-3xl shadow shadow-lime-400 border border-stone-900' alt={stylist.name}></img>
+                                        <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer opacity-90 hover:opacity-100 hover:scale-105'>
+                                            <img src={stylist.picture} className=' object-cover mx-auto' alt={stylist.name}></img>
                                             <h3 className='font-thin text-xl text-stone-800 font4 text-center py-2'>{stylist.name}</h3>
                                         </div>
                                     </motion.div>
-                                    <dialog id={`${stylist.id}Modal`} className="modal bg-stone-950 bg-opacity-90">
-                                        <div className="modal-box h-full pt-20 text-stone-400 bg-stone-900 text-center">
+                                    <dialog id={`${stylist.id}Modal`} className="modal">
+                                        <div className="modal-box md:w-2/3 lg:w-1/2 max-w-full pt-20 text-stone-400 bg-stone-100 text-center">
                                             <form method="dialog">
                                                 {/* if there is a button in form, it will close the modal */}
-                                                <button className="btn btn-md btn-square btn-primary fixed right-2 top-2 bg-lime-500 text-black">✕</button>
+                                                <button className="btn btn-md btn-square btn-primary px-12 fixed right-2 top-2 bg-lime-400 text-black hover:text-stone-200">✕</button>
                                             </form>
-                                            <img src={stylist.picture} className='md:w-64 mx-auto rounded-xl' alt='Expert Stylist Paul'></img>
+                                            <img src={stylist.picture} className='md:w-64 mx-auto' alt='Expert Stylist Paul'></img>
                                             {/* <h3 className="font-bold text-4xl">Hello, my name is {stylist.name}</h3> */}
-                                            <h3 className='text-4xl py-4 font4 text-stone-200'>{stylist.name}</h3>
-                                               <hr className='bg-stone-900 mx-3 opacity-30'></hr>
+                                            <h3 className='text-4xl py-4 font4 text-stone-950'>{stylist.name}</h3>
+                                               <hr className='bg-black mx-3 opacity-30'></hr>
                                                 {stylist.summary.map((paragraph) => {
                                                     return (
-                                                        <p className='text-lg py-2 text-stone-300' key={paragraph.length}>{paragraph}</p>
+                                                        <p className='text-lg py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
                                                     )
                                                 })}
-                                            <div className='text-center pt-6'>
-                                                {/* <img className='mx-auto h-10 -rotate-12 my-6' src={scissors} alt='scissors icon'></img>
-                                                <h4 className='text-xl font4 text-stone-300'>Specialties/Pricing</h4>
-                                                <ul className='text-xl'>
-                                                    {stylist.services.map((service) => {
-                                                        return <li key={service.id}>{service.service} - <span className='text-lime-400'>{service.price}</span></li>
-                                                    })}
-                                                </ul> */}
-
-                                            </div>
                                             {/* <hr className='bg-stone-900 mx-16'></hr> */}
                                             <Rating name={stylist.name} />
-                                            <div className='flex justify-center my-12'>
+                                            {/* <div className='flex justify-center my-12'>
                                                     <button
                                                         onClick={() => { toggleBooking(true); }}
                                                         className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
                                                         BOOK NOW
                                                     </button>
-                                                </div>
+                                                </div> */}
                                         </div>
                                     </dialog>
                                 </div>

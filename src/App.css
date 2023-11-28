@@ -68,6 +68,11 @@ background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(231,229,228,1) 100%)
 /* background-color: #e7e5e4; */
 }
 
+.bgFloral {
+  background-image: url(./assets/img/backgrounds/floral-background.jpg);
+  background-repeat: repeat;
+}
+
 tr {
   border-bottom: 1px solid rgb(70, 70, 70) !important;
  }

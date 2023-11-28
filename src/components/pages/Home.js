@@ -14,15 +14,17 @@ export default function Home({ toggleBooking, navRef }) {
                 src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
             </motion.img>
+            <div className='flex justify-center'>
             <motion.button
                 initial={{ opacity: 0, y:-10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
                 onClick={() => { toggleBooking(true); }}
-                className='fixed right-1/4 bottom-12 md:bottom-8 tracking-widest z-10 w-1/2 py-1 border border-lime-300 text-lime-300 bg-opacity-60'>
+                className='fixed text-sm transform -translate-x-1/2 bottom-12 tracking-widest z-10 w-1/2 md:w-44 bg-black py-1 border shadow shadow-stone-950 border-lime-700 text-lime-300 bg-opacity-20 hover:border-lime-400'>
                 BOOK ONLINE
             </motion.button>
-            <motion.a href='#about' className='fixed bottom-4 text-sm w-full text-center text-stone-200 z-10 animate-bounce'>&#9660;</motion.a>
+            </div>
+            <motion.a href='#about' className='fixed bottom-4 text-xs w-full text-center text-stone-400 opacity-50 hover:opacity-100 z-10 animate-bounce'>&#9660;</motion.a>
             <Parallax speed={-5}>
                 <motion.div
                     initial={{ opacity: 0 }}

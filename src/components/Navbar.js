@@ -39,22 +39,21 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                     </div>
 
                     <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal">
+                        <ul className="menu menu-horizontal font3">
                             {/* Navbar menu content here */}
-                            <li><a href='#home'>HOME</a></li>
-                            <li><a href='#about'>ABOUT</a></li>
-                            <li><a href='#services'>SERVICES</a></li>
-                            <li><a href='#stylists'>STYLISTS</a></li>
-                            {/* <li><a href='#gallery'>GALLERY</a></li> */}
-                            <li><a href='#contact'>CONTACT</a></li>
+                            <li><a className='hover:text-lime-400' href='#home'>HOME</a></li>
+                            <li><a className='hover:text-lime-400' href='#about'>ABOUT</a></li>
+                            <li><a className='hover:text-lime-400' href='#services'>SERVICES</a></li>
+                            <li><a className='hover:text-lime-400' href='#stylists'>STYLISTS</a></li>
+                            <li><a className='hover:text-lime-400' href='#contact'>CONTACT</a></li>
                         </ul>
                     </div>
                     <div className='hidden md:flex justify-end w-24 md:w-1/4 lg:w-1/5'>
                         <div className='flex justify-center w-full'>
                             <button
                                 onClick={() => { toggleBooking(true); toggleNav(); }}
-                                className=' px-16 border border-lime-300 text-lime-300 hover:text-stone-100 hover:border-stone-100'>
-                                BOOK NOW
+                                className=' px-16 text-sm border border-lime-600 text-lime-300 hover:border-lime-400'>
+                                BOOK ONLINE
                             </button>
                         </div>
                     </div>
@@ -87,19 +86,18 @@ export default function Navbar({ drawerRef2, toggleBooking, navVisible }) {
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-2/3 min-h-full text-xl bg-stone-950">
                     {/* Sidebar content here */}
-                    <li><a href='#home' onClick={() => { toggleNav(); }}>Home</a></li>
-                    <li><a href='#about' onClick={() => { toggleNav(); }}>About</a></li>
-                    <li><a href='#services' onClick={() => { toggleNav(); }}>Services</a></li>
-                    <li><a href='#stylists' onClick={() => { toggleNav(); }}>Stylists</a></li>
-                    {/* <li><a href='#gallery' onClick={() => { toggleNav(); }}>Gallery</a></li> */}
-                    <li><a href='#contact' onClick={() => { toggleNav(); }}>Contact</a></li>
+                    <li><a className='hover:text-lime-400' href='#home' onClick={() => { toggleNav(); }}>Home</a></li>
+                    <li><a className='hover:text-lime-400' href='#about' onClick={() => { toggleNav(); }}>About</a></li>
+                    <li><a className='hover:text-lime-400' href='#services' onClick={() => { toggleNav(); }}>Services</a></li>
+                    <li><a className='hover:text-lime-400' href='#stylists' onClick={() => { toggleNav(); }}>Stylists</a></li>
+                    <li><a className='hover:text-lime-400' href='#contact' onClick={() => { toggleNav(); }}>Contact</a></li>
                 </ul>
                 <div className='absolute bottom-0'>
                     <div className='flex justify-center my-4 w-full'>
                         <button
                             onClick={() => { toggleBooking(true); toggleNav(); }}
                             className=' px-16 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
-                            BOOK NOW
+                            BOOK ONLINE
                         </button>
                     </div>
                 </div>

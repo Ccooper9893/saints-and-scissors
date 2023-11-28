@@ -150,7 +150,7 @@ export default function Rating({ name }) {
     }
 
     return (
-        <div className='border border-stone-950 my-24 py-6 bg-stone-300 shadow-inner shadow-stone-800'>
+        <div className='my-12 py-6 bg-stone-100 shadow-inner shadow-stone-700'>
             <h2 className='text-xl font-bold text-stone-800 py-2 text-center'>Customer Testimonials</h2>
             <div className='mx-auto'>
                 <Slider {...settings}>
