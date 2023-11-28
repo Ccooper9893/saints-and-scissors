@@ -150,15 +150,15 @@ export default function Rating({ name }) {
     }
 
     return (
-        <div className='my-12 py-6 bg-stone-100 shadow-inner shadow-stone-700'>
-            <h2 className='text-xl font-bold text-stone-800 py-2 text-center'>Customer Testimonials</h2>
+        <div className='my-12 py-6 bg-stone-100 border border-stone-900'>
+            <h2 className='text-xl font4 text-stone-800 py-2 text-center'>Reviews</h2>
             <div className='mx-auto'>
                 <Slider {...settings}>
                     {reviews.map((review) => {
                         return (
                             <div className='flex flex-col justify-center my-4 text-center text-stone-800' key={review.review.length}>
                                 {/* <img className='w-6 h-6 mx-auto mt-2 opacity-50' src={logo}></img> */}
-                                <p className='text-lg px-2 pb-5 font-medium'>"{review.review}"</p>
+                                <p className='text-md px-2 pb-5'>"{review.review}"</p>
                                 <div className='w-full'>
                                     <Stars />
                                 </div>
@@ -167,7 +167,7 @@ export default function Rating({ name }) {
                         )
                     })}
                 </Slider>
-                <a href="https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale" className='btn normal-case' >Review us on Yelp!</a>
+                <a href="https://www.yelp.com/biz/saints-and-scissors-salon-scottsdale" className='btn normal-case' >Leave us a review!</a>
             </div>
         </div>
     )

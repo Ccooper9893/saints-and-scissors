@@ -16,9 +16,9 @@ export default function Home({ toggleBooking, navRef }) {
             </motion.img>
             <div className='flex justify-center'>
             <motion.button
-                initial={{ opacity: 0, y:-10 }}
+                initial={{ opacity: 0, y:0 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
+                transition={{ ease: "easeOut", duration: 0.5 }}
                 onClick={() => { toggleBooking(true); }}
                 className='fixed text-sm transform -translate-x-1/2 bottom-12 tracking-widest z-10 w-1/2 md:w-44 bg-black py-1 border shadow shadow-stone-950 border-lime-700 text-lime-300 bg-opacity-20 hover:border-lime-400'>
                 BOOK ONLINE

@@ -43,7 +43,14 @@ export default function Contact({ toggleBooking, navContactRef }) {
                                         <li>Sunday: CLOSED</li>
                                     </ul>
                                 </div>
-                                <div className="w-full md:w-3/4 h-3/4 mx-auto my-10">
+                            <div className='flex justify-center mt-8'>
+                                <button
+                                    onClick={() => { toggleBooking(true); }}
+                                    className='md:hidden px-12 py-2 text-stone-900 hover:underline border border-stone-900'>
+                                    BOOK ONLINE
+                                </button>
+                            </div>
+                                <div className="w-full h-3/4 mx-auto px-custom my-10">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13308.742259374223!2d-111.9319385!3d33.4965489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0b95d3511a49%3A0x63b00696b163eb19!2sSaints%20%26%20Scissors%20Salon!5e0!3m2!1sen!2sus!4v1699143477823!5m2!1sen!2sus"
                                     className="w-full h-96"

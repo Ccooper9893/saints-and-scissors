@@ -145,4 +145,8 @@ tr {
    font-weight: 600;
  }
  
+ .px-custom {
+  padding-left: 3px;
+  padding-right: 3px;
+ }
  

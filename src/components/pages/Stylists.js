@@ -224,13 +224,12 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         </div>
                                     </motion.div>
                                     <dialog id={`${stylist.id}Modal`} className="modal">
-                                        <div className="modal-box md:w-2/3 lg:w-1/2 max-w-full pt-20 text-stone-400 bg-stone-100 text-center">
+                                        <div className="modal-box pt-20 text-stone-400 bg-stone-100 text-center">
                                             <form method="dialog">
                                                 {/* if there is a button in form, it will close the modal */}
                                                 <button className="btn btn-md btn-square btn-primary px-12 fixed right-2 top-2 bg-lime-400 text-black hover:text-stone-200">✕</button>
                                             </form>
                                             <img src={stylist.picture} className='md:w-64 mx-auto' alt='Expert Stylist Paul'></img>
-                                            {/* <h3 className="font-bold text-4xl">Hello, my name is {stylist.name}</h3> */}
                                             <h3 className='text-4xl py-4 font4 text-stone-950'>{stylist.name}</h3>
                                                <hr className='bg-black mx-3 opacity-30'></hr>
                                                 {stylist.summary.map((paragraph) => {
@@ -238,15 +237,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                                         <p className='text-lg py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
                                                     )
                                                 })}
-                                            {/* <hr className='bg-stone-900 mx-16'></hr> */}
                                             <Rating name={stylist.name} />
-                                            {/* <div className='flex justify-center my-12'>
-                                                    <button
-                                                        onClick={() => { toggleBooking(true); }}
-                                                        className=' px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
-                                                        BOOK NOW
-                                                    </button>
-                                                </div> */}
                                         </div>
                                     </dialog>
                                 </div>
