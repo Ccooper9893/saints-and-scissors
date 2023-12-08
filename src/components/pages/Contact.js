@@ -5,10 +5,10 @@ export default function Contact({ toggleBooking, navContactRef }) {
 
                 <div className="flex flex-col w-full md:w-3/4 mx-auto md:px-16 py-10">
                     <div className="md:full ">
-                        <div className="w-full md:w-full text-center px-6">
+                        <div className="w-full md:w-full text-center px-3">
                             <h3 className="text-5xl font2 text-stone-200 mt-8 mb-2 uppercase">Ready to<br /> <span className='text-violet-500 font4 text-3xl'>Transform</span> Your Look?</h3>
                             <p className="md:mx-24 p-2 tracking-wide text-stone-300">Contact us to schedule your next hair transformation. We accept walk-ins on a first-come first-serve basis and offer easy online booking. Feel free to give us a call to book your appointment today!</p>
-                            <div className="flex flex-col md:w-3/4 mx-auto justify-around bg-stone-200 p-6 my-6">
+                            <div className="flex flex-col md:w-3/4 mx-auto justify-around bg-stone-300 p-2 my-6">
 
                                 <div className="p-6 text-stone-900">
                                     <div className="flex justify-center">
@@ -46,7 +46,7 @@ export default function Contact({ toggleBooking, navContactRef }) {
                             <div className='flex justify-center mt-8'>
                                 <button
                                     onClick={() => { toggleBooking(true); }}
-                                    className='md:hidden px-12 py-2 text-stone-900 hover:underline border border-stone-900'>
+                                    className='md:hidden px-12 py-2 text-stone-900 hover:underline shadow shadow-stone-900 bg-lime-400'>
                                     BOOK ONLINE
                                 </button>
                             </div>

@@ -203,7 +203,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                         <h2 className='text-stone-900 text-center font2 text-5xl px-4 md:px-12 uppercase'>MEET THE <span className='text-lime-400 font4 text-4xl'>SAINTS</span> <br />BEHIND THE SCISSORS</h2>
                     </div>
                     <hr className='mx-6 mt-16 bg-stone-500'></hr>
-                    <p className='my-8 text-center text-stone-700 mx-12'><em>*Click on each stylist's picture to access detailed information about their specialties, prices, and unique styles.</em></p>
+                    <p className='my-8 text-center text-stone-700 mx-12'><em>*Click on each stylist's picture to access detailed information about their specialties and unique styles.</em></p>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 md:gap-y-12 px-8 py-12">
 
 

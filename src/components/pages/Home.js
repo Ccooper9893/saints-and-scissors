@@ -7,7 +7,7 @@ export default function Home({ toggleBooking, navRef }) {
     return (
         <div id='home'>
             <motion.img
-                initial={{ opacity: 0, y: -4 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 20 }}
                 transition={{ ease: "easeOut", duration: 3}}
                 className='absolute top-1/4 md:top-32 z4 md:w-1/3 md:right-1/3'
@@ -24,7 +24,7 @@ export default function Home({ toggleBooking, navRef }) {
                 BOOK ONLINE
             </motion.button>
             </div>
-            <motion.a href='#about' className='fixed bottom-4 text-xs w-full text-center text-stone-400 opacity-50 hover:opacity-100 z-10 animate-bounce'>&#9660;</motion.a>
+            <motion.a href='#about' className='fixed bottom-4 text-xs w-full text-center text-stone-400 hover:opacity-100 z-10 animate-bounce'>&#9660;</motion.a>
             <Parallax speed={-5}>
                 <motion.div
                     initial={{ opacity: 0 }}
