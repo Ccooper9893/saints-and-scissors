@@ -5,10 +5,13 @@
   "homepage": "https://ccooper9893.github.io/saints-and-scissors/",
   "dependencies": {
     "daisyui": "^3.8.2",
-    "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-scroll-parallax": "^3.4.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
