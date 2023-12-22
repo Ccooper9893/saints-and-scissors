@@ -62,16 +62,6 @@ export default function Contact({ toggleBooking, navContactRef }) {
                                 ></iframe>
                             </div>
                             </div>
-                            {/* <div className='flex justify-center'>
-                                <button
-                                    onClick={() => { toggleBooking(true); }}
-                                    className='md:hidden px-12 py-2 border border-lime-300 text-lime-300 hover:bg-stone-800'>
-                                    BOOK NOW
-                                </button>
-                            </div> */}
-
-
-
                         </div>
                     </div>
 

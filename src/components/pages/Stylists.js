@@ -190,10 +190,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
 
 
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: "easeOut", duration: .75 }}
+        <div
             id='stylists'
             className='bg-zinc-100 py-26'>
             <div ref={navStylistsRef}>
@@ -211,18 +208,15 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                         {stylists.map((stylist) => {
                             return (
                                 <div key={stylist.id}>
-                                    <motion.div
+                                    <div
 
                                         onClick={() => document.getElementById(`${stylist.id}Modal`).showModal()}
-                                        initial={{ opacity: 0 }}
-                                        whileInView={{ opacity: 1 }}
-                                        transition={{ ease: "easeOut", duration: 1.5 }}
                                         className='flex justify-items-start hover:opacity-25'>
                                         <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer opacity-90 hover:opacity-100 hover:scale-105'>
                                             <img src={stylist.picture} className=' object-cover mx-auto' alt={stylist.name}></img>
                                             <h3 className='font-thin text-xl text-stone-800 font4 text-center py-2'>{stylist.name}</h3>
                                         </div>
-                                    </motion.div>
+                                    </div>
                                     <dialog id={`${stylist.id}Modal`} className="modal">
                                         <div className="modal-box pt-20 text-stone-400 bg-stone-100 text-center">
                                             <form method="dialog">
@@ -252,6 +246,6 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                     <hr className='mx-6 my-6 bg-stone-800'></hr>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }

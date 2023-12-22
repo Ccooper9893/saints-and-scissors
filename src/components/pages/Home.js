@@ -9,7 +9,7 @@ export default function Home({ toggleBooking, navRef }) {
             <motion.img
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 20 }}
-                transition={{ ease: "easeOut", duration: 3}}
+                transition={{ ease: "easeOut", duration: 2}}
                 className='absolute top-1/4 md:top-32 z4 md:w-1/3 md:right-1/3'
                 src={titleAndLogo}
                 alt='Saints and Scissors Logo'>
