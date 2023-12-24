@@ -1,7 +1,6 @@
 import './App.css';
 import { useRef, useState, useEffect } from 'react';
 import { useInView } from 'framer-motion';
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 import Navbar from './components/Navbar';
 import About from './components/pages/About';
@@ -43,8 +42,7 @@ export default function App() {
 
   return (
 
-    <ParallaxProvider>
-
+    <>
       <Navbar toggleBooking={toggleBooking} drawerRef2={drawerRef2} navVisible={navVisible} />
 
       <Home toggleBooking={toggleBooking} />
@@ -65,6 +63,6 @@ export default function App() {
 
         </div>
       </div>
-    </ParallaxProvider>
+    </>
   );
 };
