@@ -23,7 +23,7 @@ export default function Home({ toggleBooking, navRef }) {
                     BOOK ONLINE
                 </motion.button>
             </div>
-            <a href='#about' className='fixed bottom-4 text-xs w-full text-center text-stone-400 hover:opacity-100 z-10 animate-bounce'>&#9660;</a>
+            <a href='#about' className='fixed bottom-4 text-xs w-full text-center text-stone-300 z-10 animate-bounce'>&#9660;</a>
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
