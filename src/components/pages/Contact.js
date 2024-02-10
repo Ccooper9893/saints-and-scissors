@@ -21,6 +21,7 @@ export default function Contact({ toggleBooking, navContactRef }) {
                                     <hr className='opacity-20'></hr>
                                     <ul className="text-sm">
                                         <li>Phone: <a href="tel:4809462322"><span className="font-bold">(480) 946-2322</span></a></li>
+                                        <li>Email: <a href="mailto:saintsandscissors1@gmail.com">saintsandscissors1@gmail.com</a></li>
                                         <li>Address: 6934 E 5th Ave.</li>
                                         <li>Scottsdale, AZ 85251</li>
                                     </ul>
