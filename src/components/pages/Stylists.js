@@ -85,7 +85,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                         </div>
                                     </div>
                                     <dialog id={`${stylist.id}Modal`} className="modal">
-                                        <div className="modal-box pt-20 text-stone-400 bg-stone-100 text-center">
+                                        <div className="modal-box md:max-w-screen-md pt-20 text-stone-400 bg-gradient-to-b from-stone-100 to-stone-50 text-center">
                                             <form method="dialog">
                                                 {/* if there is a button in form, it will close the modal */}
                                                 <button className="btn btn-md btn-square btn-primary px-12 fixed right-2 top-2 bg-lime-400 text-black hover:text-stone-200">✕</button>
@@ -95,7 +95,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                                <hr className='bg-black mx-3 opacity-30'></hr>
                                                 {stylist.summary.map((paragraph) => {
                                                     return (
-                                                        <p className='text-lg py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
+                                                        <p className='text-lg font-bold py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
                                                     )
                                                 })}
                                             <Rating name={stylist.name} />
