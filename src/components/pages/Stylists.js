@@ -35,12 +35,12 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
             picture: juliPhoto,
             summary: ["I have been a hairdresser since 2008, and I absolutely love it! I enjoy vivids, highlights, and coloring the most. I also love a great transformation! While I don't offer tight fades or pixie cuts, I am here for all your other hair cutting needs.", "If you love to laugh, then you'll enjoy being in my chair! I cannot wait to meet you and give you the best hairstyle of your life!"],
         },
-        {
-            id: 115,
-            name: 'Kendal',
-            picture: kendalPhoto,
-            summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
-        },
+        // {
+        //     id: 115,
+        //     name: 'Kendal',
+        //     picture: kendalPhoto,
+        //     summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
+        // },
         {
             id: 116,
             name: 'CC',
