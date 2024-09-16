@@ -57,34 +57,34 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                 },
             ],
         },
-        {
-            id: 115,
-            name: 'Kendal',
-            picture: kendalPhoto,
-            summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
-            services: [
-                {
-                    id: 41,
-                    service: "Men's Haircut",
-                    price: "$40",
-                },
-                {
-                    id: 42,
-                    service: "Woman's Haircut",
-                    price: "$50",
-                },
-                {
-                    id: 43,
-                    service: "Blowdry &amp; Style",
-                    price: "$20",
-                },
-                {
-                    id: 44,
-                    service: "Conditioning",
-                    price: "$20",
-                },
-            ],
-        },
+        // {
+        //     id: 115,
+        //     name: 'Kendal',
+        //     picture: kendalPhoto,
+        //     summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
+        //     services: [
+        //         {
+        //             id: 41,
+        //             service: "Men's Haircut",
+        //             price: "$40",
+        //         },
+        //         {
+        //             id: 42,
+        //             service: "Woman's Haircut",
+        //             price: "$50",
+        //         },
+        //         {
+        //             id: 43,
+        //             service: "Blowdry &amp; Style",
+        //             price: "$20",
+        //         },
+        //         {
+        //             id: 44,
+        //             service: "Conditioning",
+        //             price: "$20",
+        //         },
+        //     ],
+        // },
         {
             id: 116,
             name: 'CC',
