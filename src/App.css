@@ -137,6 +137,6 @@ tr td:nth-child(3) {
 }
 
 .px-custom {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
