@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import kendalPhoto from '../../assets/img/stylists/kendal.jpg';
 import juliPhoto from '../../assets/img/stylists/juli.jpg';
 import amandaPhoto from '../../assets/img/stylists/amanda.jpg';
@@ -17,84 +16,18 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
             name: 'Paul',
             picture: paulPhoto,
             summary: [`Owner and operator of Saints and Scissors with decades of experience. "I will always do my very best to give you what you want; without effecting the integrity of your hair. I am the “Healthy Hair Hippie”. Healthy hair is beautiful hair."`],
-            services: [
-                {
-                    id: 1,
-                    service: "Men's Haircut",
-                    price: "$40",
-                },
-                {
-                    id: 2,
-                    service: "Woman's Haircut",
-                    price: "$50",
-                },
-                {
-                    id: 3,
-                    service: "Blowdry &amp; Style",
-                    price: "$20",
-                },
-                {
-                    id: 4,
-                    service: "Conditioning",
-                    price: "$20",
-                },
-            ],
         },
         {
             id: 112,
             name: 'Amanda',
             picture: amandaPhoto,
             summary: ["Amanda is our resident pixie queen! Specializing in hair cutting during her apprenticeship and honing her skills through years of experience and advanced education, she has become our short hair specialist. In 2004, Amanda attended the Douglas J Aveda Institute in East Lansing, Michigan, and has been rocking hair ever since!", "She moved to Arizona in 2007 to further her career and education. Amanda enjoys the entire artistic approach to hair cutting and custom color to make you feel your very best."],
-            services: [
-                {
-                    id: 11,
-                    service: "Men's Haircut",
-                    price: "$40",
-                },
-                {
-                    id: 12,
-                    service: "Woman's Haircut",
-                    price: "$50",
-                },
-                {
-                    id: 13,
-                    service: "Blowdry &amp; Style",
-                    price: "$20",
-                },
-                {
-                    id: 14,
-                    service: "Conditioning",
-                    price: "$20",
-                },
-            ],
         },
         {
             id: 113,
             name: 'Sherri',
             picture: sherriPhoto,
             summary: ["Sherri has been a stylist since 2009 after attending the Toni and Guy Academy. Specializing in healthy blondes and extensions, Sherri loves to create a look specifically tailored for each client. She enjoys crafting unique tones of blonde that suit each individual. Don’t worry brunettes! She's got you covered too!", "You will leave with shine and a brand-new confidence in your hair and yourself. She will always be honest and provide you with a finished product that she believes will elevate you completely. She can’t wait to meet you and make hair magic happen!"],
-            services: [
-                {
-                    id: 21,
-                    service: "Men's Haircut",
-                    price: "$40",
-                },
-                {
-                    id: 22,
-                    service: "Woman's Haircut",
-                    price: "$50",
-                },
-                {
-                    id: 23,
-                    service: "Blowdry &amp; Style",
-                    price: "$20",
-                },
-                {
-                    id: 24,
-                    service: "Conditioning",
-                    price: "$20",
-                },
-            ],
         },
         {
             id: 114,
@@ -124,34 +57,34 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                 },
             ],
         },
-        // {
-        //     id: 115,
-        //     name: 'Kendal',
-        //     picture: kendalPhoto,
-        //     summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
-        //     services: [
-        //         {
-        //             id: 41,
-        //             service: "Men's Haircut",
-        //             price: "$40",
-        //         },
-        //         {
-        //             id: 42,
-        //             service: "Woman's Haircut",
-        //             price: "$50",
-        //         },
-        //         {
-        //             id: 43,
-        //             service: "Blowdry &amp; Style",
-        //             price: "$20",
-        //         },
-        //         {
-        //             id: 44,
-        //             service: "Conditioning",
-        //             price: "$20",
-        //         },
-        //     ],
-        // },
+        {
+            id: 115,
+            name: 'Kendal',
+            picture: kendalPhoto,
+            summary: ["Kendal has over 5 years of experience, specializing in men's hair, mid to long women's hair, blended highlights, as well as color. Taking the time to create a flawless, personalized look is the priority, along with creating a relaxing and fun experience. He cannot wait to get to know you and have fun while enhancing your natural beauty."],
+            services: [
+                {
+                    id: 41,
+                    service: "Men's Haircut",
+                    price: "$40",
+                },
+                {
+                    id: 42,
+                    service: "Woman's Haircut",
+                    price: "$50",
+                },
+                {
+                    id: 43,
+                    service: "Blowdry &amp; Style",
+                    price: "$20",
+                },
+                {
+                    id: 44,
+                    service: "Conditioning",
+                    price: "$20",
+                },
+            ],
+        },
         {
             id: 116,
             name: 'CC',
@@ -163,37 +96,12 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
             `I have learned so much in the beauty industry over the years and I always challenge myself to become better and keep up with the latest trends past or present. I specialize and provide services for men, women, and children. Haircut, color, waxing, and makeup. I am very versatile and love to do it all!`,
         
             `My biggest goal is to not only provide my clients a great service but a space to feel safe and comfortable while in my chair. I want you to have an amazing experience that leaves you happy, confident and beautiful with your new look walking out the door into that Arizona dry heat. Always remember “Love is in the hair” and “makeup is art, beauty in the spirit. I look forward to seeing you!" – Love C.C.`],
-            services: [
-                {
-                    id: 51,
-                    service: "Men's Haircut",
-                    price: "$40",
-                },
-                {
-                    id: 52,
-                    service: "Woman's Haircut",
-                    price: "$50",
-                },
-                {
-                    id: 53,
-                    service: "Blowdry &amp; Style",
-                    price: "$20",
-                },
-                {
-                    id: 54,
-                    service: "Conditioning",
-                    price: "$20",
-                },
-            ],
         }
     ];
 
 
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ ease: "easeOut", duration: .75 }}
+        <div
             id='stylists'
             className='bg-zinc-100 py-26'>
             <div ref={navStylistsRef}>
@@ -211,20 +119,17 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                         {stylists.map((stylist) => {
                             return (
                                 <div key={stylist.id}>
-                                    <motion.div
+                                    <div
 
                                         onClick={() => document.getElementById(`${stylist.id}Modal`).showModal()}
-                                        initial={{ opacity: 0 }}
-                                        whileInView={{ opacity: 1 }}
-                                        transition={{ ease: "easeOut", duration: 1.5 }}
-                                        className='flex justify-items-start hover:opacity-25'>
+                                        className='flex justify-items-start'>
                                         <div className='relative w-full md:w-4/5 mx-auto py-1 hover:cursor-pointer opacity-90 hover:opacity-100 hover:scale-105'>
                                             <img src={stylist.picture} className=' object-cover mx-auto' alt={stylist.name}></img>
                                             <h3 className='font-thin text-xl text-stone-800 font4 text-center py-2'>{stylist.name}</h3>
                                         </div>
-                                    </motion.div>
+                                    </div>
                                     <dialog id={`${stylist.id}Modal`} className="modal">
-                                        <div className="modal-box pt-20 text-stone-400 bg-stone-100 text-center">
+                                        <div className="modal-box md:max-w-screen-md pt-20 text-stone-400 bg-gradient-to-b from-stone-100 to-stone-50 text-center">
                                             <form method="dialog">
                                                 {/* if there is a button in form, it will close the modal */}
                                                 <button className="btn btn-md btn-square btn-primary px-12 fixed right-2 top-2 bg-lime-400 text-black hover:text-stone-200">✕</button>
@@ -234,7 +139,7 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                                                <hr className='bg-black mx-3 opacity-30'></hr>
                                                 {stylist.summary.map((paragraph) => {
                                                     return (
-                                                        <p className='text-lg py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
+                                                        <p className='text-lg font-bold py-2 text-stone-800' key={paragraph.length}>{paragraph}</p>
                                                     )
                                                 })}
                                             <Rating name={stylist.name} />
@@ -252,6 +157,6 @@ export default function Stylists({ toggleBooking, navStylistsRef }) {
                     <hr className='mx-6 my-6 bg-stone-800'></hr>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
