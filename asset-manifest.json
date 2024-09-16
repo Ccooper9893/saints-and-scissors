@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a78a8566.css",
+    "main.js": "/static/js/main.29270ad3.js",
+    "static/media/decal-2.png": "/static/media/decal-2.9ced3fc49de81bfe5833.png",
+    "static/media/slides-home-3.jpg": "/static/media/slides-home-3.c65e0b9ed601c5a66d3b.jpg",
+    "static/media/slides-home-2.jpg": "/static/media/slides-home-2.6247a6a3d2a0fa12b585.jpg",
+    "static/media/floral-background.jpg": "/static/media/floral-background.a64d4dc8563cdeea9cf3.jpg",
+    "static/media/slides-home-1.jpg": "/static/media/slides-home-1.e568cc746a014d66056f.jpg",
+    "static/media/paul.jpg": "/static/media/paul.a8d53ef267aeeb001e1b.jpg",
+    "static/media/kendal.jpg": "/static/media/kendal.c4c69cd55552bb2433e4.jpg",
+    "static/media/title-and-logo-glow.png": "/static/media/title-and-logo-glow.8c485e3a6e287e268249.png",
+    "static/media/sherri.jpg": "/static/media/sherri.11259bfe565dae07295a.jpg",
+    "static/media/juli.jpg": "/static/media/juli.95ddf08d8bb1d71f1a77.jpg",
+    "static/media/cc.jpg": "/static/media/cc.c76c65160662a10e3768.jpg",
+    "static/media/amanda.jpg": "/static/media/amanda.65fccf874277c8448a27.jpg",
+    "static/media/nav-logo.png": "/static/media/nav-logo.b3528bf41d9d215f823f.png",
+    "static/media/nav-title-and-logo.png": "/static/media/nav-title-and-logo.1d8a43e0614c35c23e5b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "index.html": "/index.html",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.a78a8566.css.map": "/static/css/main.a78a8566.css.map",
+    "main.29270ad3.js.map": "/static/js/main.29270ad3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a78a8566.css",
+    "static/js/main.29270ad3.js"
+  ]
+}
